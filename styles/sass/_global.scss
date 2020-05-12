@@ -1,0 +1,39 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    max-width: 1200px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+header {
+    padding: 0;
+    margin: 0;
+    background-color: $primaryLightColor;
+    min-height: 100vh;
+    h1, h2, h3, h4, p, a, li, span {
+        letter-spacing: 3px;
+        margin: 0;
+        padding: 0;
+        font-weight: 400;
+    }
+    h1, h2, h3, p, li {
+        font-family: $contentFont;
+    }
+    h4, a, span {
+        font-family: $accentFont;
+    }
+}
+
+// .headerLine {
+//     width: 3px;
+//     height: 100px;
+//     background-color: $secondAccentColor;
+// }

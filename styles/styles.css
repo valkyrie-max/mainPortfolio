@@ -234,3 +234,90 @@ html {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  max-width: 1200px;
+  width: 70%;
+  margin: 0 auto;
+}
+
+header {
+  padding: 0;
+  margin: 0;
+  background-color: #F0E9ED;
+  min-height: 100vh;
+}
+
+header h1, header h2, header h3, header h4, header p, header a, header li, header span {
+  letter-spacing: 3px;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+}
+
+header h1, header h2, header h3, header p, header li {
+  font-family: "Libre Baskerville", serif;
+}
+
+header h4, header a, header span {
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  position: relative;
+}
+
+header .headerContentContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  bottom: 45%;
+}
+
+header .headerContentContainer .mainHeading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-right: 30px;
+  border-right: 3px solid #02423F;
+}
+
+header .headerContentContainer .mainHeading h1 {
+  font-size: 9rem;
+  text-transform: uppercase;
+  color: #110506;
+}
+
+header .headerContentContainer .mainHeading span {
+  font-size: 3.7rem;
+  font-weight: 500;
+  color: #630304;
+}
+
+header .headerContentContainer .secondaryHeading {
+  padding-left: 30px;
+}
+
+header .headerContentContainer .secondaryHeading h2 {
+  color: #110506;
+  font-size: 8rem;
+  font-style: italic;
+  font-weight: 400;
+}

@@ -2,6 +2,7 @@ header {
     position: relative;
     .headerContentContainer {
         display: flex;
+        flex-direction: row;
         align-items: center;
         position: absolute;
         bottom: 45%;
@@ -29,6 +30,29 @@ header {
                 font-style: italic;
                 font-weight: 400;
             }
+        }
+    }
+    .scrollToContent {
+        opacity: 0.5;
+        position: absolute;
+        top: 92%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        p {
+            letter-spacing: 2px;
+            color: $secondAccentColor;
+            font-family: $accentFont;
+            text-transform: uppercase;
+            font-size: 2.5rem;
+            font-weight: 500;
+        }
+        .fa-chevron-down {
+            margin-top: 10px;
+            color: $secondAccentColor;
+            font-size: 5rem;
         }
     }
 }

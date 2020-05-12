@@ -1,0 +1,58 @@
+header {
+    position: relative;
+    .headerContentContainer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: absolute;
+        bottom: 45%;
+        .mainHeading {
+            display: flex;
+            flex-direction: column;
+            padding-right: 30px;
+            border-right: 3px solid $secondAccentColor;
+            h1 {
+                font-size: 9rem;
+                text-transform: uppercase;
+                color: $primaryDarkColor;
+            }
+            span {
+                font-size: 3.7rem;
+                font-weight: 500;
+                color: $firstAccentColor;
+            }
+        }
+        .secondaryHeading {
+            padding-left: 30px;
+            h2 {
+                color: $primaryDarkColor;
+                font-size: 8rem;
+                font-style: italic;
+                font-weight: 400;
+            }
+        }
+    }
+    .scrollToContent {
+        opacity: 0.5;
+        position: absolute;
+        top: 92%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        p {
+            letter-spacing: 2px;
+            color: $secondAccentColor;
+            font-family: $accentFont;
+            text-transform: uppercase;
+            font-size: 2.5rem;
+            font-weight: 500;
+        }
+        .fa-chevron-down {
+            margin-top: 10px;
+            color: $secondAccentColor;
+            font-size: 5rem;
+        }
+    }
+}

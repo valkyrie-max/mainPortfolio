@@ -17,7 +17,7 @@ header {
                 color: $primaryDarkColor;
             }
             span {
-                font-size: 3.7rem;
+                font-size: 3.9rem;
                 font-weight: 500;
                 color: $firstAccentColor;
             }
@@ -33,26 +33,9 @@ header {
         }
     }
     .scrollToContent {
-        opacity: 0.5;
-        position: absolute;
-        top: 92%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        p {
-            letter-spacing: 2px;
-            color: $secondAccentColor;
-            font-family: $accentFont;
-            text-transform: uppercase;
-            font-size: 2.5rem;
-            font-weight: 500;
-        }
+        @include arrowPosition;
         .fa-chevron-down {
-            margin-top: 10px;
             color: $secondAccentColor;
-            font-size: 5rem;
         }
     }
 }

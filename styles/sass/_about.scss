@@ -1,0 +1,42 @@
+.about {
+    min-height: 100vh;
+    display: flex;
+    position: relative;
+    .aboutContentContainer {
+        display: flex;
+        align-items: center;
+        .aboutHeading {
+            h3 {
+                @include secondaryHeadingsStyle;
+                text-shadow: 0px 60px rgba($secondAccentColor, 0.5), 0px 120px rgba($firstAccentColor, 0.5);
+            }
+        }
+        .aboutText {
+            ul {
+                display: flex;
+                flex-direction: column;
+                li {
+                    margin: 15px 0px;
+                    p {
+                        line-height: 1.7;
+                        font-size: 2.2rem;
+                        letter-spacing: 2px;
+                    }
+                }
+            }
+        }
+        .aboutLine {
+            display: inline-block;
+            width: 5px;
+            height: 500px;
+            background-color: $primaryLightColor;
+            margin: 0px 50px;
+        }
+    }
+    .scrollToSkills {
+        @include arrowPosition;
+        .fa-chevron-down {
+            color: $primaryLightColor;
+        }
+    }
+}

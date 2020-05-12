@@ -13,27 +13,46 @@ body {
     margin: 0 auto;
 }
 
+h1, h2, h3, h4, p, a, li, span {
+    letter-spacing: 3px;
+    margin: 0;
+    padding: 0;
+}
+h1, h2, p, li {
+    font-family: $contentFont;
+}
+h3, h4, a, span {
+    font-family: $accentFont;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.fatText {
+    font-family: $contentFont;
+    font-weight: 700;
+}
+
 header {
     padding: 0;
     margin: 0;
     background-color: $primaryLightColor;
     min-height: 100vh;
-    h1, h2, h3, h4, p, a, li, span {
-        letter-spacing: 3px;
-        margin: 0;
-        padding: 0;
-        font-weight: 400;
-    }
-    h1, h2, h3, p, li {
-        font-family: $contentFont;
-    }
-    h4, a, span {
-        font-family: $accentFont;
-    }
 }
 
-// .headerLine {
-//     width: 3px;
-//     height: 100px;
-//     background-color: $secondAccentColor;
-// }
+main {
+    padding: 0;
+    margin: 0;
+    background-color: $primaryDarkColor;
+    color: $primaryLightColor;
+}

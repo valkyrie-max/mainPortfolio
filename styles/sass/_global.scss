@@ -38,6 +38,11 @@ li {
     list-style: none;
 }
 
+img {
+    width: 100%;
+    display: inline-block;
+}
+
 .fatText {
     font-family: $contentFont;
     font-weight: 700;
@@ -55,4 +60,49 @@ main {
     margin: 0;
     background-color: $primaryDarkColor;
     color: $primaryLightColor;
+}
+
+
+.slick-initialized .slick-slide {
+    display: flex !important;
+}
+
+.slick-dots {
+    font-size: 5rem;
+    display: flex;
+    li {
+        background-color: $primaryLightColor;
+        button {
+            border: none;
+        }
+    }
+}
+
+
+.slick-prev, .slick-next {
+    background-color: transparent;
+    border: 0;
+    position: absolute;
+    cursor: pointer;
+    color: $primaryLightColor;
+    font-family: $contentFont;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    border-bottom: 1px solid $primaryLightColor;
+    padding-bottom: 10px;
+    transition: 0.2s all ease-out;
+}
+
+.slick-prev:hover, .slick-next:hover, .slick-prev:focus, .slick-next:focus {
+    padding-bottom: 20px;
+}
+
+.slick-prev {
+    top: 50%;
+    left: -20%;
+}
+
+.slick-next {
+    top: 50%;
+    right: -15%;
 }

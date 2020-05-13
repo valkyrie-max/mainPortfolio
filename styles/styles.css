@@ -277,6 +277,11 @@ li {
   list-style: none;
 }
 
+img {
+  width: 100%;
+  display: inline-block;
+}
+
 .fatText {
   font-family: "Libre Baskerville", serif;
   font-weight: 700;
@@ -294,6 +299,56 @@ main {
   margin: 0;
   background-color: #110506;
   color: #F0E9ED;
+}
+
+.slick-initialized .slick-slide {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+.slick-dots {
+  font-size: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.slick-dots li {
+  background-color: #F0E9ED;
+}
+
+.slick-dots li button {
+  border: none;
+}
+
+.slick-prev, .slick-next {
+  background-color: transparent;
+  border: 0;
+  position: absolute;
+  cursor: pointer;
+  color: #F0E9ED;
+  font-family: "Libre Baskerville", serif;
+  text-transform: uppercase;
+  font-size: 1.7rem;
+  border-bottom: 1px solid #F0E9ED;
+  padding-bottom: 10px;
+  -webkit-transition: 0.2s all ease-out;
+  transition: 0.2s all ease-out;
+}
+
+.slick-prev:hover, .slick-next:hover, .slick-prev:focus, .slick-next:focus {
+  padding-bottom: 20px;
+}
+
+.slick-prev {
+  top: 50%;
+  left: -20%;
+}
+
+.slick-next {
+  top: 50%;
+  right: -15%;
 }
 
 header {
@@ -607,5 +662,154 @@ header .scrollToContent .fa-chevron-down {
 }
 
 .skillset .scrollToProjects .fa-chevron-down {
+  color: #F0E9ED;
+}
+
+.portfolio {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+}
+
+.portfolio h3 {
+  margin: 0;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-family: "Libre Baskerville", serif;
+  margin-bottom: 20px;
+  text-align: center;
+  opacity: 0.2;
+}
+
+.portfolio .gallery {
+  margin: 100px 0px;
+}
+
+.portfolio .gallery .projectContent {
+  height: 700px;
+  cursor: -webkit-grab;
+  cursor: grab;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 50px;
+}
+
+.portfolio .gallery .projectContent .projectText {
+  max-width: 50%;
+}
+
+.portfolio .gallery .projectContent .projectText .projectDescription h4 {
+  font-size: 5rem;
+  font-family: "Libre Baskerville", serif;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-shadow: 0px 20px rgba(2, 66, 63, 0.5), 0px 40px rgba(99, 3, 4, 0.5);
+}
+
+.portfolio .gallery .projectContent .projectText .projectDescription h5 {
+  margin: 40px 0px 35px 0px;
+  font-size: 2.5rem;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.portfolio .gallery .projectContent .projectText .projectDescription .tools {
+  font-size: 2.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.portfolio .gallery .projectContent .projectText .projectDescription p {
+  letter-spacing: 2px;
+  line-height: 1.5;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.portfolio .gallery .projectContent .projectText .projectLinks {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-top: 50px;
+}
+
+.portfolio .gallery .projectContent .projectText .projectLinks a {
+  margin-right: 50px;
+  color: #F0E9ED;
+  padding: 10px;
+  -webkit-box-shadow: 3px 3px rgba(240, 233, 237, 0.5);
+          box-shadow: 3px 3px rgba(240, 233, 237, 0.5);
+}
+
+.portfolio .gallery .projectContent .projectText .projectLinks .github {
+  background-color: #630304;
+}
+
+.portfolio .gallery .projectContent .projectText .projectLinks .viewLive {
+  background-color: #02423F;
+}
+
+.portfolio .gallery .projectContent .projectImg {
+  width: 100%;
+}
+
+.portfolio .gallery .projectContent .projectsLine {
+  display: inline-block;
+  width: 5px;
+  height: 500px;
+  background-color: #F0E9ED;
+  margin: 0px 50px;
+}
+
+.portfolio .scrollToContact {
+  opacity: 0.5;
+  position: absolute;
+  top: 92%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.portfolio .scrollToContact p {
+  letter-spacing: 2px;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.portfolio .scrollToContact .fa-chevron-down {
+  margin-top: 5px;
+  font-size: 3rem;
+}
+
+.portfolio .scrollToContact .fa-chevron-down {
   color: #F0E9ED;
 }

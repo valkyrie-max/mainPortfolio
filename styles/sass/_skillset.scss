@@ -54,10 +54,11 @@
         }
         .skillsetLine {
             display: inline-block;
-            width: 1px;
+            width: 1.5px;
             height: 400px;
             background-color: $primaryLightColor;
             margin: 0px 50px;
+            z-index: 0;
         }
     }
     .scrollToProjects {

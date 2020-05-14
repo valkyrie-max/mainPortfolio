@@ -13,7 +13,12 @@
 
     <!-- linking font awesome -->
     <script src="https://kit.fontawesome.com/82d522d35e.js" crossorigin="anonymous"></script>
+
+    <!-- linking carousel -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+    <!-- linking annimation on scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -44,7 +49,12 @@
     <main>
         <div class="wrapper">
             <!-- about starts -->
-            <section class="about" id="about">
+            <section 
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"  
+            data-aos-offset="100"
+            data-aos="fade-left" 
+            class="about" id="about">
                 <div class="aboutContentContainer">
                     <div class="aboutHeading">
                         <h3>About</h3>
@@ -77,8 +87,14 @@
             <!-- about ends -->
 
             <!-- skills start -->
-            <section class="skillset" id="skillset">
-                <div class="skillsetContentContainer">
+            <section
+            id="skillset"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"  
+            data-aos-offset="300"
+            data-aos="fade-right" 
+            class="skillset" id="skillset">
+                <div id="skillset" class="skillsetContentContainer">
                     <div class="skillList">
                         <div class="codeSkills">
                             <h4>How I talk to: <span class="fatText computers">computers</span></h4>
@@ -147,7 +163,7 @@
                         </div>
                     </div>
                     <span class="skillsetLine"></span>
-                    <div class="skillsetHeading">
+                    <div id="skillset" class="skillsetHeading">
                         <h3>Skillset</h3>
                     </div>
                 </div>
@@ -161,10 +177,10 @@
             <!-- skills end -->
             
             <!-- projects start -->
-            <section id="projects" class="portfolio">
+            <section class="portfolio">
                 <!-- <h3>Portfolio</h3> -->
                 <div class="gallery">
-                    <div class="projectContent">
+                    <div id="projects" class="projectContent">
                         <div class="projectText">
                             <div class="projectDescription">
                                 <h4>Creative</h4>
@@ -326,7 +342,16 @@
     <!-- scripts -->
     <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+    <!-- carousel -->
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <!-- animation on scroll -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    
     <!-- js -->
     <script src="scripts.js"></script>
 </body>

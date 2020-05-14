@@ -20,6 +20,28 @@
     }
 }
 
+@mixin arrowPositionPhone {
+    opacity: 0.5;
+    position: absolute;
+    top: 92%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p {
+        letter-spacing: 2px;
+        font-family: $accentFont;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+    .fa-chevron-down {
+        margin-top: 5px;
+        font-size: 3rem;
+    }
+}
+
 @mixin secondaryHeadingsStyle {
     font-size: 6rem;
     font-weight: 700;

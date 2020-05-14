@@ -25,7 +25,7 @@
 <body>
     
     <!-- header starts -->
-    <header>
+    <header id="up">
         <div class="wrapper">
             <div class="headerContentContainer">
                 <div class="mainHeading">
@@ -36,9 +36,9 @@
                     <h2>front-end developer.</h2>
                 </div>
             </div>
-            <div class="scrollToContent">
-                <p>To content</p>
-                <a aria-label="go to about section" href="#about">
+            <div>
+                <a class="scrollToContent" aria-label="go to about section" href="#about">
+                    <p>To content</p>
                     <i class="fas fa-chevron-down"></i>
                 </a>
             </div>
@@ -78,9 +78,9 @@
                         </ul>
                     </div>
                 </div>
-                <div class="scrollToSkills">
-                    <p>Skills</p>
-                    <a aria-label="go to skills" href="#skillset">
+                <div>
+                    <a class="scrollToSkills" aria-label="go to skills" href="#skillset">
+                        <p>Skills</p>
                         <i class="fas fa-chevron-down"></i>
                     </a>
                 </div>
@@ -168,9 +168,9 @@
                         <h3>Skillset</h3>
                     </div>
                 </div>
-                <div class="scrollToProjects">
-                    <p>Projects</p>
-                    <a aria-label="go to projects" href="#projects">
+                <div>
+                    <a class="scrollToProjects" aria-label="go to projects" href="#projects">
+                        <p>Projects</p>
                         <i class="fas fa-chevron-down"></i>
                     </a>
                 </div>
@@ -180,6 +180,10 @@
             <!-- projects start -->
             <section id="projects"  class="portfolio">
                 <!-- <h3>Portfolio</h3> -->
+                <div class="direction">
+                    <h3>Swipe left or right to view the projects.</h3>
+                    <h3>You can also use your arrow keys to look through the works.</h3>
+                </div>
                 <div class="gallery">
                     <div tabindex=0 class="projectContent">
                         <div class="projectText">
@@ -281,11 +285,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="scrollToContact">
-                    <h3 class="extra">More new projects coming soon.</h3>
-                    <h3 class="lowWidth">Swipe left or right.</h3>
-                    <p>Contact</p>
-                    <a aria-label="go to contact info" href="#contact">
+                <div>
+                    <a class="scrollToContact" aria-label="go to contact info" href="#contact">
+                        <p>Contact</p>
                         <i class="fas fa-chevron-down"></i>
                     </a>
                 </div>
@@ -331,6 +333,7 @@
                             <a aria-label="link to linkedin" href="https://www.linkedin.com/in/alisakitkina/"><i class="fab fa-linkedin"></i></a>
                         </li>
                     </ul>
+                    <a class="up" href="#up">go back up</a>
                 </div>
             </div>
         </div>

@@ -37,7 +37,6 @@
         font-size: 2.5rem;
     }
     footer .means .socials ul {
-        // margin: 0;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
@@ -226,10 +225,284 @@
     .skillset .skillsetContentContainer .skillsetLine {
         display: none;
     }
+    footer .up {
+        margin-top: 10px;
+        font-size: 2.5rem;
+    }
 }
 
-@media (max-width: 865px) {
+@media (max-width: 890px) {
     header .headerContentContainer {
+        position: static;
+        transform: none;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        transform: translate(0%, 120%);
+    }
+    header .headerContentContainer .mainHeading {
+        border: none;
+        // text-align: center;
+        padding: 0;
+    }
+    header .headerContentContainer .secondaryHeading {
+        margin-top: 50px;
+        padding: 0;
+    }
+    header .headerContentContainer .secondaryHeading h2 {
+        font-size: 6rem;
+    }
+    .skillset .skillsetContentContainer .skillList h4 {
+        font-size: 2.9rem;
+    }
+    .skillset .skillsetContentContainer .skillList .codeSkills ul li, .skillset .skillsetContentContainer .skillList .humanSkills ul li {
+        font-size: 1.7rem;
+    }
+    footer .footerHeadings h3 {
+        font-size: 4rem;
+    }
+    footer .footerHeadings p {
+        font-size: 1.6rem;
+        letter-spacing: 1px;
+    }
+    footer .means .socials ul li, footer .means .socials ul li:nth-child(4) {
+        font-size: 5rem;
+        margin-right: 45px;
+    }
+    footer .means .socials ul li:nth-child(4) {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 800px) {
+    header .headerContentContainer .secondaryHeading h2 {
+        font-size: 5rem;
+    }
+    header .headerContentContainer .secondaryHeading {
+        margin-top: 30px;
+    }
+    .about .aboutContentContainer .aboutText ul li p {
+        font-size: 1.7rem;
+        letter-spacing: normal;
+    }
+    .skillset .skillsetContentContainer .skillList .codeSkills ul li, .skillset .skillsetContentContainer .skillList .humanSkills ul li {
+        font-size: 1.5rem;
+    }
+    .portfolio .gallery .projectContent .projectText .projectDescription h4 {
+        font-size: 3rem;
+    }
+    .portfolio .gallery .projectContent .projectText .projectDescription h5 {
+        font-size: 2rem;
+    }
+    .portfolio .gallery .projectContent .projectText .projectDescription p {
+        font-size: 1.4rem;
+    } 
+    .portfolio .gallery .projectContent .projectText .projectDescription .tools {
+        font-size: 1.8rem;
+        font-weight: 700;
+    }
+    footer .footerHeadings h3 {
+        font-size: 3.5rem;
+    }
+    footer .means .contactMe form {
+        width: 350px;
+    }
+}
+
+@media (max-width: 707px) {
+    footer .footerHeadings h3 {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 621px) {
+    .portfolio .direction h3 {
+        font-size: 1.4rem;
+    }
+    .portfolio .gallery .projectContent .projectText .projectLinks {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 590px) {
+    .about .aboutContentContainer .aboutHeading h3,
+    .skillset .skillsetContentContainer .skillsetHeading h3 {
+        font-size: 4rem;
+        padding-bottom: 60px;
+    }
+    .about .aboutContentContainer .aboutText ul li p {
+        font-size: 1.5rem;
+    }
+    .about .aboutContentContainer .aboutText ul li {
+        font-size: 1.5rem;
+    }
+    .skillset .skillsetContentContainer .skillsetHeading {
+        padding: 0;
+    }
+    .skillset .skillsetContentContainer .skillList h4 {
+        font-size: 2.5rem;
+    }
+    .skillset .skillsetContentContainer .skillList .codeSkills ul, 
+    .skillset .skillsetContentContainer .skillList .humanSkills ul {
+        margin: 10px 30px 0px 0px;
+    }
+    .portfolio .gallery .projectContent {
+        height: 700px;
+        margin-top: 20px;
+    }
+    .portfolio .gallery .projectContent .projectText .projectDescription h4 {
+        text-shadow: 0px 10px rgba(2, 66, 63, 0.5), 0px 20px rgba(99, 3, 4, 0.5);
+    }
+    .portfolio .gallery .projectContent .projectText .projectDescription h5 {
+        margin: 20px 0px;
+    }
+    .portfolio .gallery .projectContent .projectText .projectDescription p {
+        font-size: 1.35rem;
+    }
+    .portfolio .gallery .projectContent .projectText .projectLinks .github,
+    .portfolio .gallery .projectContent .projectText .projectLinks .viewLive {
+        font-size: 1.6rem;
+        padding: 5px 10px;
+    }
+}
+
+@media (max-width: 515px) {
+    .skillset .skillsetContentContainer .skillList h4 {
+        font-size: 2rem;
+    }
+    .skillset .skillsetContentContainer .skillList .codeSkills ul li, .skillset .skillsetContentContainer .skillList .humanSkills ul li {
+        font-size: 1.2rem;
+    }
+    .portfolio .direction h3 {
+        font-size: 1.2rem;
+    }
+    .portfolio .gallery .projectContent {
+        margin-top: 0;
+        height: 800px;
+    }
+    .portfolio .gallery .projectContent .projectText .projectDescription .tools {
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+    .portfolio .gallery .projectContent .projectText .projectDescription p {
+        font-size: 1.35rem;
+    }
+    .portfolio .scrollToContact {
+        top: 96%;
+    }
+    footer .means .socials p {
+        font-size: 2rem;
+    }
+    footer .up {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 470px) {
+    header .scrollToContent p,
+    .about .scrollToSkills p,
+    .skillset .scrollToProjects p,
+    .portfolio .scrollToContact p {
+        font-size: 1.5rem;
+    }
+    header .headerContentContainer {
+        transform: translate(0, 160%);
+    }
+    header .headerContentContainer .mainHeading h1 {
+        font-size: 5rem;
+    }
+    header .headerContentContainer .mainHeading span {
+        font-size: 2rem;;
+    }
+    header .headerContentContainer .secondaryHeading h2 {
+        font-size: 4rem;
+    }
+    .about .aboutContentContainer .aboutHeading h3, .skillset .skillsetContentContainer .skillsetHeading h3 {
+        font-size: 2.5rem;
+        text-shadow: 0px 15px rgba(2, 66, 63, 0.5), 0px 30px rgba(99, 3, 4, 0.5);
+        padding-bottom: 30px;
+    }
+    .about .aboutContentContainer .aboutText ul {
+        margin-top: 0px;
+    }
+    .about .aboutContentContainer .aboutText ul li  {
+        list-style: none;
+    }
+    .about .aboutContentContainer .aboutText ul li p {
+        font-size: 1.3rem;
+        letter-spacing: 0.5px;
+    }
+    .skillset .skillsetContentContainer .skillList h4 {
+        display: inline-block;
+        max-width: 70%;
+        font-size: 1.7rem;
+    }
+    .skillset .skillsetContentContainer .skillList .codeSkills ul, 
+    .skillset .skillsetContentContainer .skillList .humanSkills ul {
+        margin-right: 30px;
+        flex-wrap: wrap;
+    }
+    .skillset .skillsetContentContainer .skillList .codeSkills ul li, 
+    .skillset .skillsetContentContainer .skillList .humanSkills ul li {
+        // list-style: none;
+        font-size: 1rem;
+        margin-left: 0;
+    }
+    .skillset .skillsetContentContainer .skillList .codeSkills ul li p, 
+    .skillset .skillsetContentContainer .skillList .humanSkills ul li p {
+        letter-spacing: 2px;
+    }
+    .portfolio .direction h3 {
+        font-size: 1rem;
+        margin-bottom: 4px;
+    }
+    .portfolio .gallery .projectContent {
+
+    }
+    .portfolio .gallery .projectContent .projectText .projectDescription h4 {
+        font-size: 2rem;
+    }
+    .portfolio .gallery .projectContent .projectText .projectDescription h5 {
+        display: none;
+    }
+    .portfolio .gallery .projectContent .projectText .projectDescription .tools {
+        margin: 20px 0px;
+    }
+    .portfolio .gallery .projectContent .projectText .projectDescription p {
+        font-size: 1.15rem;
+    }
+    .portfolio .gallery .projectContent .projectText .projectLinks .github, 
+    .portfolio .gallery .projectContent .projectText .projectLinks .viewLive {
+        font-size: 1.2rem;
+        letter-spacing: normal;
+        margin-right: 15px;
+        // padding: 5px 10px;
+    }
+    footer .footerHeadings h3 {
+        font-size: 2.5rem;
+    }
+    footer .footerHeadings p {
+        font-size: 1.3rem;
+    }
+    footer .means .contactMe form {
+        width: 220px;
+    }
+    footer .means .contactMe form input, footer .means .contactMe form textarea {
+        font-size: 1.5rem;
+    }
+    footer .means .socials h4 {
+        font-size: 2rem;
+    }
+    footer .means .socials p {
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+    footer .means .socials ul li, footer .means .socials ul li:nth-child(4) {
+        font-size: 3rem;
+        margin-right: 25px;
+    }
+    footer .copyright {
+        font-size: 0.7rem;
     }
 }

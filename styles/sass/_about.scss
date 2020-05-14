@@ -35,6 +35,10 @@
     }
     .scrollToSkills {
         @include arrowPosition;
+        color: $primaryLightColor;
+        p {
+            font-weight: 700;
+        }
         .fa-chevron-down {
             color: $primaryLightColor;
         }

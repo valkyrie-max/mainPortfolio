@@ -10,22 +10,16 @@
         font-family: $contentFont;
         margin-bottom: 20px;
         text-align: center;
-        // opacity: 0.2;
-    }
-    .lowWidth {
-        display: none;
     }
     .gallery {
-        margin: 10px 0px;
         .projectContent {
             height: 800px;
             cursor: grab;
             display: flex;
             flex-direction: row;
             align-items: center;
-            padding: 0px 50px;
+            padding: 0px 20px;
             .projectText {
-                // max-width: 50%;
                 .projectDescription {
                     h4 {
                         font-size: 5rem;
@@ -88,8 +82,21 @@
             }
         }
     }
+    .direction {
+        margin-top: 10px;
+        h3 {
+            font-size: 1.7rem;
+            opacity: 0.2;
+            // margin-top: -15px;
+        }
+    }
     .scrollToContact {
         @include arrowPosition;
+        color: $primaryLightColor;
+        top: 95%;
+        p {
+            font-weight: 700;
+        }
         .fa-chevron-down {
             color: $primaryLightColor;
         }

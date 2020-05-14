@@ -89,7 +89,7 @@ footer {
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: right;
-                margin-top: 50px;
+                margin: 50px 0px;
                 li {
                     font-size: 14rem;
                     margin-right: 30px;
@@ -122,5 +122,11 @@ footer {
         p:nth-child(1) {
             margin-bottom: 10px;
         }
+    }
+    .up {
+        font-size: 3.5rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: $firstAccentColor;
     }
 }

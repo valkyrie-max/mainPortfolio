@@ -34,6 +34,11 @@ header {
     }
     .scrollToContent {
         @include arrowPosition;
+        color: $secondAccentColor;
+        p {
+            font-weight: 700;
+            // font-size: 5rem;
+        }
         .fa-chevron-down {
             color: $secondAccentColor;
         }

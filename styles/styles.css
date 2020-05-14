@@ -355,35 +355,6 @@ main {
   border: none;
 }
 
-.slick-prev, .slick-next {
-  background-color: transparent;
-  border: 0;
-  position: absolute;
-  cursor: pointer;
-  color: #F0E9ED;
-  font-family: "Libre Baskerville", serif;
-  text-transform: uppercase;
-  font-size: 1.7rem;
-  border-bottom: 1px solid #F0E9ED;
-  padding-bottom: 10px;
-  -webkit-transition: 0.2s all ease-out;
-  transition: 0.2s all ease-out;
-}
-
-.slick-prev:hover, .slick-next:hover, .slick-prev:focus, .slick-next:focus {
-  padding-bottom: 20px;
-}
-
-.slick-prev {
-  top: 50%;
-  left: -18%;
-}
-
-.slick-next {
-  top: 50%;
-  right: -15%;
-}
-
 header {
   position: relative;
 }
@@ -455,6 +426,7 @@ header .scrollToContent {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: #02423F;
 }
 
 header .scrollToContent p {
@@ -468,6 +440,10 @@ header .scrollToContent p {
 header .scrollToContent .fa-chevron-down {
   margin-top: 5px;
   font-size: 3rem;
+}
+
+header .scrollToContent p {
+  font-weight: 700;
 }
 
 header .scrollToContent .fa-chevron-down {
@@ -544,6 +520,7 @@ header .scrollToContent .fa-chevron-down {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: #F0E9ED;
 }
 
 .about .scrollToSkills p {
@@ -557,6 +534,10 @@ header .scrollToContent .fa-chevron-down {
 .about .scrollToSkills .fa-chevron-down {
   margin-top: 5px;
   font-size: 3rem;
+}
+
+.about .scrollToSkills p {
+  font-weight: 700;
 }
 
 .about .scrollToSkills .fa-chevron-down {
@@ -680,6 +661,8 @@ header .scrollToContent .fa-chevron-down {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: #F0E9ED;
+  top: 95%;
 }
 
 .skillset .scrollToProjects p {
@@ -693,6 +676,10 @@ header .scrollToContent .fa-chevron-down {
 .skillset .scrollToProjects .fa-chevron-down {
   margin-top: 5px;
   font-size: 3rem;
+}
+
+.skillset .scrollToProjects p {
+  font-weight: 700;
 }
 
 .skillset .scrollToProjects .fa-chevron-down {
@@ -720,14 +707,6 @@ header .scrollToContent .fa-chevron-down {
   text-align: center;
 }
 
-.portfolio .lowWidth {
-  display: none;
-}
-
-.portfolio .gallery {
-  margin: 10px 0px;
-}
-
 .portfolio .gallery .projectContent {
   height: 800px;
   cursor: -webkit-grab;
@@ -742,7 +721,7 @@ header .scrollToContent .fa-chevron-down {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0px 50px;
+  padding: 0px 20px;
 }
 
 .portfolio .gallery .projectContent .projectText .projectDescription h4 {
@@ -812,6 +791,15 @@ header .scrollToContent .fa-chevron-down {
   margin: 0px 50px;
 }
 
+.portfolio .direction {
+  margin-top: 10px;
+}
+
+.portfolio .direction h3 {
+  font-size: 1.7rem;
+  opacity: 0.2;
+}
+
 .portfolio .scrollToContact {
   opacity: 0.5;
   position: absolute;
@@ -829,6 +817,8 @@ header .scrollToContent .fa-chevron-down {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: #F0E9ED;
+  top: 95%;
 }
 
 .portfolio .scrollToContact p {
@@ -842,6 +832,10 @@ header .scrollToContent .fa-chevron-down {
 .portfolio .scrollToContact .fa-chevron-down {
   margin-top: 5px;
   font-size: 3rem;
+}
+
+.portfolio .scrollToContact p {
+  font-weight: 700;
 }
 
 .portfolio .scrollToContact .fa-chevron-down {
@@ -978,7 +972,7 @@ footer .means .socials ul {
   -webkit-box-pack: right;
       -ms-flex-pack: right;
           justify-content: right;
-  margin-top: 50px;
+  margin: 50px 0px;
 }
 
 footer .means .socials ul li {
@@ -1009,6 +1003,13 @@ footer .copyright {
 
 footer .copyright p:nth-child(1) {
   margin-bottom: 10px;
+}
+
+footer .up {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #630304;
 }
 
 @media (max-width: 1630px) {
@@ -1279,13 +1280,289 @@ footer .copyright p:nth-child(1) {
   .skillset .skillsetContentContainer .skillsetLine {
     display: none;
   }
+  footer .up {
+    margin-top: 10px;
+    font-size: 2.5rem;
+  }
 }
 
-@media (max-width: 865px) {
+@media (max-width: 890px) {
   header .headerContentContainer {
+    position: static;
+    -webkit-transform: none;
+            transform: none;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    -webkit-transform: translate(0%, 120%);
+            transform: translate(0%, 120%);
+  }
+  header .headerContentContainer .mainHeading {
+    border: none;
+    padding: 0;
+  }
+  header .headerContentContainer .secondaryHeading {
+    margin-top: 50px;
+    padding: 0;
+  }
+  header .headerContentContainer .secondaryHeading h2 {
+    font-size: 6rem;
+  }
+  .skillset .skillsetContentContainer .skillList h4 {
+    font-size: 2.9rem;
+  }
+  .skillset .skillsetContentContainer .skillList .codeSkills ul li, .skillset .skillsetContentContainer .skillList .humanSkills ul li {
+    font-size: 1.7rem;
+  }
+  footer .footerHeadings h3 {
+    font-size: 4rem;
+  }
+  footer .footerHeadings p {
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+  }
+  footer .means .socials ul li, footer .means .socials ul li:nth-child(4) {
+    font-size: 5rem;
+    margin-right: 45px;
+  }
+  footer .means .socials ul li:nth-child(4) {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 800px) {
+  header .headerContentContainer .secondaryHeading h2 {
+    font-size: 5rem;
+  }
+  header .headerContentContainer .secondaryHeading {
+    margin-top: 30px;
+  }
+  .about .aboutContentContainer .aboutText ul li p {
+    font-size: 1.7rem;
+    letter-spacing: normal;
+  }
+  .skillset .skillsetContentContainer .skillList .codeSkills ul li, .skillset .skillsetContentContainer .skillList .humanSkills ul li {
+    font-size: 1.5rem;
+  }
+  .portfolio .gallery .projectContent .projectText .projectDescription h4 {
+    font-size: 3rem;
+  }
+  .portfolio .gallery .projectContent .projectText .projectDescription h5 {
+    font-size: 2rem;
+  }
+  .portfolio .gallery .projectContent .projectText .projectDescription p {
+    font-size: 1.4rem;
+  }
+  .portfolio .gallery .projectContent .projectText .projectDescription .tools {
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+  footer .footerHeadings h3 {
+    font-size: 3.5rem;
+  }
+  footer .means .contactMe form {
+    width: 350px;
+  }
+}
+
+@media (max-width: 707px) {
+  footer .footerHeadings h3 {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 621px) {
+  .portfolio .direction h3 {
+    font-size: 1.4rem;
+  }
+  .portfolio .gallery .projectContent .projectText .projectLinks {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 590px) {
+  .about .aboutContentContainer .aboutHeading h3,
+  .skillset .skillsetContentContainer .skillsetHeading h3 {
+    font-size: 4rem;
+    padding-bottom: 60px;
+  }
+  .about .aboutContentContainer .aboutText ul li p {
+    font-size: 1.5rem;
+  }
+  .about .aboutContentContainer .aboutText ul li {
+    font-size: 1.5rem;
+  }
+  .skillset .skillsetContentContainer .skillsetHeading {
+    padding: 0;
+  }
+  .skillset .skillsetContentContainer .skillList h4 {
+    font-size: 2.5rem;
+  }
+  .skillset .skillsetContentContainer .skillList .codeSkills ul,
+  .skillset .skillsetContentContainer .skillList .humanSkills ul {
+    margin: 10px 30px 0px 0px;
+  }
+  .portfolio .gallery .projectContent {
+    height: 700px;
+    margin-top: 20px;
+  }
+  .portfolio .gallery .projectContent .projectText .projectDescription h4 {
+    text-shadow: 0px 10px rgba(2, 66, 63, 0.5), 0px 20px rgba(99, 3, 4, 0.5);
+  }
+  .portfolio .gallery .projectContent .projectText .projectDescription h5 {
+    margin: 20px 0px;
+  }
+  .portfolio .gallery .projectContent .projectText .projectDescription p {
+    font-size: 1.35rem;
+  }
+  .portfolio .gallery .projectContent .projectText .projectLinks .github,
+  .portfolio .gallery .projectContent .projectText .projectLinks .viewLive {
+    font-size: 1.6rem;
+    padding: 5px 10px;
+  }
+}
+
+@media (max-width: 515px) {
+  .skillset .skillsetContentContainer .skillList h4 {
+    font-size: 2rem;
+  }
+  .skillset .skillsetContentContainer .skillList .codeSkills ul li, .skillset .skillsetContentContainer .skillList .humanSkills ul li {
+    font-size: 1.2rem;
+  }
+  .portfolio .direction h3 {
+    font-size: 1.2rem;
+  }
+  .portfolio .gallery .projectContent {
+    margin-top: 0;
+    height: 800px;
+  }
+  .portfolio .gallery .projectContent .projectText .projectDescription .tools {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  .portfolio .gallery .projectContent .projectText .projectDescription p {
+    font-size: 1.35rem;
+  }
+  .portfolio .scrollToContact {
+    top: 96%;
+  }
+  footer .means .socials p {
+    font-size: 2rem;
+  }
+  footer .up {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 470px) {
+  header .scrollToContent p,
+  .about .scrollToSkills p,
+  .skillset .scrollToProjects p,
+  .portfolio .scrollToContact p {
+    font-size: 1.5rem;
+  }
+  header .headerContentContainer {
+    -webkit-transform: translate(0, 160%);
+            transform: translate(0, 160%);
+  }
+  header .headerContentContainer .mainHeading h1 {
+    font-size: 5rem;
+  }
+  header .headerContentContainer .mainHeading span {
+    font-size: 2rem;
+  }
+  header .headerContentContainer .secondaryHeading h2 {
+    font-size: 4rem;
+  }
+  .about .aboutContentContainer .aboutHeading h3, .skillset .skillsetContentContainer .skillsetHeading h3 {
+    font-size: 2.5rem;
+    text-shadow: 0px 15px rgba(2, 66, 63, 0.5), 0px 30px rgba(99, 3, 4, 0.5);
+    padding-bottom: 30px;
+  }
+  .about .aboutContentContainer .aboutText ul {
+    margin-top: 0px;
+  }
+  .about .aboutContentContainer .aboutText ul li {
+    list-style: none;
+  }
+  .about .aboutContentContainer .aboutText ul li p {
+    font-size: 1.3rem;
+    letter-spacing: 0.5px;
+  }
+  .skillset .skillsetContentContainer .skillList h4 {
+    display: inline-block;
+    max-width: 70%;
+    font-size: 1.7rem;
+  }
+  .skillset .skillsetContentContainer .skillList .codeSkills ul,
+  .skillset .skillsetContentContainer .skillList .humanSkills ul {
+    margin-right: 30px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .skillset .skillsetContentContainer .skillList .codeSkills ul li,
+  .skillset .skillsetContentContainer .skillList .humanSkills ul li {
+    font-size: 1rem;
+    margin-left: 0;
+  }
+  .skillset .skillsetContentContainer .skillList .codeSkills ul li p,
+  .skillset .skillsetContentContainer .skillList .humanSkills ul li p {
+    letter-spacing: 2px;
+  }
+  .portfolio .direction h3 {
+    font-size: 1rem;
+    margin-bottom: 4px;
+  }
+  .portfolio .gallery .projectContent .projectText .projectDescription h4 {
+    font-size: 2rem;
+  }
+  .portfolio .gallery .projectContent .projectText .projectDescription h5 {
+    display: none;
+  }
+  .portfolio .gallery .projectContent .projectText .projectDescription .tools {
+    margin: 20px 0px;
+  }
+  .portfolio .gallery .projectContent .projectText .projectDescription p {
+    font-size: 1.15rem;
+  }
+  .portfolio .gallery .projectContent .projectText .projectLinks .github,
+  .portfolio .gallery .projectContent .projectText .projectLinks .viewLive {
+    font-size: 1.2rem;
+    letter-spacing: normal;
+    margin-right: 15px;
+  }
+  footer .footerHeadings h3 {
+    font-size: 2.5rem;
+  }
+  footer .footerHeadings p {
+    font-size: 1.3rem;
+  }
+  footer .means .contactMe form {
+    width: 220px;
+  }
+  footer .means .contactMe form input, footer .means .contactMe form textarea {
+    font-size: 1.5rem;
+  }
+  footer .means .socials h4 {
+    font-size: 2rem;
+  }
+  footer .means .socials p {
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+  footer .means .socials ul li, footer .means .socials ul li:nth-child(4) {
+    font-size: 3rem;
+    margin-right: 25px;
+  }
+  footer .copyright {
+    font-size: 0.7rem;
   }
 }

@@ -3,7 +3,7 @@ $(function() {
     $('.gallery').slick({
         autoplay: true,
         autoplaySpeed: 5000,
-        arrows: true,
+        arrows: false,
         dots: false,
         speed: 1000,
     });
@@ -15,4 +15,5 @@ $(function() {
         }, 1200);
         return false;
     });
+
 });

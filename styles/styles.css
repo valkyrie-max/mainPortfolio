@@ -926,6 +926,10 @@ footer .means .contactMe form input, footer .means .contactMe form textarea {
   color: #110506;
 }
 
+footer .means .contactMe form input:focus, footer .means .contactMe form textarea:focus {
+  border: 5px solid #630304;
+}
+
 footer .means .contactMe form input {
   height: 40px;
 }

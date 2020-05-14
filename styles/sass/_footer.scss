@@ -52,6 +52,9 @@ footer {
                     font-weight: 500;
                     color: $primaryDarkColor;
                 }
+                input:focus, textarea:focus {
+                    border: 5px solid $firstAccentColor;
+                }
                 input {
                     height: 40px;
                 }

@@ -37,7 +37,7 @@
             </div>
             <div class="scrollToContent">
                 <p>To content</p>
-                <a href="#about">
+                <a aria-label="go to about section" href="#about">
                     <i class="fas fa-chevron-down"></i>
                 </a>
             </div>
@@ -79,7 +79,7 @@
                 </div>
                 <div class="scrollToSkills">
                     <p>Skills</p>
-                    <a href="#skillset">
+                    <a aria-label="go to skills" href="#skillset">
                         <i class="fas fa-chevron-down"></i>
                     </a>
                 </div>
@@ -169,7 +169,7 @@
                 </div>
                 <div class="scrollToProjects">
                     <p>Projects</p>
-                    <a href="#projects">
+                    <a aria-label="go to projects" href="#projects">
                         <i class="fas fa-chevron-down"></i>
                     </a>
                 </div>
@@ -180,7 +180,7 @@
             <section id="projects"  class="portfolio">
                 <!-- <h3>Portfolio</h3> -->
                 <div class="gallery">
-                    <div class="projectContent">
+                    <div tabindex=0 class="projectContent">
                         <div class="projectText">
                             <div class="projectDescription">
                                 <h4>Creative</h4>
@@ -196,10 +196,10 @@
                         </div>
                         <span class="projectsLine"></span>
                         <div class="projectImg">
-                            <img src="assets/project1.png" alt="">
+                            <img src="assets/project1.png" alt="Project preview">
                         </div>
                     </div>
-                    <div class="projectContent">
+                    <div tabindex=0 class="projectContent">
                         <div class="projectText">
                             <div class="projectDescription">
                                 <h4>Anime Quiz</h4>
@@ -216,10 +216,10 @@
                         </div>
                         <span class="projectsLine"></span>
                         <div class="projectImg">
-                            <img src="assets/project2.png" alt="">
+                            <img src="assets/project2.png" alt="Project preview">
                         </div>
                     </div>
-                    <div class="projectContent">
+                    <div tabindex=0 class="projectContent">
                         <div class="projectText">
                             <div class="projectDescription">
                                 <h4>Laark</h4>
@@ -236,10 +236,10 @@
                         </div>
                         <span class="projectsLine"></span>
                         <div class="projectImg">
-                            <img src="assets/project3.png" alt="">
+                            <img src="assets/project3.png" alt="Project preview">
                         </div>
                     </div>
-                    <div class="projectContent">
+                    <div tabindex=0 class="projectContent">
                         <div class="projectText">
                             <div class="projectDescription">
                                 <h4>Frame of mind</h4>
@@ -256,10 +256,10 @@
                         </div>
                         <span class="projectsLine"></span>
                         <div class="projectImg">
-                            <img src="assets/project4.png" alt="">
+                            <img src="assets/project4.png" alt="Project preview">
                         </div>
                     </div>
-                    <div class="projectContent">
+                    <div tabindex=0 class="projectContent">
                         <div class="projectText">
                             <div class="projectDescription">
                                 <h4>BattleRockets</h4>
@@ -276,14 +276,14 @@
                         </div>
                         <span class="projectsLine"></span>
                         <div class="projectImg">
-                            <img src="assets/project5.png" alt="">
+                            <img src="assets/project5.png" alt="Project preview">
                         </div>
                     </div>
                 </div>
                 <div class="scrollToContact">
                     <h3>More new projects coming soon.</h3>
                     <p>Contact</p>
-                    <a href="#contact">
+                    <a aria-label="go to contact info" href="#contact">
                         <i class="fas fa-chevron-down"></i>
                     </a>
                 </div>
@@ -303,12 +303,12 @@
             <div class="means">
                 <div class="contactMe">
                     <form action="https://formspree.io/moqkayqd" method="POST">
-                        <label> Hi Alisa! My name is:</label>
-                        <input placeholder="your name" type="text" name="personName">
-                        <label> Here is my e-mail:</label>
-                        <input placeholder="your email" type="text" name="_replyto">
-                        <label> And this is my message:</label>
-                        <textarea placeholder="your message" name="message"></textarea>
+                        <label for="personName"> Hi Alisa! My name is:</label>
+                        <input id="personName" placeholder="your name" type="text" name="personName">
+                        <label for="_replyto"> Here is my e-mail:</label>
+                        <input id="_replyto" placeholder="your email" type="text" name="_replyto">
+                        <label for="message"> And this is my message:</label>
+                        <textarea id="message" placeholder="your message" name="message"></textarea>
                         <button type="submit">Send</button>
                     </form>
                 </div>

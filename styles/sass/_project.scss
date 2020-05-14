@@ -10,7 +10,10 @@
         font-family: $contentFont;
         margin-bottom: 20px;
         text-align: center;
-        opacity: 0.2;
+        // opacity: 0.2;
+    }
+    .lowWidth {
+        display: none;
     }
     .gallery {
         margin: 10px 0px;

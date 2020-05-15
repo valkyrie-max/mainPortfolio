@@ -355,6 +355,123 @@ main {
   border: none;
 }
 
+.menuToggle {
+  display: none;
+  position: fixed;
+  top: 50px;
+  left: 50px;
+  z-index: 1;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.menuToggle a {
+  text-decoration: none;
+  color: #02423F;
+  font-family: "Libre Baskerville", serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+.menuToggle a:hover,
+.menuToggle a:active {
+  color: #630304;
+}
+
+.menuToggle input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 1;
+}
+
+.menuToggle span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #F0E9ED;
+  -webkit-box-shadow: 2px 2px #110506;
+          box-shadow: 2px 2px #110506;
+  border-radius: 3px;
+  z-index: 3;
+  -webkit-transform-origin: 4px 0px;
+          transform-origin: 4px 0px;
+  -webkit-transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+
+.menuToggle span:first-child {
+  -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+}
+
+.menuToggle span:nth-last-child(2) {
+  -webkit-transform-origin: 0% 100%;
+          transform-origin: 0% 100%;
+}
+
+.menuToggle input:checked ~ span {
+  opacity: 1;
+  -webkit-transform: rotate(45deg) translate(-2px, -1px);
+          transform: rotate(45deg) translate(-2px, -1px);
+  background: #110506;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.menuToggle input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  -webkit-transform: rotate(0deg) scale(0.2, 0.2);
+          transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+.menuToggle input:checked ~ span:nth-last-child(2) {
+  -webkit-transform: rotate(-45deg) translate(0, -1px);
+          transform: rotate(-45deg) translate(0, -1px);
+}
+
+.menuToggle .menu {
+  position: absolute;
+  width: 100vw;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  background-color: #F0E9ED;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+  -webkit-transform: translate(-100%, 0);
+          transform: translate(-100%, 0);
+  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+
+.menuToggle .menu li {
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+.menuToggle input:checked ~ ul {
+  -webkit-transform: none;
+          transform: none;
+}
+
 header {
   position: relative;
 }
@@ -1380,11 +1497,23 @@ footer .up {
 }
 
 @media (max-width: 621px) {
+  .menuToggle {
+    display: block;
+  }
   .portfolio .direction h3 {
     font-size: 1.4rem;
   }
   .portfolio .gallery .projectContent .projectText .projectLinks {
     margin-top: 20px;
+  }
+  .about .aboutContentContainer .aboutHeading h3,
+  .skillset .skillsetContentContainer .skillsetHeading h3 {
+    display: none;
+  }
+  .about .scrollToSkills,
+  .skillset .scrollToProjects,
+  .portfolio .scrollToContact {
+    display: none;
   }
 }
 
@@ -1567,5 +1696,32 @@ footer .up {
   }
   footer .copyright {
     font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 420px) {
+  header .headerContentContainer {
+    -webkit-transform: translate(0, 120%);
+            transform: translate(0, 120%);
+  }
+  .menuToggle {
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+  }
+  .menuToggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+  }
+  .about .aboutContentContainer .aboutText ul {
+    margin: 30px 0px;
+  }
+  .portfolio .direction h3 {
+    line-height: 1.5;
+  }
+  .portfolio .gallery .projectContent {
+    height: 600px;
+    margin: 20px 0px;
   }
 }

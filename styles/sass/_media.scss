@@ -129,8 +129,11 @@
     footer .means .contactMe form input {
         height: 35px;
     }
+    footer .means .contactMe form textarea {
+        height: 150px;
+    }
     footer .means .contactMe form button {
-        font-size: 2rem;
+        font-size: 1.7rem;
     }
     footer .means {
         flex-direction: column;
@@ -495,15 +498,25 @@
     }
     footer .footerHeadings p {
         font-size: 1.3rem;
+        letter-spacing: normal;
+        margin: 5px;
     }
     footer .means .contactMe form {
         width: 220px;
     }
+    footer .means .contactMe form input {
+        height: 25px;
+    }
     footer .means .contactMe form input, footer .means .contactMe form textarea {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
+    }
+    footer .means .contactMe form button {
+        font-size: 1.4rem;
+        padding: 4px;
     }
     footer .means .socials h4 {
-        font-size: 2rem;
+        font-size: 1.5rem;
+        margin-bottom: 5px;
     }
     footer .means .socials p {
         font-size: 1.2rem;
@@ -541,5 +554,29 @@
     .portfolio .gallery .projectContent {
         height: 600px;
         margin: 20px 0px;
+    }
+}
+
+@media (max-width: 350px) {
+    header .headerContentContainer {
+        transform: translate(0, 80%);
+    }
+    .skillset .skillsetContentContainer .skillList .codeSkills ul li p, .skillset .skillsetContentContainer .skillList .humanSkills ul li p {
+        font-size: 1.1rem;
+    }
+    .portfolio .gallery .projectContent .projectText .projectDescription p {
+        font-size: 1.2rem;
+    }
+    footer .footerHeadings {
+        margin-top: 30px;
+    }
+    footer .footerHeadings p {
+        display: none;
+    }
+    footer .means .contactMe form label {
+        font-size: 1.3rem;
+    }
+    footer .means .contactMe form textarea {
+        height: 100px;
     }
 }

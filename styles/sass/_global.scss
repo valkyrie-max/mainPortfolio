@@ -70,6 +70,8 @@ header {
     margin: 0;
     background-color: $primaryLightColor;
     min-height: 100vh;
+    border-top: 80px solid $primaryDarkColor;
+    border-bottom: 80px solid $primaryDarkColor;
 }
 
 main {
@@ -77,22 +79,7 @@ main {
     margin: 0;
     background-color: $primaryDarkColor;
     color: $primaryLightColor;
-}
-
-
-.slick-initialized .slick-slide {
-    display: flex !important;
-}
-
-.slick-dots {
-    font-size: 5rem;
-    display: flex;
-    li {
-        background-color: $primaryLightColor;
-        button {
-            border: none;
-        }
-    }
+    background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
 }
 
 .menuToggle {

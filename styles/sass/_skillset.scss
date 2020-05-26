@@ -13,15 +13,12 @@
                 letter-spacing: 2px;
                 font-weight: 400;
                 text-transform: uppercase;
-                .fatText {
-                    font-family: $accentFont;
-                    font-weight: 700;
-                }
+                font-family: $contentFont;
                 .computers {
-                    text-shadow: 3px 3px $firstAccentColor;
+                    text-shadow: 2px 2px $firstAccentColor;
                 }
                 .humans {
-                    text-shadow: 3px 3px $secondAccentColor;
+                    text-shadow: 2px 2px $secondAccentColor;
                 }
             }
             .codeSkills, .humanSkills {
@@ -37,6 +34,9 @@
                         list-style: disclosure-closed;
                         text-transform: uppercase;
                         margin-left: 24px;
+                        p {
+                            font-family: $accentFont;
+                        }
                     }
                     .firstColumn {
                         grid-area: 2 / 1 / 3 / 2;

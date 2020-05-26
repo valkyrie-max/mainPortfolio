@@ -293,25 +293,25 @@ form button {
 
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   font-family: "Montserrat", sans-serif;
-  color: #02423F;
+  color: #EF233C;
   opacity: 0.2;
 }
 
 input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   font-family: "Montserrat", sans-serif;
-  color: #02423F;
+  color: #EF233C;
   opacity: 0.2;
 }
 
 input::-ms-input-placeholder, textarea::-ms-input-placeholder {
   font-family: "Montserrat", sans-serif;
-  color: #02423F;
+  color: #EF233C;
   opacity: 0.2;
 }
 
 input::placeholder, textarea::placeholder {
   font-family: "Montserrat", sans-serif;
-  color: #02423F;
+  color: #EF233C;
   opacity: 0.2;
 }
 
@@ -323,36 +323,18 @@ input::placeholder, textarea::placeholder {
 header {
   padding: 0;
   margin: 0;
-  background-color: #F0E9ED;
+  background-color: #edf2f4;
   min-height: 100vh;
+  border-top: 80px solid #2B2D42;
+  border-bottom: 80px solid #2B2D42;
 }
 
 main {
   padding: 0;
   margin: 0;
-  background-color: #110506;
-  color: #F0E9ED;
-}
-
-.slick-initialized .slick-slide {
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
-}
-
-.slick-dots {
-  font-size: 5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.slick-dots li {
-  background-color: #F0E9ED;
-}
-
-.slick-dots li button {
-  border: none;
+  background-color: #2B2D42;
+  color: #edf2f4;
+  background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
 }
 
 .menuToggle {
@@ -369,7 +351,7 @@ main {
 
 .menuToggle a {
   text-decoration: none;
-  color: #02423F;
+  color: #EF233C;
   font-family: "Libre Baskerville", serif;
   text-transform: uppercase;
   font-weight: 700;
@@ -379,7 +361,7 @@ main {
 
 .menuToggle a:hover,
 .menuToggle a:active {
-  color: #630304;
+  color: #c20114;
 }
 
 .menuToggle input {
@@ -400,9 +382,9 @@ main {
   height: 4px;
   margin-bottom: 5px;
   position: relative;
-  background: #F0E9ED;
-  -webkit-box-shadow: 2px 2px #110506;
-          box-shadow: 2px 2px #110506;
+  background: #edf2f4;
+  -webkit-box-shadow: 2px 2px #2B2D42;
+          box-shadow: 2px 2px #2B2D42;
   border-radius: 3px;
   z-index: 3;
   -webkit-transform-origin: 4px 0px;
@@ -427,7 +409,7 @@ main {
   opacity: 1;
   -webkit-transform: rotate(45deg) translate(-2px, -1px);
           transform: rotate(45deg) translate(-2px, -1px);
-  background: #110506;
+  background: #2B2D42;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
@@ -449,7 +431,7 @@ main {
   margin: -100px 0 0 -50px;
   padding: 50px;
   padding-top: 125px;
-  background-color: #F0E9ED;
+  background-color: #edf2f4;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   -webkit-transform-origin: 0% 0%;
@@ -476,7 +458,7 @@ header {
   position: relative;
 }
 
-header .headerContentContainer {
+header .headerContentContainer .headings {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -491,7 +473,7 @@ header .headerContentContainer {
   bottom: 45%;
 }
 
-header .headerContentContainer .mainHeading {
+header .headerContentContainer .headings .mainHeading {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -500,34 +482,74 @@ header .headerContentContainer .mainHeading {
       -ms-flex-direction: column;
           flex-direction: column;
   padding-right: 30px;
-  border-right: 3px solid #02423F;
+  border-right: 3px solid #c20114;
 }
 
-header .headerContentContainer .mainHeading h1 {
+header .headerContentContainer .headings .mainHeading h1 {
   font-size: 9rem;
   text-transform: uppercase;
-  color: #110506;
+  color: #2B2D42;
+  text-shadow: 2px 2px #edf2f4;
 }
 
-header .headerContentContainer .mainHeading span {
+header .headerContentContainer .headings .mainHeading span {
   font-size: 3.9rem;
   font-weight: 500;
-  color: #630304;
+  color: #edf2f4;
+  text-shadow: 1px 1px #c20114;
 }
 
-header .headerContentContainer .secondaryHeading {
+header .headerContentContainer .headings .secondaryHeading {
   padding-left: 30px;
 }
 
-header .headerContentContainer .secondaryHeading h2 {
-  color: #110506;
+header .headerContentContainer .headings .secondaryHeading h2 {
+  color: #2B2D42;
   font-size: 8rem;
   font-style: italic;
   font-weight: 400;
+  text-shadow: 2px 2px #edf2f4;
+}
+
+header .headerContentContainer .lpNavigation {
+  width: 50%;
+  position: absolute;
+  text-align: center;
+  bottom: 25%;
+  left: 36%;
+}
+
+header .headerContentContainer .lpNavigation ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+header .headerContentContainer .lpNavigation ul li a {
+  font-size: 2rem;
+  color: #2B2D42;
+  font-weight: 500;
+  text-transform: uppercase;
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+  padding-right: 5px;
+  border-right: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+}
+
+header .headerContentContainer .lpNavigation ul li a:hover, header .headerContentContainer .lpNavigation ul li a:focus {
+  border-right: 3px solid #c20114;
+  border-bottom: 3px solid #c20114;
 }
 
 header .scrollToContent {
-  opacity: 0.5;
   position: absolute;
   top: 92%;
   left: 50%;
@@ -543,7 +565,9 @@ header .scrollToContent {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #02423F;
+  color: #2B2D42;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
 }
 
 header .scrollToContent p {
@@ -556,15 +580,28 @@ header .scrollToContent p {
 
 header .scrollToContent .fa-chevron-down {
   margin-top: 5px;
-  font-size: 3rem;
+  font-size: 1.5rem;
 }
 
 header .scrollToContent p {
-  font-weight: 700;
+  font-size: 1.4rem;
 }
 
-header .scrollToContent .fa-chevron-down {
-  color: #02423F;
+header .scrollToContent:hover {
+  color: #c20114;
+}
+
+header::before {
+  content: "";
+  opacity: 0.35;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/background.jpg");
+  -webkit-filter: grayscale(90%);
+          filter: grayscale(90%);
 }
 
 .about {
@@ -589,7 +626,7 @@ header .scrollToContent .fa-chevron-down {
   font-weight: 700;
   text-transform: uppercase;
   margin-top: -100px;
-  text-shadow: 0px 60px rgba(2, 66, 63, 0.5), 0px 120px rgba(99, 3, 4, 0.5);
+  text-shadow: 0px 60px rgba(239, 35, 60, 0.5), 0px 120px rgba(194, 1, 20, 0.5);
 }
 
 .about .aboutContentContainer .aboutText ul {
@@ -607,6 +644,7 @@ header .scrollToContent .fa-chevron-down {
 }
 
 .about .aboutContentContainer .aboutText ul li p {
+  font-family: "Montserrat", sans-serif;
   line-height: 1.7;
   font-size: 2rem;
   letter-spacing: 2px;
@@ -616,12 +654,11 @@ header .scrollToContent .fa-chevron-down {
   display: inline-block;
   width: 4px;
   height: 500px;
-  background-color: #F0E9ED;
+  background-color: #edf2f4;
   margin: 0px 50px;
 }
 
 .about .scrollToSkills {
-  opacity: 0.5;
   position: absolute;
   top: 92%;
   left: 50%;
@@ -637,7 +674,7 @@ header .scrollToContent .fa-chevron-down {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #F0E9ED;
+  color: #edf2f4;
 }
 
 .about .scrollToSkills p {
@@ -650,7 +687,7 @@ header .scrollToContent .fa-chevron-down {
 
 .about .scrollToSkills .fa-chevron-down {
   margin-top: 5px;
-  font-size: 3rem;
+  font-size: 1.5rem;
 }
 
 .about .scrollToSkills p {
@@ -658,7 +695,7 @@ header .scrollToContent .fa-chevron-down {
 }
 
 .about .scrollToSkills .fa-chevron-down {
-  color: #F0E9ED;
+  color: #edf2f4;
 }
 
 .skillset {
@@ -692,19 +729,15 @@ header .scrollToContent .fa-chevron-down {
   letter-spacing: 2px;
   font-weight: 400;
   text-transform: uppercase;
-}
-
-.skillset .skillsetContentContainer .skillList h4 .fatText {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
+  font-family: "Libre Baskerville", serif;
 }
 
 .skillset .skillsetContentContainer .skillList h4 .computers {
-  text-shadow: 3px 3px #630304;
+  text-shadow: 2px 2px #c20114;
 }
 
 .skillset .skillsetContentContainer .skillList h4 .humans {
-  text-shadow: 3px 3px #02423F;
+  text-shadow: 2px 2px #EF233C;
 }
 
 .skillset .skillsetContentContainer .skillList .codeSkills, .skillset .skillsetContentContainer .skillList .humanSkills {
@@ -728,6 +761,10 @@ header .scrollToContent .fa-chevron-down {
   margin-left: 24px;
 }
 
+.skillset .skillsetContentContainer .skillList .codeSkills ul li p, .skillset .skillsetContentContainer .skillList .humanSkills ul li p {
+  font-family: "Montserrat", sans-serif;
+}
+
 .skillset .skillsetContentContainer .skillList .codeSkills ul .firstColumn, .skillset .skillsetContentContainer .skillList .humanSkills ul .firstColumn {
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
@@ -749,20 +786,19 @@ header .scrollToContent .fa-chevron-down {
   font-weight: 700;
   text-transform: uppercase;
   margin-top: -100px;
-  text-shadow: 0px 70px rgba(2, 66, 63, 0.5), 0px 140px rgba(99, 3, 4, 0.5);
+  text-shadow: 0px 70px rgba(239, 35, 60, 0.5), 0px 140px rgba(194, 1, 20, 0.5);
 }
 
 .skillset .skillsetContentContainer .skillsetLine {
   display: inline-block;
   width: 1.5px;
   height: 400px;
-  background-color: #F0E9ED;
+  background-color: #edf2f4;
   margin: 0px 50px;
   z-index: 0;
 }
 
 .skillset .scrollToProjects {
-  opacity: 0.5;
   position: absolute;
   top: 92%;
   left: 50%;
@@ -778,7 +814,7 @@ header .scrollToContent .fa-chevron-down {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #F0E9ED;
+  color: #edf2f4;
   top: 95%;
 }
 
@@ -792,7 +828,7 @@ header .scrollToContent .fa-chevron-down {
 
 .skillset .scrollToProjects .fa-chevron-down {
   margin-top: 5px;
-  font-size: 3rem;
+  font-size: 1.5rem;
 }
 
 .skillset .scrollToProjects p {
@@ -800,7 +836,7 @@ header .scrollToContent .fa-chevron-down {
 }
 
 .skillset .scrollToProjects .fa-chevron-down {
-  color: #F0E9ED;
+  color: #edf2f4;
 }
 
 .portfolio {
@@ -825,9 +861,6 @@ header .scrollToContent .fa-chevron-down {
 }
 
 .portfolio .gallery .projectContent {
-  height: 800px;
-  cursor: -webkit-grab;
-  cursor: grab;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -847,7 +880,7 @@ header .scrollToContent .fa-chevron-down {
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   font-weight: 700;
-  text-shadow: 0px 20px rgba(2, 66, 63, 0.5), 0px 40px rgba(99, 3, 4, 0.5);
+  text-shadow: 0px 20px rgba(239, 35, 60, 0.5), 0px 40px rgba(194, 1, 20, 0.5);
 }
 
 .portfolio .gallery .projectContent .projectText .projectDescription h5 {
@@ -882,18 +915,18 @@ header .scrollToContent .fa-chevron-down {
 
 .portfolio .gallery .projectContent .projectText .projectLinks a {
   margin-right: 30px;
-  color: #F0E9ED;
+  color: #edf2f4;
   padding: 10px;
-  -webkit-box-shadow: 3px 3px rgba(240, 233, 237, 0.5);
-          box-shadow: 3px 3px rgba(240, 233, 237, 0.5);
+  -webkit-box-shadow: 3px 3px rgba(237, 242, 244, 0.5);
+          box-shadow: 3px 3px rgba(237, 242, 244, 0.5);
 }
 
 .portfolio .gallery .projectContent .projectText .projectLinks .github {
-  background-color: #630304;
+  background-color: #c20114;
 }
 
 .portfolio .gallery .projectContent .projectText .projectLinks .viewLive {
-  background-color: #02423F;
+  background-color: #EF233C;
 }
 
 .portfolio .gallery .projectContent .projectImg {
@@ -904,7 +937,7 @@ header .scrollToContent .fa-chevron-down {
   display: inline-block;
   width: 5px;
   height: 500px;
-  background-color: #F0E9ED;
+  background-color: #edf2f4;
   margin: 0px 50px;
 }
 
@@ -918,7 +951,6 @@ header .scrollToContent .fa-chevron-down {
 }
 
 .portfolio .scrollToContact {
-  opacity: 0.5;
   position: absolute;
   top: 92%;
   left: 50%;
@@ -934,7 +966,7 @@ header .scrollToContent .fa-chevron-down {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #F0E9ED;
+  color: #edf2f4;
   top: 95%;
 }
 
@@ -948,7 +980,7 @@ header .scrollToContent .fa-chevron-down {
 
 .portfolio .scrollToContact .fa-chevron-down {
   margin-top: 5px;
-  font-size: 3rem;
+  font-size: 1.5rem;
 }
 
 .portfolio .scrollToContact p {
@@ -956,12 +988,12 @@ header .scrollToContent .fa-chevron-down {
 }
 
 .portfolio .scrollToContact .fa-chevron-down {
-  color: #F0E9ED;
+  color: #edf2f4;
 }
 
 footer {
   min-height: 100vh;
-  background-color: #F0E9ED;
+  background-color: #edf2f4;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -973,6 +1005,7 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+  background-image: url("https://www.transparenttextures.com/patterns/foggy-birds.png");
 }
 
 footer .footerHeadings {
@@ -987,7 +1020,7 @@ footer .footerHeadings h3 {
   text-transform: uppercase;
   font-size: 7rem;
   font-weight: 400;
-  border-bottom: 2px solid #630304;
+  border-bottom: 2px solid #c20114;
 }
 
 footer .footerHeadings p {
@@ -1023,25 +1056,25 @@ footer .means .contactMe form {
 footer .means .contactMe form label {
   font-size: 2rem;
   font-style: italic;
-  color: #110506;
+  color: #2B2D42;
   margin: 10px 0px;
 }
 
 footer .means .contactMe form input, footer .means .contactMe form textarea {
-  -webkit-box-shadow: 3px 3px rgba(2, 66, 63, 0.5);
-          box-shadow: 3px 3px rgba(2, 66, 63, 0.5);
-  border: 1px solid #630304;
+  -webkit-box-shadow: 3px 3px rgba(239, 35, 60, 0.5);
+          box-shadow: 3px 3px rgba(239, 35, 60, 0.5);
+  border: 1px solid #c20114;
   padding: 10px;
   font-size: 2rem;
   font-family: "Libre Baskerville", serif;
   letter-spacing: 1.5px;
   line-height: 1.5;
   font-weight: 500;
-  color: #110506;
+  color: #2B2D42;
 }
 
 footer .means .contactMe form input:focus, footer .means .contactMe form textarea:focus {
-  border: 5px solid #630304;
+  border: 5px solid #c20114;
 }
 
 footer .means .contactMe form input {
@@ -1054,9 +1087,9 @@ footer .means .contactMe form textarea {
 }
 
 footer .means .contactMe form button {
-  -webkit-box-shadow: 3px 3px rgba(2, 66, 63, 0.5);
-          box-shadow: 3px 3px rgba(2, 66, 63, 0.5);
-  border: 1px solid #630304;
+  -webkit-box-shadow: 3px 3px rgba(239, 35, 60, 0.5);
+          box-shadow: 3px 3px rgba(239, 35, 60, 0.5);
+  border: 1px solid #c20114;
   text-transform: uppercase;
   background-color: white;
   font-size: 2.5rem;
@@ -1098,7 +1131,7 @@ footer .means .socials ul li {
 }
 
 footer .means .socials ul li a {
-  color: #110506;
+  color: #2B2D42;
 }
 
 footer .means .socials ul li:nth-child(4) {
@@ -1113,9 +1146,9 @@ footer .copyright {
   padding-top: 8px;
   font-size: 1.2rem;
   text-transform: uppercase;
-  color: #F0E9ED;
+  color: #edf2f4;
   text-align: center;
-  background-color: #110506;
+  background-color: #2B2D42;
 }
 
 footer .copyright p:nth-child(1) {
@@ -1126,7 +1159,7 @@ footer .up {
   font-size: 3.5rem;
   text-transform: uppercase;
   font-weight: 700;
-  color: #630304;
+  color: #c20114;
 }
 
 @media (max-width: 1630px) {

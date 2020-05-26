@@ -15,11 +15,11 @@
     <!-- linking font awesome -->
     <script src="https://kit.fontawesome.com/82d522d35e.js" crossorigin="anonymous"></script>
 
-    <!-- linking carousel -->
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-
-    <!-- linking annimation on scroll -->
+    <!-- linking animation on scroll -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- linking animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
 </head>
 
 <body>
@@ -28,18 +28,39 @@
     <header id="up">
         <div class="wrapper">
             <div class="headerContentContainer">
-                <div class="mainHeading">
-                    <h1>Alisa</h1>
-                    <span aria-hidden="true">[ah]-[lee]-[sah]</span>
+                <div class="headings">
+                    <div class="animate__slow animate__animated animate__fadeInDown mainHeading">
+                        <h1>Alisa</h1>
+                        <span aria-hidden="true">[ah]-[lee]-[sah]</span>
+                    </div>
+                    <div class="animate__slow animate__animated animate__fadeInUp secondaryHeading">
+                        <h2>front-end developer.</h2>
+                    </div>
                 </div>
-                <div class="secondaryHeading">
-                    <h2>front-end developer.</h2>
+                <div class="lpNavigation">
+                    <ul>
+                        <li>
+                            <a href="#about">about</a>
+                        </li>
+                        <li>
+                            <a href="#skillset">skills</a>
+                        </li>
+                        <li>
+                            <a href="#projects">projects</a>
+                        </li>
+                        <li>
+                            <a href="#blog">blog</a>
+                        </li>
+                        <li>
+                            <a href="#contact">contact info</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
             <div>
                 <a class="scrollToContent" aria-label="go to about section" href="#about">
-                    <p>To content</p>
-                    <i class="fas fa-chevron-down"></i>
+                    <p>scroll down to see more</p>
+                    <i aria-label="To content" class="fas fa-chevron-down"></i>
                 </a>
             </div>
         </div>
@@ -47,8 +68,8 @@
     <!-- header ends -->
 
     <!-- main starts -->
-    <main>
-        <nav class="navigation">
+    <main id="about">
+        <!-- <nav class="navigation">
             <div class="menuToggle">
             <input type="checkbox" />
             <span></span>
@@ -62,7 +83,7 @@
                 <li><a href="#contact">Contact me</a></li>
             </ul>
         </div>
-        </nav>
+        </nav> -->
         <div class="wrapper">
             <!-- about starts -->
             <section 
@@ -70,7 +91,7 @@
             data-aos-easing="ease-in-out"  
             data-aos-offset="100"
             data-aos="fade-right" 
-            class="about" id="about">
+            class="about">
                 <div class="aboutContentContainer">
                     <div class="aboutHeading">
                         <h3>About</h3>
@@ -82,10 +103,10 @@
                                 <p>My name is <span class="fatText">Alisa Kitkina</span>, and I am a <span class="fatText">human</span> who  likes to <span class="fatText">express herself through code.</span></p>
                             </li>
                             <li>
-                                <p>As <span class="fatText">a front-end developer</span> with a background in International Development (Faculty of Business of Humber College), I care deeply about <span class="fatText">accessibility, responsiveness, UX, and UI</span>. Additionally, I am in love with <span class="fatText">personal growth</span> and <span class="fatText">getting things done</span>.</p>
+                                <p>As a front-end developer with a background in International Development (Faculty of Business of Humber College), I care deeply about accessibility, responsiveness, UX, and UI. Additionally, I am in love with personal growth and getting things done.</p>
                             </li>
                             <li>
-                                <p>I am a strong believer in <span class="fatText">facing challenges head on</span> because I moved to Canada from Russia at 17 without any family or friends. This journey taught me <span class="fatText">to adapt to any critical situation</span> and <span class="fatText">to keep my chin up no matter what.</span></p>
+                                <p>I am a strong believer in facing challenges head on because I moved to Canada from Russia at 17 without any family or friends. This journey taught me to adapt to any critical situation and to keep my chin up no matter what.</p>
                             </li>
                             <li>
                                 <p>When I'm not coding I learn Japanese combined with researching about the country's culture, go for walks when the sun sets, and write small detective stories.</p>
@@ -93,21 +114,15 @@
                         </ul>
                     </div>
                 </div>
-                <div>
-                    <a class="scrollToSkills" aria-label="go to skills" href="#skillset">
-                        <p>Skills</p>
-                        <i class="fas fa-chevron-down"></i>
-                    </a>
-                </div>
             </section>
             <!-- about ends -->
 
             <!-- skills start -->
             <section
             id="skillset"
-            data-aos-duration="1000"
+            data-aos-duration="1500"
             data-aos-easing="ease-in-out"  
-            data-aos-offset="300"
+            data-aos-offset="200"
             data-aos="fade-right" 
             class="skillset">
                 <div class="skillsetContentContainer">
@@ -183,24 +198,13 @@
                         <h3>Skillset</h3>
                     </div>
                 </div>
-                <div>
-                    <a class="scrollToProjects" aria-label="go to projects" href="#projects">
-                        <p>Projects</p>
-                        <i class="fas fa-chevron-down"></i>
-                    </a>
-                </div>
             </section>
             <!-- skills end -->
             
             <!-- projects start -->
-            <section id="projects"  class="portfolio">
-                <!-- <h3>Portfolio</h3> -->
-                <div class="direction">
-                    <h3>Swipe left or right to view the projects.</h3>
-                    <h3>You can also use your arrow keys to look through the works.</h3>
-                </div>
+            <section id="projects" class="portfolio">
                 <div class="gallery">
-                    <div tabindex=0 class="projectContent">
+                    <div class="projectContent">
                         <div class="projectText">
                             <div class="projectDescription">
                                 <h4>Creative</h4>
@@ -300,14 +304,14 @@
                         </div>
                     </div>
                 </div>
-                <div>
-                    <a class="scrollToContact" aria-label="go to contact info" href="#contact">
-                        <p>Contact</p>
-                        <i class="fas fa-chevron-down"></i>
-                    </a>
-                </div>
             </section>
             <!-- projects end -->
+
+            <!-- blog starts -->
+            <section id="blog" class="blog">
+                <h2>hahahahah</h2>
+            </section>
+            <!-- blog ends -->
         </div>
     </main>
     <!-- main ends -->
@@ -362,10 +366,6 @@
     <!-- scripts -->
     <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-
-    <!-- carousel -->
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
     <!-- animation on scroll -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>

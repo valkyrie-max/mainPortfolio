@@ -606,237 +606,37 @@ header::before {
 
 .about {
   min-height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
+  padding-top: 200px;
 }
 
-.about .aboutContentContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.about .aboutContentContainer .aboutHeading h3 {
+.about h3 {
+  max-width: 275px;
+  padding: 0 20px 20px 0px;
   font-size: 6rem;
   font-weight: 700;
   text-transform: uppercase;
   margin-top: -100px;
-  text-shadow: 0px 60px rgba(239, 35, 60, 0.5), 0px 120px rgba(194, 1, 20, 0.5);
+  border-right: 8px solid #c20114;
+  border-bottom: 8px solid #c20114;
 }
 
-.about .aboutContentContainer .aboutText ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+.about .aboutText {
+  margin-top: 50px;
 }
 
-.about .aboutContentContainer .aboutText ul li {
-  margin: 15px 0px;
-}
-
-.about .aboutContentContainer .aboutText ul li p {
-  font-family: "Montserrat", sans-serif;
+.about .aboutText ul li {
+  list-style: square;
+  font-size: 2.5rem;
+  color: #EF233C;
   line-height: 1.7;
-  font-size: 2rem;
-  letter-spacing: 2px;
+  margin-bottom: 45px;
 }
 
-.about .aboutContentContainer .aboutLine {
-  display: inline-block;
-  width: 4px;
-  height: 500px;
-  background-color: #edf2f4;
-  margin: 0px 50px;
-}
-
-.about .scrollToSkills {
-  position: absolute;
-  top: 92%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.about .aboutText ul li p {
+  font-size: 2.5rem;
+  letter-spacing: 1.5px;
   color: #edf2f4;
-}
-
-.about .scrollToSkills p {
-  letter-spacing: 2px;
   font-family: "Montserrat", sans-serif;
-  text-transform: uppercase;
-  font-size: 2rem;
-  font-weight: 500;
-}
-
-.about .scrollToSkills .fa-chevron-down {
-  margin-top: 5px;
-  font-size: 1.5rem;
-}
-
-.about .scrollToSkills p {
-  font-weight: 700;
-}
-
-.about .scrollToSkills .fa-chevron-down {
-  color: #edf2f4;
-}
-
-.skillset {
-  min-height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-}
-
-.skillset .skillsetContentContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.skillset .skillsetContentContainer .skillList h4 {
-  font-size: 3rem;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: 1 / 1 / 2 / 3;
-  letter-spacing: 2px;
-  font-weight: 400;
-  text-transform: uppercase;
-  font-family: "Libre Baskerville", serif;
-}
-
-.skillset .skillsetContentContainer .skillList h4 .computers {
-  text-shadow: 2px 2px #c20114;
-}
-
-.skillset .skillsetContentContainer .skillList h4 .humans {
-  text-shadow: 2px 2px #EF233C;
-}
-
-.skillset .skillsetContentContainer .skillList .codeSkills, .skillset .skillsetContentContainer .skillList .humanSkills {
-  margin: 60px 0px;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-}
-
-.skillset .skillsetContentContainer .skillList .codeSkills ul, .skillset .skillsetContentContainer .skillList .humanSkills ul {
-  line-height: 2;
-  margin: 10px 50px 0px 0px;
-}
-
-.skillset .skillsetContentContainer .skillList .codeSkills ul li, .skillset .skillsetContentContainer .skillList .humanSkills ul li {
-  font-weight: 700;
-  font-size: 2rem;
-  list-style: disclosure-closed;
-  text-transform: uppercase;
-  margin-left: 24px;
-}
-
-.skillset .skillsetContentContainer .skillList .codeSkills ul li p, .skillset .skillsetContentContainer .skillList .humanSkills ul li p {
-  font-family: "Montserrat", sans-serif;
-}
-
-.skillset .skillsetContentContainer .skillList .codeSkills ul .firstColumn, .skillset .skillsetContentContainer .skillList .humanSkills ul .firstColumn {
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-area: 2 / 1 / 3 / 2;
-}
-
-.skillset .skillsetContentContainer .skillList .codeSkills ul .secondColumn, .skillset .skillsetContentContainer .skillList .humanSkills ul .secondColumn {
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-area: 2 / 2 / 3 / 3;
-}
-
-.skillset .skillsetContentContainer .skillsetHeading {
-  font-size: 6rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  margin-top: -100px;
-  text-shadow: 0px 70px rgba(239, 35, 60, 0.5), 0px 140px rgba(194, 1, 20, 0.5);
-}
-
-.skillset .skillsetContentContainer .skillsetLine {
-  display: inline-block;
-  width: 1.5px;
-  height: 400px;
-  background-color: #edf2f4;
-  margin: 0px 50px;
-  z-index: 0;
-}
-
-.skillset .scrollToProjects {
-  position: absolute;
-  top: 92%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: #edf2f4;
-  top: 95%;
-}
-
-.skillset .scrollToProjects p {
-  letter-spacing: 2px;
-  font-family: "Montserrat", sans-serif;
-  text-transform: uppercase;
-  font-size: 2rem;
-  font-weight: 500;
-}
-
-.skillset .scrollToProjects .fa-chevron-down {
-  margin-top: 5px;
-  font-size: 1.5rem;
-}
-
-.skillset .scrollToProjects p {
-  font-weight: 700;
-}
-
-.skillset .scrollToProjects .fa-chevron-down {
-  color: #edf2f4;
 }
 
 .portfolio {

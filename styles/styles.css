@@ -606,16 +606,15 @@ header::before {
 
 .about {
   min-height: 100vh;
-  padding-top: 200px;
+  padding-top: 100px;
 }
 
 .about h3 {
-  max-width: 275px;
+  text-align: right;
   padding: 0 20px 20px 0px;
   font-size: 6rem;
   font-weight: 700;
   text-transform: uppercase;
-  margin-top: -100px;
   border-right: 8px solid #c20114;
   border-bottom: 8px solid #c20114;
 }
@@ -637,6 +636,73 @@ header::before {
   letter-spacing: 1.5px;
   color: #edf2f4;
   font-family: "Montserrat", sans-serif;
+}
+
+.skillset {
+  min-height: 100vh;
+  padding-top: 50px;
+}
+
+.skillset h3 {
+  text-align: right;
+  padding: 0 20px 20px 0px;
+  font-size: 6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-right: 8px solid #c20114;
+  border-bottom: 8px solid #c20114;
+}
+
+.skillset .skillsContainer {
+  margin-top: 80px;
+}
+
+.skillset .skillsContainer h4 {
+  font-size: 3rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #c20114;
+}
+
+.skillset .skillsContainer .comp, .skillset .skillsContainer .current {
+  margin-bottom: 50px;
+}
+
+.skillset .skillsContainer .comp .skillList, .skillset .skillsContainer .current .skillList {
+  margin-right: 100px;
+}
+
+.skillset .skillsContainer .comp .skillList li, .skillset .skillsContainer .current .skillList li {
+  margin: 10px 100px 50px 0px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.skillset .skillsContainer .comp .skillList li p, .skillset .skillsContainer .current .skillList li p {
+  font-size: 2rem;
+  text-align: center;
+  margin-left: 15px;
+}
+
+.skillset .skillsContainer .comp .skillList li i, .skillset .skillsContainer .current .skillList li i {
+  font-size: 5rem;
+}
+
+.skillset .skillsContainer .comp .compCont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .portfolio {

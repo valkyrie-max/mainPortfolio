@@ -1,67 +1,50 @@
-// .skillset {
-//     min-height: 100vh;
-//     display: flex;
-//     position: relative;
-//     .skillsetContentContainer {
-//         display: flex;
-//         flex-direction: row;
-//         align-items: center;
-//         .skillList {
-//             h4 {
-//                 font-size: 3rem;
-//                 grid-area: 1 / 1 / 2 / 3;
-//                 letter-spacing: 2px;
-//                 font-weight: 400;
-//                 text-transform: uppercase;
-//                 font-family: $contentFont;
-//                 .computers {
-//                     text-shadow: 2px 2px $firstAccentColor;
-//                 }
-//                 .humans {
-//                     text-shadow: 2px 2px $secondAccentColor;
-//                 }
-//             }
-//             .codeSkills, .humanSkills {
-//                 margin: 60px 0px;
-//                 display: grid;
-//                 grid-template-columns: repeat(2, 1fr);
-//                 ul {
-//                     line-height: 2;
-//                     margin: 10px 50px 0px 0px;
-//                     li {
-//                         font-weight: 700;
-//                         font-size: 2rem;
-//                         list-style: disclosure-closed;
-//                         text-transform: uppercase;
-//                         margin-left: 24px;
-//                         p {
-//                             font-family: $accentFont;
-//                         }
-//                     }
-//                     .firstColumn {
-//                         grid-area: 2 / 1 / 3 / 2;
-//                     }
-//                     .secondColumn {
-//                         grid-area: 2 / 2 / 3 / 3;
-//                     }
-//                 }
-//             }
-//         }
-//         .skillsetHeading {
-//             @include secondaryHeadingsStyle;
-//             text-shadow: 0px 70px rgba($secondAccentColor, 0.5), 0px 140px rgba($firstAccentColor, 0.5);
-//         }
-//         .skillsetLine {
-//             display: inline-block;
-//             width: 1.5px;
-//             height: 400px;
-//             background-color: $primaryLightColor;
-//             margin: 0px 50px;
-//             z-index: 0;
-//         }
-//     }
-// }
-
-.skillSet {
-    
+.skillset {
+    min-height: 100vh;
+    padding-top: 50px;
+    h3 {
+        // max-width: 355px;
+        text-align: right;
+        padding: 0 20px 20px 0px;
+        @include secondaryHeadingsStyle;
+        border-right: 8px solid $firstAccentColor;
+        border-bottom: 8px solid $firstAccentColor;
+    }
+    .skillsContainer {
+        margin-top: 80px;
+        h4 {
+            font-size: 3rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid $firstAccentColor;
+        }
+        .comp, .current {
+            margin-bottom: 50px;
+            .skillList {
+                margin-right: 100px;
+                li {
+                    margin: 10px 100px 50px 0px;
+                    text-align: center;
+                    display: flex;
+                    align-items: center;
+                    p {
+                        font-size: 2rem;
+                        text-align: center;
+                        margin-left: 15px;
+                    }
+                    i {
+                        font-size: 5rem;
+                    }
+                }
+            }
+        }
+        .comp {
+            .compCont {
+                display: flex;
+                flex-direction: row;
+                // justify-content: center;
+            }
+        }
+    }
 }

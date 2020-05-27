@@ -20,6 +20,9 @@
 
     <!-- linking animate.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+
+    <!-- linking jquery icon -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 </head>
 
 <body>
@@ -87,16 +90,28 @@
         <div class="wrapper">
             <!-- about starts -->
             <section 
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"  
-            data-aos-offset="100"
-            data-aos="fade-right" 
             class="about">
-                <div class="aboutContentContainer">
+                <div class="aboutContent">
                     <div class="aboutHeading">
-                        <h3>About</h3>
+                        <h3
+                        data-aos="fade-right"
+                        data-aos-offset="50" 
+                        data-aos-delay="70"
+                        data-aos-duration="1000"
+                        data-aos-easing="ease-in-out"
+                        data-aos-mirror="true"
+                        data-aos-once="false">
+                        About</h3>
                     </div>
-                    <div class="aboutText">
+                    <div
+                    data-aos="fade-left"
+                    data-aos-offset="100" 
+                    data-aos-delay="70"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out"
+                    data-aos-mirror="true"
+                    data-aos-once="false"
+                    class="aboutText">
                         <ul class="aboutPoints">
                             <li>
                                 <p>My name is <span class="fatText">Alisa Kitkina</span>, and I am a <span class="fatText">human</span> who  likes to <span class="fatText">express herself through code.</span></p>
@@ -117,87 +132,96 @@
             <!-- about ends -->
 
             <!-- skills start -->
-            <!-- <section
+            <section
             id="skillset"
-            data-aos-duration="1500"
-            data-aos-easing="ease-in-out"  
-            data-aos-offset="200"
-            data-aos="fade-right" 
             class="skillset">
-                <div class="skillsetContentContainer">
-                    <div class="skillList">
-                        <div class="codeSkills">
-                            <h4>How I talk to: <span class="fatText computers">computers</span></h4>
-                            <ul class="firstColumn">
+                <div class="skillsetHeading">
+                    <h3>Skillset</h3>
+                </div>
+                <div class="skillsContainer">
+                    <div class="comp">
+                        <h4>What I know & polish every day</h4>
+                        <div class="compCont">
+                            <ul class="skillList computerSkills">
                                 <li>
+                                    <i class="fab fa-html5"></i>
                                     <p>HTML5</p>
                                 </li>
                                 <li>
-                                    <p>CSS</p>
+                                    <i class="fab fa-css3-alt"></i>
+                                    <p>CSS3</p>
                                 </li>
                                 <li>
+                                    <i class="fab fa-sass"></i>
                                     <p>SCSS</p>
                                 </li>
                                 <li>
-                                    <p>VSCode</p>
-                                </li>
-                                <li>
-                                    <p>Git & GitHub</p>
-                                </li>
-                            </ul>
-                            <ul class="secondColumn">
-                                <li>
+                                    <i class="fab fa-js"></i>
                                     <p>JavaScript</p>
                                 </li>
                                 <li>
+                                    <i class="devicon-jquery-plain"></i>
                                     <p>JQuery</p>
                                 </li>
                                 <li>
-                                    <p>Rest API</p>
+                                    <i class="fab fa-react"></i>
+                                    <p>React</p>
                                 </li>
                                 <li>
+                                    <i class="fas fa-cogs"></i>
+                                    <p>REST API</p>
+                                </li>
+                            </ul>
+                            <ul class="skillList computerSkills">
+                                <li>
+                                    <i class="fas fa-server"></i>
                                     <p>Firebase</p>
                                 </li>
                                 <li>
-                                    <p>React</p>
+                                    <i class="fab fa-git-alt"></i>
+                                    <p>Git & Github</p>
                                 </li>
-                            </ul>
-                        </div>
-                        <div class="humanSkills">
-                            <h4>How I talk to: <span class="fatText humans">humans</span></h4>
-                            <ul class="firstColumn">
                                 <li>
+                                    <i class="fas fa-file-code"></i>
+                                    <p>VSCode</p>
+                                </li>
+                                <li>
+                                    <i class="fas fa-terminal"></i>
+                                    <p>Terminal</p>
+                                </li>
+                                <li>
+                                    <i class="fas fa-universal-access"></i>
                                     <p>Web accessability</p>
                                 </li>
                                 <li>
+                                    <i class="fas fa-mobile-alt"></i>
                                     <p>Responsive design</p>
                                 </li>
-                                <li>
-                                    <p>UX & UI</p>
-                                </li>
-                                <li>
+                                <li><i class="fab fa-adobe"></i>
                                     <p>Adobe Photoshop</p>
-                                </li>
-                            </ul>
-                            <ul class="secondColumn">
-                                <li>
-                                    <p>Russian (native)</p>
-                                </li>
-                                <li>
-                                    <p>English (advanced)</p>
-                                </li>
-                                <li>
-                                    <p>Japanese (basic, N5)</p>
                                 </li>
                             </ul>
                         </div>
                     </div>
-                    <span class="skillsetLine"></span>
-                    <div class="skillsetHeading">
-                        <h3>Skillset</h3>
+                    <div class="current">
+                        <h4>What I am learning & want to learn</h4>
+                        <ul class="skillList">
+                            <li>
+                                <p>PHP</p>
+                            </li>
+                            <li>
+                                <p>WordPress</p>
+                            </li>
+                            <li>
+                                <p>Angular</p>
+                            </li>
+                            <li>
+                                <p>Vue</p>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-            </section> -->
+            </section>
             <!-- skills end -->
             
             <!-- projects start -->

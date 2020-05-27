@@ -1,102 +1,203 @@
+// .portfolio {
+//     position: relative;
+//     display: flex;
+//     flex-direction: column;
+//     min-height: 100vh;
+//     h3 {
+//         margin: 0;
+//         font-size: 2rem;
+//         text-transform: uppercase;
+//         font-family: $contentFont;
+//         margin-bottom: 20px;
+//         text-align: center;
+//     }
+//     .gallery {
+//         .projectContent {
+//             display: flex;
+//             flex-direction: row;
+//             align-items: center;
+//             padding: 0px 20px;
+//             .projectText {
+//                 .projectDescription {
+//                     h4 {
+//                         font-size: 5rem;
+//                         font-family: $contentFont;
+//                         font-family: $accentFont;
+//                         text-transform: uppercase;
+//                         font-weight: 700;
+//                         // font-weight: 400;
+//                         text-shadow: 0px 20px rgba($secondAccentColor, 0.5), 0px 40px rgba($firstAccentColor, 0.5);;
+//                     }
+//                     h5 {
+//                         margin: 40px 0px 35px 0px;
+//                         font-size: 2.3rem;
+//                         letter-spacing: 1px;
+//                         font-family: $contentFont;
+//                         font-weight: 400;
+//                         font-style: italic;
+//                     }
+//                     .tools {
+//                         font-size: 2.2rem;
+//                         font-family: $accentFont;
+//                         font-weight: 500;
+//                         margin-bottom: 20px;
+//                     }
+//                     p {
+//                         letter-spacing: 1.5px;
+//                         line-height: 1.5;
+//                         font-size: 1.8rem;
+//                         margin-bottom: 15px;
+//                     }
+//                 }
+//                 .projectLinks {
+//                     font-size: 2rem;
+//                     text-transform: uppercase;
+//                     font-weight: 700;
+//                     margin-top: 50px;
+//                     a {
+//                         margin-right: 30px;
+//                         color: $primaryLightColor;
+//                         padding: 10px;
+//                         box-shadow: 3px 3px rgba($primaryLightColor, 0.5);
+//                     }
+//                     .github {
+//                         background-color: $firstAccentColor;
+//                     }
+//                     .viewLive {
+//                         background-color: $secondAccentColor;
+//                     }
+//                 }
+//             }
+//             .projectImg {
+//                 width: 150%;
+//             }
+//             .projectsLine {
+//                 display: inline-block;
+//                 width: 5px;
+//                 height: 500px;
+//                 background-color: $primaryLightColor;
+//                 margin: 0px 50px;
+//             }
+//         }
+//     }
+//     .direction {
+//         margin-top: 10px;
+//         h3 {
+//             font-size: 1.7rem;
+//             opacity: 0.5;
+//             // margin-top: -15px;
+//         }
+//     }
+//     .scrollToContact {
+//         @include arrowPosition;
+//         color: $primaryLightColor;
+//         top: 95%;
+//         p {
+//             font-weight: 700;
+//         }
+//         .fa-chevron-down {
+//             color: $primaryLightColor;
+//         }
+//     }
+// }
+
 .portfolio {
-    position: relative;
-    display: flex;
-    flex-direction: column;
+    padding: 100px 0px;
     min-height: 100vh;
     h3 {
-        margin: 0;
-        font-size: 2rem;
-        text-transform: uppercase;
-        font-family: $contentFont;
-        margin-bottom: 20px;
-        text-align: center;
+        text-align: right;
+        padding: 0 20px 20px 0px;
+        @include secondaryHeadingsStyle;
+        border-right: 8px solid $firstAccentColor;
+        border-bottom: 8px solid $firstAccentColor;
     }
     .gallery {
         .projectContent {
+            min-height: 80vh;
+            margin: 20px 0px;
             display: flex;
             flex-direction: row;
+            justify-content: space-between;
             align-items: center;
-            padding: 0px 20px;
             .projectText {
+                max-width: 85%;
+                width: 85%;
+                margin-right: 50px;
                 .projectDescription {
                     h4 {
-                        font-size: 5rem;
-                        font-family: $contentFont;
-                        font-family: $accentFont;
+                        text-align: right;
+                        font-size: 4rem;
+                        padding: 0px 20px 15px 0px;
                         text-transform: uppercase;
-                        font-weight: 700;
-                        // font-weight: 400;
-                        text-shadow: 0px 20px rgba($secondAccentColor, 0.5), 0px 40px rgba($firstAccentColor, 0.5);;
+                        text-shadow: 2px 2px $firstAccentColor;
+                        border-right: 3px solid $firstAccentColor;
+                        border-bottom: 3px solid $firstAccentColor;
+                    }
+                    span {
+                        text-align: right;
+                        font-size: 5rem;
+                        margin-right: 20px;
                     }
                     h5 {
-                        margin: 40px 0px 35px 0px;
-                        font-size: 2.3rem;
-                        letter-spacing: 1px;
+                        text-align: right;
+                        margin: 15px 0px;
+                        padding-bottom: 15px;
                         font-family: $contentFont;
-                        font-weight: 400;
                         font-style: italic;
-                    }
-                    .tools {
-                        font-size: 2.2rem;
-                        font-family: $accentFont;
-                        font-weight: 500;
-                        margin-bottom: 20px;
+                        font-weight: 400;
+                        letter-spacing: 1px;
+                        font-size: 1.9rem;
                     }
                     p {
-                        letter-spacing: 1.5px;
-                        line-height: 1.5;
-                        font-size: 1.8rem;
+                        font-family: $accentFont;
+                        font-size: 2rem;
                         margin-bottom: 15px;
+                        letter-spacing: 1px;
+                        line-height: 1.7;
+                    }
+                    .tools {
+                        font-size: 1.7rem;
+                        // text-align: right;
+                        font-weight: 700;
+                        margin-bottom: 25px;
+                        // text-shadow: 1px 1px $firstAccentColor;
                     }
                 }
                 .projectLinks {
-                    font-size: 2rem;
-                    text-transform: uppercase;
-                    font-weight: 700;
                     margin-top: 50px;
                     a {
-                        margin-right: 30px;
+                        margin-right: 50px;
+                        background-color: $primaryLightColor;
+                        text-transform: uppercase;
+                        color: $firstAccentColor;
+                        font-weight: 500;
+                        font-size: 2.5rem;
+                        padding: 5px 10px;
+                        text-align: center;
+                        border: 5px solid transparent;
+                        transition: 0.3s all ease;
+                    }
+                    a:hover, a:focus {
+                        background-color: transparent;
                         color: $primaryLightColor;
-                        padding: 10px;
-                        box-shadow: 3px 3px rgba($primaryLightColor, 0.5);
-                    }
-                    .github {
-                        background-color: $firstAccentColor;
-                    }
-                    .viewLive {
-                        background-color: $secondAccentColor;
+                        padding: 15px 15px;
+                        // font-size: 3rem;
+                        border-right: 5px solid $firstAccentColor;
+                        border-bottom: 5px solid $firstAccentColor;
                     }
                 }
             }
             .projectImg {
-                width: 150%;
-            }
-            .projectsLine {
-                display: inline-block;
-                width: 5px;
-                height: 500px;
-                background-color: $primaryLightColor;
-                margin: 0px 50px;
+                // width: 50%;
+                margin-left: 20px;
             }
         }
-    }
-    .direction {
-        margin-top: 10px;
-        h3 {
-            font-size: 1.7rem;
-            opacity: 0.5;
-            // margin-top: -15px;
-        }
-    }
-    .scrollToContact {
-        @include arrowPosition;
-        color: $primaryLightColor;
-        top: 95%;
-        p {
-            font-weight: 700;
-        }
-        .fa-chevron-down {
-            color: $primaryLightColor;
+        .reverse {
+            display: flex;
+            flex-direction: row-reverse;
+            .projectText {
+                margin-left: 50px;
+            }
         }
     }
 }

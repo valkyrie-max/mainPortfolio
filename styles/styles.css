@@ -606,7 +606,7 @@ header::before {
 
 .about {
   min-height: 100vh;
-  padding-top: 100px;
+  padding: 100px 0px;
 }
 
 .about h3 {
@@ -620,7 +620,7 @@ header::before {
 }
 
 .about .aboutText {
-  margin-top: 50px;
+  margin-top: 100px;
 }
 
 .about .aboutText ul li {
@@ -632,7 +632,7 @@ header::before {
 }
 
 .about .aboutText ul li p {
-  font-size: 2.5rem;
+  font-size: 2rem;
   letter-spacing: 1.5px;
   color: #edf2f4;
   font-family: "Montserrat", sans-serif;
@@ -640,7 +640,9 @@ header::before {
 
 .skillset {
   min-height: 100vh;
-  padding-top: 50px;
+  padding-top: 100px;
+  background-color: #edf2f4;
+  color: #2B2D42;
 }
 
 .skillset h3 {
@@ -654,7 +656,7 @@ header::before {
 }
 
 .skillset .skillsContainer {
-  margin-top: 80px;
+  margin-top: 50px;
 }
 
 .skillset .skillsContainer h4 {
@@ -670,29 +672,50 @@ header::before {
   margin-bottom: 50px;
 }
 
-.skillset .skillsContainer .comp .skillList, .skillset .skillsContainer .current .skillList {
-  margin-right: 100px;
-}
-
 .skillset .skillsContainer .comp .skillList li, .skillset .skillsContainer .current .skillList li {
-  margin: 10px 100px 50px 0px;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 20px;
 }
 
 .skillset .skillsContainer .comp .skillList li p, .skillset .skillsContainer .current .skillList li p {
-  font-size: 2rem;
+  font-size: 1.7rem;
+  letter-spacing: 1px;
   text-align: center;
-  margin-left: 15px;
+  margin-top: 15px;
 }
 
 .skillset .skillsContainer .comp .skillList li i, .skillset .skillsContainer .current .skillList li i {
+  text-shadow: 1.5px 1.5px #EF233C;
   font-size: 5rem;
+}
+
+.skillset .skillsContainer .comp .current, .skillset .skillsContainer .current .current {
+  margin-top: 50px;
+  padding-bottom: 50px;
+}
+
+.skillset .skillsContainer .comp .current .skillList, .skillset .skillsContainer .current .current .skillList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0px 20px;
 }
 
 .skillset .skillsContainer .comp .compCont {
@@ -703,30 +726,29 @@ header::before {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .portfolio {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  padding: 100px 0px;
   min-height: 100vh;
 }
 
 .portfolio h3 {
-  margin: 0;
-  font-size: 2rem;
+  text-align: right;
+  padding: 0 20px 20px 0px;
+  font-size: 6rem;
+  font-weight: 700;
   text-transform: uppercase;
-  font-family: "Libre Baskerville", serif;
-  margin-bottom: 20px;
-  text-align: center;
+  border-right: 8px solid #c20114;
+  border-bottom: 8px solid #c20114;
 }
 
 .portfolio .gallery .projectContent {
+  min-height: 80vh;
+  margin: 20px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -734,127 +756,103 @@ header::before {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0px 20px;
+}
+
+.portfolio .gallery .projectContent .projectText {
+  max-width: 85%;
+  width: 85%;
+  margin-right: 50px;
 }
 
 .portfolio .gallery .projectContent .projectText .projectDescription h4 {
-  font-size: 5rem;
-  font-family: "Libre Baskerville", serif;
-  font-family: "Montserrat", sans-serif;
+  text-align: right;
+  font-size: 4rem;
+  padding: 0px 20px 15px 0px;
   text-transform: uppercase;
-  font-weight: 700;
-  text-shadow: 0px 20px rgba(239, 35, 60, 0.5), 0px 40px rgba(194, 1, 20, 0.5);
+  text-shadow: 2px 2px #c20114;
+  border-right: 3px solid #c20114;
+  border-bottom: 3px solid #c20114;
+}
+
+.portfolio .gallery .projectContent .projectText .projectDescription span {
+  text-align: right;
+  font-size: 5rem;
+  margin-right: 20px;
 }
 
 .portfolio .gallery .projectContent .projectText .projectDescription h5 {
-  margin: 40px 0px 35px 0px;
-  font-size: 2.3rem;
-  letter-spacing: 1px;
+  text-align: right;
+  margin: 15px 0px;
+  padding-bottom: 15px;
   font-family: "Libre Baskerville", serif;
-  font-weight: 400;
   font-style: italic;
-}
-
-.portfolio .gallery .projectContent .projectText .projectDescription .tools {
-  font-size: 2.2rem;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  margin-bottom: 20px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-size: 1.9rem;
 }
 
 .portfolio .gallery .projectContent .projectText .projectDescription p {
-  letter-spacing: 1.5px;
-  line-height: 1.5;
-  font-size: 1.8rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
   margin-bottom: 15px;
+  letter-spacing: 1px;
+  line-height: 1.7;
+}
+
+.portfolio .gallery .projectContent .projectText .projectDescription .tools {
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin-bottom: 25px;
 }
 
 .portfolio .gallery .projectContent .projectText .projectLinks {
-  font-size: 2rem;
-  text-transform: uppercase;
-  font-weight: 700;
   margin-top: 50px;
 }
 
 .portfolio .gallery .projectContent .projectText .projectLinks a {
-  margin-right: 30px;
+  margin-right: 50px;
+  background-color: #edf2f4;
+  text-transform: uppercase;
+  color: #c20114;
+  font-weight: 500;
+  font-size: 2.5rem;
+  padding: 5px 10px;
+  text-align: center;
+  border: 5px solid transparent;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+
+.portfolio .gallery .projectContent .projectText .projectLinks a:hover, .portfolio .gallery .projectContent .projectText .projectLinks a:focus {
+  background-color: transparent;
   color: #edf2f4;
-  padding: 10px;
-  -webkit-box-shadow: 3px 3px rgba(237, 242, 244, 0.5);
-          box-shadow: 3px 3px rgba(237, 242, 244, 0.5);
-}
-
-.portfolio .gallery .projectContent .projectText .projectLinks .github {
-  background-color: #c20114;
-}
-
-.portfolio .gallery .projectContent .projectText .projectLinks .viewLive {
-  background-color: #EF233C;
+  padding: 15px 15px;
+  border-right: 5px solid #c20114;
+  border-bottom: 5px solid #c20114;
 }
 
 .portfolio .gallery .projectContent .projectImg {
-  width: 150%;
+  margin-left: 20px;
 }
 
-.portfolio .gallery .projectContent .projectsLine {
-  display: inline-block;
-  width: 5px;
-  height: 500px;
-  background-color: #edf2f4;
-  margin: 0px 50px;
-}
-
-.portfolio .direction {
-  margin-top: 10px;
-}
-
-.portfolio .direction h3 {
-  font-size: 1.7rem;
-  opacity: 0.5;
-}
-
-.portfolio .scrollToContact {
-  position: absolute;
-  top: 92%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+.portfolio .gallery .reverse {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: #edf2f4;
-  top: 95%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
 
-.portfolio .scrollToContact p {
-  letter-spacing: 2px;
-  font-family: "Montserrat", sans-serif;
-  text-transform: uppercase;
-  font-size: 2rem;
-  font-weight: 500;
-}
-
-.portfolio .scrollToContact .fa-chevron-down {
-  margin-top: 5px;
-  font-size: 1.5rem;
-}
-
-.portfolio .scrollToContact p {
-  font-weight: 700;
-}
-
-.portfolio .scrollToContact .fa-chevron-down {
-  color: #edf2f4;
+.portfolio .gallery .reverse .projectText {
+  margin-left: 50px;
 }
 
 footer {

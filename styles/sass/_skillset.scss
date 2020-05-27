@@ -1,6 +1,8 @@
 .skillset {
     min-height: 100vh;
-    padding-top: 50px;
+    padding-top: 100px;
+    background-color: $primaryLightColor;
+    color: $primaryDarkColor;
     h3 {
         // max-width: 355px;
         text-align: right;
@@ -10,7 +12,7 @@
         border-bottom: 8px solid $firstAccentColor;
     }
     .skillsContainer {
-        margin-top: 80px;
+        margin-top: 50px;
         h4 {
             font-size: 3rem;
             font-weight: 500;
@@ -22,20 +24,32 @@
         .comp, .current {
             margin-bottom: 50px;
             .skillList {
-                margin-right: 100px;
                 li {
-                    margin: 10px 100px 50px 0px;
                     text-align: center;
                     display: flex;
+                    flex-direction: column;
                     align-items: center;
+                    margin-bottom: 20px;
                     p {
-                        font-size: 2rem;
+                        font-size: 1.7rem;
+                        letter-spacing: 1px;
                         text-align: center;
-                        margin-left: 15px;
+                        margin-top: 15px;
                     }
                     i {
+                        text-shadow: 1.5px 1.5px $secondAccentColor;
                         font-size: 5rem;
                     }
+                }
+            }
+            .current {
+                margin-top: 50px;
+                padding-bottom: 50px;
+                .skillList {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    padding: 0px 20px;
                 }
             }
         }
@@ -43,7 +57,7 @@
             .compCont {
                 display: flex;
                 flex-direction: row;
-                // justify-content: center;
+                justify-content: space-between;
             }
         }
     }

@@ -654,6 +654,7 @@ header::before {
   padding-top: 100px;
   background-color: #edf2f4;
   color: #2B2D42;
+  background-image: url("https://www.transparenttextures.com/patterns/foggy-birds.png");
 }
 
 .skillset h3 {
@@ -1196,8 +1197,8 @@ footer p {
     font-size: 3.5rem;
   }
   .portfolio .gallery .projectContent .projectText .projectLinks a {
-    font-size: 1.7rem;
-    margin-right: 25px;
+    font-size: 1.5rem;
+    margin-right: 15px;
   }
   .portfolio .gallery .projectContent .projectText .projectDescription p {
     font-size: 1.5rem;

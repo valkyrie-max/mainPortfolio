@@ -824,17 +824,22 @@ header::before {
   font-size: 2.5rem;
   padding: 5px 10px;
   text-align: center;
-  border: 5px solid transparent;
+  -webkit-box-shadow: 0px 0px #c20114;
+          box-shadow: 0px 0px #c20114;
   -webkit-transition: 0.3s all ease;
   transition: 0.3s all ease;
+  border: 6px solid transparent;
 }
 
 .portfolio .gallery .projectContent .projectText .projectLinks a:hover, .portfolio .gallery .projectContent .projectText .projectLinks a:focus {
-  background-color: transparent;
-  color: #edf2f4;
-  padding: 15px 15px;
-  border-right: 5px solid #c20114;
-  border-bottom: 5px solid #c20114;
+  -webkit-box-shadow: 6px 6px #EF233C;
+          box-shadow: 6px 6px #EF233C;
+  border: 6px solid #EF233C;
+}
+
+.portfolio .gallery .projectContent .projectText .projectLinks a:active {
+  -webkit-box-shadow: 4px 4px #c20114;
+          box-shadow: 4px 4px #c20114;
 }
 
 .portfolio .gallery .projectContent .projectImg {
@@ -855,58 +860,15 @@ header::before {
   margin-left: 50px;
 }
 
-footer {
-  min-height: 100vh;
+.contactInfo {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  color: #2B2D42;
   background-color: #edf2f4;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
   background-image: url("https://www.transparenttextures.com/patterns/foggy-birds.png");
 }
 
-footer .footerHeadings {
-  margin-top: 80px;
-  text-align: center;
-}
-
-footer .footerHeadings h3 {
-  display: inline-block;
-  max-width: 55%;
-  font-family: "Libre Baskerville", serif;
-  text-transform: uppercase;
-  font-size: 7rem;
-  font-weight: 400;
-  border-bottom: 2px solid #c20114;
-}
-
-footer .footerHeadings p {
-  display: inline-block;
-  max-width: 90%;
-  line-height: 1.5;
-  margin: 20px 0px;
-  font-style: italic;
-  font-size: 3rem;
-}
-
-footer .means {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-top: 20px;
-}
-
-footer .means .contactMe form {
+.contactInfo .contactHeadings {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -914,116 +876,223 @@ footer .means .contactMe form {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 500px;
 }
 
-footer .means .contactMe form label {
-  font-size: 2rem;
-  font-style: italic;
-  color: #2B2D42;
-  margin: 10px 0px;
-}
-
-footer .means .contactMe form input, footer .means .contactMe form textarea {
-  -webkit-box-shadow: 3px 3px rgba(239, 35, 60, 0.5);
-          box-shadow: 3px 3px rgba(239, 35, 60, 0.5);
-  border: 1px solid #c20114;
-  padding: 10px;
-  font-size: 2rem;
-  font-family: "Libre Baskerville", serif;
-  letter-spacing: 1.5px;
-  line-height: 1.5;
-  font-weight: 500;
-  color: #2B2D42;
-}
-
-footer .means .contactMe form input:focus, footer .means .contactMe form textarea:focus {
-  border: 5px solid #c20114;
-}
-
-footer .means .contactMe form input {
-  height: 40px;
-}
-
-footer .means .contactMe form textarea {
-  resize: none;
-  height: 250px;
-}
-
-footer .means .contactMe form button {
-  -webkit-box-shadow: 3px 3px rgba(239, 35, 60, 0.5);
-          box-shadow: 3px 3px rgba(239, 35, 60, 0.5);
-  border: 1px solid #c20114;
-  text-transform: uppercase;
-  background-color: white;
-  font-size: 2.5rem;
-  font-family: "Libre Baskerville", serif;
-  padding: 10px;
-  margin-top: 10px;
-}
-
-footer .means .socials {
+.contactInfo .contactHeadings h3 {
   text-align: right;
-}
-
-footer .means .socials h4 {
+  padding: 0 20px 20px 0px;
+  font-size: 6rem;
+  font-weight: 700;
   text-transform: uppercase;
-  font-size: 4rem;
-  font-family: "Libre Baskerville", serif;
-  margin-bottom: 10px;
+  border-right: 8px solid #c20114;
+  border-bottom: 8px solid #c20114;
 }
 
-footer .means .socials p {
-  font-size: 3rem;
+.contactInfo .contactHeadings p {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 70%;
+  text-align: center;
+  margin-top: 40px;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  line-height: 1.7;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #c20114;
 }
 
-footer .means .socials ul {
+.contactInfo .means {
+  margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
-  margin: 50px 0px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-footer .means .socials ul li {
-  font-size: 14rem;
-  margin-right: 30px;
+.contactInfo .means .contactMe {
+  width: 50%;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #2B2D42;
 }
 
-footer .means .socials ul li a {
-  color: #2B2D42;
+.contactInfo .means .contactMe form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-footer .means .socials ul li:nth-child(4) {
-  margin: 0;
-}
-
-footer .copyright {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 50px;
-  padding-top: 8px;
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  color: #edf2f4;
-  text-align: center;
-  background-color: #2B2D42;
-}
-
-footer .copyright p:nth-child(1) {
+.contactInfo .means .contactMe form label {
+  font-size: 1.7rem;
   margin-bottom: 10px;
+  margin-top: 15px;
+  color: #2B2D42;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
 }
 
-footer .up {
-  font-size: 3.5rem;
+.contactInfo .means .contactMe form input, .contactInfo .means .contactMe form textarea {
+  font-size: 1.7rem;
+  padding: 5px 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+  -webkit-box-shadow: 2px 2px transparent;
+          box-shadow: 2px 2px transparent;
+  -webkit-box-shadow: 0px 0px #2B2D42;
+          box-shadow: 0px 0px #2B2D42;
+  transition: 0.3s all ease;
+  border: 3px solid transparent;
+}
+
+.contactInfo .means .contactMe form input:focus, .contactInfo .means .contactMe form textarea:focus {
+  -webkit-box-shadow: 5px 5px #2B2D42;
+          box-shadow: 5px 5px #2B2D42;
+  border: 3px solid #2B2D42;
+}
+
+.contactInfo .means .contactMe form textarea {
+  resize: none;
+  min-height: 150px;
+  max-height: 300px;
+}
+
+.contactInfo .means .contactMe form button {
+  width: 30%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  cursor: pointer;
+  margin-top: 20px;
+  background-color: #edf2f4;
+  color: #2B2D42;
+  padding: 10px 20px;
+  font-size: 2rem;
+  font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   font-weight: 700;
+  -webkit-box-shadow: 3px 3px #EF233C;
+          box-shadow: 3px 3px #EF233C;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+  border: 1px solid #EF233C;
+}
+
+.contactInfo .means .contactMe form button:hover, .contactInfo .means .contactMe form button:focus {
+  padding: 15px 20px;
+  -webkit-box-shadow: 8px 8px #EF233C;
+          box-shadow: 8px 8px #EF233C;
+}
+
+.contactInfo .means .contactMe form button:active {
+  -webkit-box-shadow: 3px 3px #EF233C;
+          box-shadow: 3px 3px #EF233C;
+}
+
+.contactInfo .means .socials {
+  margin-top: 25px;
+  width: 50%;
+  text-align: center;
+}
+
+.contactInfo .means .socials h4 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.contactInfo .means .socials .gmail {
+  font-size: 2rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #2B2D42;
+  padding-bottom: 5px;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+  border-bottom: 1px solid transparent;
+}
+
+.contactInfo .means .socials .gmail:hover {
+  border-bottom: 1px solid #c20114;
+}
+
+.contactInfo .means .socials .socialLinks {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contactInfo .means .socials .socialLinks li {
+  text-align: center;
+  margin-right: 40px;
+}
+
+.contactInfo .means .socials .socialLinks li a {
+  color: #2B2D42;
+  text-shadow: 1px 1px #c20114;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+
+.contactInfo .means .socials .socialLinks li a i {
+  font-size: 4rem;
+}
+
+.contactInfo .means .socials .socialLinks li a:hover, .contactInfo .means .socials .socialLinks li a:focus {
+  text-shadow: 3px 3px #c20114;
+}
+
+.contactInfo .means .socials .socialLinks li:nth-child(4) {
+  margin-right: 0px;
+}
+
+.contactInfo .means .socials .up {
+  color: #2B2D42;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.contactInfo .means .socials .up:hover, .contactInfo .means .socials .up:focus {
   color: #c20114;
+}
+
+footer {
+  min-height: 30px;
+  background-color: #2B2D42;
+  color: #edf2f4;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+footer p {
+  letter-spacing: 1px;
+  padding: 10px;
 }
 
 @media (max-width: 1630px) {

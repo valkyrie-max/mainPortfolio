@@ -82,17 +82,19 @@ main {
     background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
 }
 
+.navigation {
+    display: none;
+}
 .menuToggle {
     display: none;
     position: fixed;
-    top: 50px;
-    left: 50px;
+    top: 30px;
+    left: 30px;
     z-index: 1;
-    user-select: none;
     a {
         text-decoration: none;
-        color: $secondAccentColor;
-        font-family: $contentFont;
+        color: $primaryDarkColor;
+        font-family: $accentFont;
         text-transform: uppercase;
         font-weight: 700;
         transition: color 0.3s ease;
@@ -113,18 +115,16 @@ main {
         z-index: 1; 
     }
     span {
+        width: 50px;
+        height: 6px;
         display: block;
-        width: 33px;
-        height: 4px;
         margin-bottom: 5px;
         position: relative;
-        background: $primaryLightColor;
-        box-shadow: 2px 2px $primaryDarkColor;
-        border-radius: 3px;
+        background: $firstAccentColor;
         z-index: 3;
-        transform-origin: 4px 0px;
+        transform-origin: 2px 0px;
         transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-                    background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                    // background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
                     opacity 0.55s ease;
     }
     span:first-child {
@@ -135,25 +135,29 @@ main {
     }
     input:checked ~ span {
         opacity: 1;
-        transform: rotate(45deg) translate(-2px, -1px);
-        background: $primaryDarkColor;
+        transform: rotate(45deg) translate(-6px, -10px);
+        background: $firstAccentColor;
         box-shadow: none;
     }
     input:checked ~ span:nth-last-child(3) {
         opacity: 0;
-        transform: rotate(0deg) scale(0.2, 0.2);
+        transform: rotate(0deg) translate(0px, 0px);
     }
     input:checked ~ span:nth-last-child(2) {
-        transform: rotate(-45deg) translate(0, -1px);
+        transform: rotate(-45deg) translate(2px, 0px);
     }
     .menu {
         position: absolute;
-        width: 100vw;
+        top: -50px;
+        width: 120vw;
+        height: 120vh;
         margin: -100px 0 0 -50px;
-        padding: 50px;
-        padding-top: 125px;
-        
-        background-color: $primaryLightColor;
+        padding: 100px;
+        // padding-top: 125px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: transparentize($primaryLightColor, 0.1);
         list-style-type: none;
         -webkit-font-smoothing: antialiased;
         
@@ -162,8 +166,11 @@ main {
         
         transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
         li {
+            width: 70%;
             padding: 10px 0;
+            margin-top: 20px;
             font-size: 22px;
+            border-bottom: 1px solid $firstAccentColor;
         }
     }
     input:checked ~ ul {

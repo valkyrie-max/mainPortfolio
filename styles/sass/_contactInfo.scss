@@ -1,0 +1,153 @@
+.contactInfo {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    color: $primaryDarkColor;
+    background-color: $primaryLightColor;
+    background-image: url("https://www.transparenttextures.com/patterns/foggy-birds.png");
+    .contactHeadings {
+        display: flex;
+        flex-direction: column;
+        h3 {
+            text-align: right;
+            padding: 0 20px 20px 0px;
+            @include secondaryHeadingsStyle;
+            border-right: 8px solid $firstAccentColor;
+            border-bottom: 8px solid $firstAccentColor;
+        }
+        p {
+            align-self: center;
+            width: 70%;
+            text-align: center;
+            margin-top: 40px;
+            font-size: 2rem;
+            letter-spacing: 1px;
+            line-height: 1.7;
+            padding-bottom: 20px;
+            border-bottom: 1px solid $firstAccentColor;
+        }
+    }
+    .means {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        .contactMe {
+            width: 50%;
+            padding-bottom: 30px;
+            border-bottom: 1px solid $primaryDarkColor;
+            form {
+                display: flex;
+                flex-direction: column;
+                label {
+                    font-size: 1.7rem;
+                    margin-bottom: 10px;
+                    margin-top: 15px;
+                    color: $primaryDarkColor;
+                    font-family: $accentFont;
+                    font-weight: 500;
+                }
+                input, textarea {
+                    font-size: 1.7rem;
+                    padding: 5px 10px;
+                    font-family: $accentFont;
+                    font-weight: 500;
+                    transition: 0.3s all ease;
+                    box-shadow: 2px 2px transparent;
+                    box-shadow: 0px 0px $primaryDarkColor;
+                    transition: 0.3s all ease;
+                    border: 3px solid transparent;
+                }
+                input:focus, textarea:focus {
+                    box-shadow: 5px 5px $primaryDarkColor;
+                    border: 3px solid $primaryDarkColor;
+                }
+                textarea {
+                    resize: none;
+                    min-height: 150px;
+                    max-height: 300px;
+                }
+                button {
+                    width: 30%;
+                    align-self: center;
+                    cursor: pointer;
+                    margin-top: 20px;
+                    background-color: $primaryLightColor;
+                    color: $primaryDarkColor;
+                    padding: 10px 20px;
+                    font-size: 2rem;
+                    font-family: $accentFont;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    box-shadow: 3px 3px $secondAccentColor;
+                    transition: 0.3s all ease;
+                    border: 1px solid $secondAccentColor;
+                }
+                button:hover, button:focus {
+                    padding: 15px 20px;
+                    box-shadow: 8px 8px $secondAccentColor;
+                }
+                button:active {
+                    box-shadow: 3px 3px $secondAccentColor;
+                }
+            }
+        }
+        .socials {
+            margin-top: 25px;
+            width: 50%;
+            text-align: center;
+            h4 {
+                font-size: 2rem;
+                text-transform: uppercase;
+                font-weight: 500;
+                margin-bottom: 5px;
+            }
+            .gmail {
+                font-size: 2rem;
+                font-family: $accentFont;
+                font-weight: 700;
+                color: $primaryDarkColor;
+                padding-bottom: 5px;
+                transition: 0.3s all ease;
+                border-bottom: 1px solid transparent;
+            }
+            .gmail:hover {
+                border-bottom: 1px solid $firstAccentColor;
+            }
+            .socialLinks {
+                margin-top: 20px;
+                margin-bottom: 40px;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                li {
+                    text-align: center;
+                    margin-right: 40px;
+                    a {
+                        color: $primaryDarkColor;
+                        text-shadow: 1px 1px $firstAccentColor;
+                        transition: 0.3s all ease;
+                        i {
+                            font-size: 4rem;
+                        }
+                    }
+                    a:hover, a:focus {
+                        text-shadow: 3px 3px $firstAccentColor;
+                    }
+                }
+                li:nth-child(4) {
+                    margin-right: 0px;
+                }
+            }
+            .up {
+                color: $primaryDarkColor;
+                transition: 0.3s all ease;
+                font-size: 2rem;
+                font-weight: 500;
+            }
+            .up:hover, .up:focus {
+                color: $firstAccentColor;
+            }
+        }
+    }
+}

@@ -15,11 +15,14 @@
     <!-- linking font awesome -->
     <script src="https://kit.fontawesome.com/82d522d35e.js" crossorigin="anonymous"></script>
 
-    <!-- linking carousel -->
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-
-    <!-- linking annimation on scroll -->
+    <!-- linking animation on scroll -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- linking animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+
+    <!-- linking jquery icon -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 </head>
 
 <body>
@@ -28,18 +31,36 @@
     <header id="up">
         <div class="wrapper">
             <div class="headerContentContainer">
-                <div class="mainHeading">
-                    <h1>Alisa</h1>
-                    <span aria-hidden="true">[ah]-[lee]-[sah]</span>
+                <div class="headings">
+                    <div class="animate__slow animate__animated animate__fadeInDown mainHeading">
+                        <h1>Alisa</h1>
+                        <span aria-hidden="true">[ah]-[lee]-[sah]</span>
+                    </div>
+                    <div class="animate__slow animate__animated animate__fadeInUp secondaryHeading">
+                        <h2>front-end developer.</h2>
+                    </div>
                 </div>
-                <div class="secondaryHeading">
-                    <h2>front-end developer.</h2>
+                <div class="lpNavigation">
+                    <ul>
+                        <li>
+                            <a href="#about">about</a>
+                        </li>
+                        <li>
+                            <a href="#skillset">skills</a>
+                        </li>
+                        <li>
+                            <a href="#projects">projects</a>
+                        </li>
+                        <li>
+                            <a href="#contact">contact info</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
             <div>
                 <a class="scrollToContent" aria-label="go to about section" href="#about">
-                    <p>To content</p>
-                    <i class="fas fa-chevron-down"></i>
+                    <p>scroll down to see more</p>
+                    <i aria-label="To content" class="fas fa-chevron-down"></i>
                 </a>
             </div>
         </div>
@@ -47,7 +68,7 @@
     <!-- header ends -->
 
     <!-- main starts -->
-    <main>
+    <main id="about">
         <nav class="navigation">
             <div class="menuToggle">
             <input type="checkbox" />
@@ -63,29 +84,39 @@
             </ul>
         </div>
         </nav>
-        <div class="wrapper">
             <!-- about starts -->
-            <section 
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"  
-            data-aos-offset="100"
-            data-aos="fade-right" 
-            class="about" id="about">
-                <div class="aboutContentContainer">
+        <section class="about">
+            <div class="wrapper">
+                <div class="aboutContent">
                     <div class="aboutHeading">
-                        <h3>About</h3>
+                        <h3
+                        data-aos="fade-down"
+                        data-aos-offset="50" 
+                        data-aos-delay="70"
+                        data-aos-duration="1000"
+                        data-aos-easing="ease-in-out"
+                        data-aos-mirror="true"
+                        data-aos-once="true">
+                        About</h3>
                     </div>
-                    <span class="aboutLine"></span>
-                    <div class="aboutText">
+                    <div
+                    data-aos="fade-up"
+                    data-aos-offset="100" 
+                    data-aos-delay="70"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out"
+                    data-aos-mirror="true"
+                    data-aos-once="true"
+                    class="aboutText">
                         <ul class="aboutPoints">
                             <li>
                                 <p>My name is <span class="fatText">Alisa Kitkina</span>, and I am a <span class="fatText">human</span> who  likes to <span class="fatText">express herself through code.</span></p>
                             </li>
                             <li>
-                                <p>As <span class="fatText">a front-end developer</span> with a background in International Development (Faculty of Business of Humber College), I care deeply about <span class="fatText">accessibility, responsiveness, UX, and UI</span>. Additionally, I am in love with <span class="fatText">personal growth</span> and <span class="fatText">getting things done</span>.</p>
+                                <p>As a front-end developer with a background in International Development (Faculty of Business of Humber College), I care deeply about accessibility, responsiveness, UX, and UI. Additionally, I am in love with personal growth and getting things done.</p>
                             </li>
                             <li>
-                                <p>I am a strong believer in <span class="fatText">facing challenges head on</span> because I moved to Canada from Russia at 17 without any family or friends. This journey taught me <span class="fatText">to adapt to any critical situation</span> and <span class="fatText">to keep my chin up no matter what.</span></p>
+                                <p>I am a strong believer in facing challenges head on because I moved to Canada from Russia at 17 without any family or friends. This journey taught me to adapt to any critical situation and to keep my chin up no matter what.</p>
                             </li>
                             <li>
                                 <p>When I'm not coding I learn Japanese combined with researching about the country's culture, go for walks when the sun sets, and write small detective stories.</p>
@@ -93,279 +124,313 @@
                         </ul>
                     </div>
                 </div>
-                <div>
-                    <a class="scrollToSkills" aria-label="go to skills" href="#skillset">
-                        <p>Skills</p>
-                        <i class="fas fa-chevron-down"></i>
-                    </a>
-                </div>
-            </section>
-            <!-- about ends -->
+            </div>
+        </section>
+        <!-- about ends -->
 
-            <!-- skills start -->
-            <section
-            id="skillset"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"  
-            data-aos-offset="300"
-            data-aos="fade-right" 
-            class="skillset">
-                <div class="skillsetContentContainer">
-                    <div class="skillList">
-                        <div class="codeSkills">
-                            <h4>How I talk to: <span class="fatText computers">computers</span></h4>
-                            <ul class="firstColumn">
+        <!-- skills start -->
+        <section
+        id="skillset"
+        class="skillset">
+            <div class="wrapper">
+                <div class="skillsetHeading">
+                    <h3
+                    data-aos="fade-down"
+                    data-aos-offset="50" 
+                    data-aos-delay="70"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out"
+                    data-aos-mirror="true"
+                    data-aos-once="true">Skillset</h3>
+                </div>
+                <div
+                data-aos="fade-up"
+                data-aos-offset="50" 
+                data-aos-delay="70"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true"
+                data-aos-once="true"
+                class="skillsContainer">
+                    <div class="comp">
+                        <h4>What I know & polish every day</h4>
+                        <div class="compCont">
+                            <ul class="skillList">
                                 <li>
+                                    <i class="fab fa-html5"></i>
                                     <p>HTML5</p>
                                 </li>
                                 <li>
-                                    <p>CSS</p>
+                                    <i class="fab fa-css3-alt"></i>
+                                    <p>CSS3</p>
                                 </li>
                                 <li>
+                                    <i class="fab fa-sass"></i>
                                     <p>SCSS</p>
                                 </li>
                                 <li>
-                                    <p>VSCode</p>
-                                </li>
-                                <li>
-                                    <p>Git & GitHub</p>
-                                </li>
-                            </ul>
-                            <ul class="secondColumn">
-                                <li>
+                                    <i class="fab fa-js"></i>
                                     <p>JavaScript</p>
                                 </li>
+                            </ul>
+                            <ul class="skillList">
                                 <li>
+                                    <i class="devicon-jquery-plain"></i>
                                     <p>JQuery</p>
                                 </li>
                                 <li>
-                                    <p>Rest API</p>
-                                </li>
-                                <li>
-                                    <p>Firebase</p>
-                                </li>
-                                <li>
+                                    <i class="fab fa-react"></i>
                                     <p>React</p>
                                 </li>
-                            </ul>
-                        </div>
-                        <div class="humanSkills">
-                            <h4>How I talk to: <span class="fatText humans">humans</span></h4>
-                            <ul class="firstColumn">
                                 <li>
+                                    <i class="fas fa-cogs"></i>
+                                    <p>REST API</p>
+                                </li>
+                                <li>
+                                    <i class="fas fa-server"></i>
+                                    <p>Firebase</p>
+                                </li>
+                            </ul>
+                            <ul class="skillList">
+                                <li>
+                                    <i class="fab fa-git-alt"></i>
+                                    <p>Git & Github</p>
+                                </li>
+                                <li>
+                                    <i class="fas fa-file-code"></i>
+                                    <p>VSCode</p>
+                                </li>
+                                <li>
+                                    <i class="fas fa-terminal"></i>
+                                    <p>Terminal</p>
+                                </li>
+                            </ul>
+                            <ul class="skillList">
+                                <li>
+                                    <i class="fas fa-universal-access"></i>
                                     <p>Web accessability</p>
                                 </li>
                                 <li>
+                                    <i class="fas fa-mobile-alt"></i>
                                     <p>Responsive design</p>
                                 </li>
-                                <li>
-                                    <p>UX & UI</p>
-                                </li>
-                                <li>
+                                <li><i class="fab fa-adobe"></i>
                                     <p>Adobe Photoshop</p>
                                 </li>
                             </ul>
-                            <ul class="secondColumn">
+                        </div>
+                        <div class="current">
+                            <h4>What I am learning & want to learn</h4>
+                            <ul class="skillList">
                                 <li>
-                                    <p>Russian (native)</p>
+                                    <i class="devicon-php-plain"></i>
+                                    <p>PHP</p>
                                 </li>
                                 <li>
-                                    <p>English (advanced)</p>
+                                    <i class="devicon-wordpress-plain"></i>
+                                    <p>WordPress</p>
                                 </li>
                                 <li>
-                                    <p>Japanese (basic, N5)</p>
+                                    <i class="devicon-angularjs-plain"></i>
+                                    <p>Angular</p>
+                                </li>
+                                <li>
+                                    <i class="devicon-vuejs-plain"></i>
+                                    <p>Vue.js</p>
                                 </li>
                             </ul>
                         </div>
                     </div>
-                    <span class="skillsetLine"></span>
-                    <div class="skillsetHeading">
-                        <h3>Skillset</h3>
-                    </div>
                 </div>
-                <div>
-                    <a class="scrollToProjects" aria-label="go to projects" href="#projects">
-                        <p>Projects</p>
-                        <i class="fas fa-chevron-down"></i>
-                    </a>
-                </div>
-            </section>
-            <!-- skills end -->
-            
-            <!-- projects start -->
-            <section id="projects"  class="portfolio">
-                <!-- <h3>Portfolio</h3> -->
-                <div class="direction">
-                    <h3>Swipe left or right to view the projects.</h3>
-                    <h3>You can also use your arrow keys to look through the works.</h3>
+            </div>
+        </section>
+        <!-- skills end -->
+        
+        <section id="projects"  class="portfolio">
+            <div class="wrapper">
+                <div class="aboutHeading">
+                    <h3
+                    data-aos="fade-down"
+                    data-aos-offset="50" 
+                    data-aos-delay="70"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out"
+                    data-aos-mirror="true"
+                    data-aos-once="true">
+                    Projects</h3>
                 </div>
                 <div class="gallery">
-                    <div tabindex=0 class="projectContent">
+                    <div data-aos="fade-up"
+                    data-aos-offset="50" 
+                    data-aos-delay="700"
+                    data-aos-duration="1200"
+                    data-aos-easing="ease-in-out"
+                    data-aos-mirror="true"
+                    data-aos-once="true" class="projectContent">
                         <div class="projectText">
                             <div class="projectDescription">
-                                <h4>Creative</h4>
-                                <h5>Creative is a multi-page PDF conversion project.</h5>
+                                <h4><span aria-label="first project">01:</span>Creative</h4>
+                                <h5>Multi-page PDF conversion.</h5>
                                 <p class="tools">HTML | CSS | SCSS</p>
-                                <p>The purpose of the project was to build a website based on the given design. While recreating the template, it was important to create the best user experience possible no matter what device the user might access it from.</p>
-                                <p>Although the conversion helped polish my UX skills, this project also taught me the importance of time management and folder structure. </p>
+                                <p>A PDF conversion based on the given design. It is fully accessible and responsive across all browsers and devices.</p>
                             </div>
                             <div class="projectLinks">
                                 <a class="github" href="https://github.com/valkyrie-max/alisa_kitkina_project_two">Github</a>
                                 <a class="viewLive" href="https://valkyrie-max.github.io/alisa_kitkina_project_two/">View live</a>
                             </div>
                         </div>
-                        <span class="projectsLine"></span>
                         <div class="projectImg">
                             <img src="assets/project1.png" alt="Project preview">
                         </div>
                     </div>
-                    <div tabindex=0 class="projectContent">
+                    <div data-aos="fade-down"
+                    data-aos-offset="50" 
+                    data-aos-delay="700"
+                    data-aos-duration="1200"
+                    data-aos-easing="ease-in-out"
+                    data-aos-mirror="true"
+                    data-aos-once="true" class="reverse projectContent">
                         <div class="projectText">
                             <div class="projectDescription">
-                                <h4>Anime Quiz</h4>
+                                <h4><span aria-label="second project">02:</span>Anime Quiz</h4>
                                 <h5>Find out what anime you should watch based on your answers.</h5>
                                 <p class="tools">HTML | CSS | SCSS | JavaScript | JQuery</p>
-                                <!-- <p>The project's objective was to build a website that involves the use of JQuery library, dynamic DOM manipulation, proper error handling, and good UI design.</p> -->
-                                <p>This applications allows provides an anime recommendation based on what user answered to each question. If the user is not familiar with the term "anime", a small description was provided in order to enhance user experience.</p>
-                                <p>Thanks to this project, I became more confident in using JQuery and acquired new skills such as swift DOM manipulation. Moreover, it allowed me to practice and polish my UI skills, grow my vanilla JavaScript knowledge, and web accessability.</p>
+                                <p>This applications provides an anime recommendation based on what user answered to each question. If the user is not familiar with the term "anime", a small description is provided in order to enhance user experience.</p>
                             </div>
                             <div class="projectLinks">
                                 <a class="github" href="https://github.com/valkyrie-max/alisaKitkinaProjectThree">Github</a>
                                 <a class="viewLive" href="https://valkyrie-max.github.io/alisaKitkinaProjectThree/">View live</a>
                             </div>
                         </div>
-                        <span class="projectsLine"></span>
                         <div class="projectImg">
                             <img src="assets/project2.png" alt="Project preview">
                         </div>
                     </div>
-                    <div tabindex=0 class="projectContent">
+                    <div data-aos="fade-up"
+                    data-aos-offset="50" 
+                    data-aos-delay="700"
+                    data-aos-duration="1200"
+                    data-aos-easing="ease-in-out"
+                    data-aos-mirror="true"
+                    data-aos-once="true" class="projectContent">
                         <div class="projectText">
                             <div class="projectDescription">
-                                <h4>Laark</h4>
+                                <h4><span aria-label="third project">03:</span>Laark</h4>
                                 <h5>A virtual gallery application that allows users to look at art.</h5>
                                 <p class="tools">HTML | SCSS | JQuery | REST API | Paired programming</p>
-                                <!-- <p>The main task of the project was to work in a pair and practice the strong type of paired programming while communicating in an effective way. Futhermore, the web application had to be interactive, accessible and fully responsive.</p> -->
-                                <p>In this application, the user starts by selecting a theme. Then, the app presents three paintings to pick from. Based on the painting the user choose, two more related art pieces are exhibited.</p>
-                                <p>No doubt, this project helped me to enhance my human skills by working together with the teammate. I also got a chance to continue to improve my tech skills by introducing myself to namespacing to ensure the readability of code.</p>
+                                <p>In this application, the user starts by selecting a theme. Then, the app presents three paintings to pick from. Based on the painting the user chose, two more related art pieces are exhibited.</p>
                             </div>
                             <div class="projectLinks">
                                 <a class="github" href="https://github.com/frankAndAlisa/laark">Github</a>
                                 <a class="viewLive" href="https://frankandalisa.github.io/laark/">View live</a>
                             </div>
                         </div>
-                        <span class="projectsLine"></span>
                         <div class="projectImg">
                             <img src="assets/project3.png" alt="Project preview">
                         </div>
                     </div>
-                    <div tabindex=0 class="projectContent">
+                    <div data-aos="fade-down"
+                    data-aos-offset="50" 
+                    data-aos-delay="700"
+                    data-aos-duration="1200"
+                    data-aos-easing="ease-in-out"
+                    data-aos-mirror="true"
+                    data-aos-once="true" class="reverse projectContent">
                         <div class="projectText">
                             <div class="projectDescription">
-                                <h4>Frame of mind</h4>
+                                <h4><span aria-label="fourth project">04:</span>Frame of mind</h4>
                                 <h5>A place where you can let it all out.</h5>
                                 <p class="tools">SCSS | JSX | REACT | JavaScript | Firebase</p>
-                                <!-- <p>The primary objective of the project was to learn more about React.js library by creating an app that could involve API and/or Firebase.It also included a good chunk of error handling and more practice with UI/UX.</p> -->
-                                <p>Frame of Mind is a place where the user can get everything off their chest. They start by choosing an emotion from the list. Then, they can either listen to the offered melody or not while writing about what they are feeling in the moment. After the user is finished, they can share their thoughts with others.</p>
-                                <p>This is one of the projects I am really proud of. It taught me the importance of MVP, enhanced awareness of error handling and UX. Additionally, this project was an essential tool for me to understand and get a good grip of React and Firebase basics.</p>
+                                <p>The user starts by choosing an emotion from the list. Then, they can either listen to the offered melody or not while writing about what they are feeling in the moment. After the user is finished, they can share their thoughts with others.</p>
                             </div>
                             <div class="projectLinks">
                                 <a class="github" href="https://github.com/valkyrie-max/frameOfMind">Github</a>
                                 <a class="viewLive" href="https://valkyrie-max.github.io/frameOfMind/">View live</a>
                             </div>
                         </div>
-                        <span class="projectsLine"></span>
                         <div class="projectImg">
                             <img src="assets/project4.png" alt="Project preview">
                         </div>
                     </div>
-                    <div tabindex=0 class="projectContent">
+                    <div data-aos="fade-up"
+                    data-aos-offset="50" 
+                    data-aos-delay="700"
+                    data-aos-duration="1200"
+                    data-aos-easing="ease-in-out"
+                    data-aos-mirror="true"
+                    data-aos-once="true" class="projectContent">
                         <div class="projectText">
                             <div class="projectDescription">
-                                <h4>BattleRockets</h4>
+                                <h4><span aria-label="fifth project">05:</span>Battle Rockets</h4>
                                 <h5>Wreck the enemy's rockets before they destroy yours.</h5>
                                 <p class="tools">SCSS | JSX | REACT | JavaScript | API | Mob programming</p>
-                                <!-- <p>This project's goal was to mimic the agency-like environment where as a team of 3-4 developers each team had to create a web application based on the client's brief. The project was focused on improving team working skills as well as React, JavaScript, and many other tech skills.</p> -->
-                                <p>BattleRockets is a two-player game similar to classic battleship but with rockets instead. The objective of the application is to educate players about SpaceX rockets. By hitting a rocket, the user gets a popup with info about one.</p>
-                                <p>Just like the previous project, I am proud of this one. It helped me to drastically improve my human skills get a deeper understanding of React and REST API. The project was created along side with Mariya Morosovska, Miguel Cabrera and Lucas Silbernagel.</p>
+                                <p>BattleRockets is a two-player game similar to the classic battleship but with rockets instead. The objective of the application is to educate players about SpaceX rockets. By hitting a rocket, the user gets a popup with info about one.</p>
                             </div>
                             <div class="projectLinks">
                                 <a class="github" href="https://github.com/rocketBattle/battleRockets">Github</a>
                                 <a class="viewLive" href="https://rocketbattle.github.io/battleRockets/">View live</a>
                             </div>
                         </div>
-                        <span class="projectsLine"></span>
                         <div class="projectImg">
                             <img src="assets/project5.png" alt="Project preview">
                         </div>
                     </div>
                 </div>
-                <div>
-                    <a class="scrollToContact" aria-label="go to contact info" href="#contact">
-                        <p>Contact</p>
-                        <i class="fas fa-chevron-down"></i>
-                    </a>
+            </div>
+        </section>
+
+        <section id="contact" class="contactInfo">
+            <div class="wrapper">
+                <div class="contactHeadings">
+                    <h3>Contact me</h3>
+                    <p>If there is something that you are interested in or curious about, feel free to connect with me through any of the following!</p>
                 </div>
-            </section>
-            <!-- projects end -->
-        </div>
+                <div class="means">
+                    <div class="contactMe">
+                        <form action="https://formspree.io/moqkayqd" method="POST">
+                            <label for="personName"> Hi Alisa! My name is:</label>
+                            <input required id="personName" placeholder="your name" type="text" name="personName">
+                            <label for="_replyto"> Here is my e-mail:</label>
+                            <input required id="_replyto" placeholder="your email" type="text" name="_replyto">
+                            <label for="message"> And this is my message:</label>
+                            <textarea required id="message" placeholder="your message" name="message"></textarea>
+                            <button type="submit">Send</button>
+                        </form>
+                    </div>
+                    <div class="socials">
+                        <a class="gmail" href="alisalovescode@gmail.com">alisalovescode@gmail.com</a>  
+                        <ul class="socialLinks">
+                            <li>
+                                <a aria-label="link to github profile"  href="https://github.com/valkyrie-max"><i class="fab fa-github-square"></i></a>
+                            </li>
+                            <li>
+                                <a aria-label="link to twitter"  href="https://twitter.com/alisacodes"><i class="fab fa-twitter-square"></i></a>
+                            </li>
+                            <li>
+                                <a aria-label="link to medium" href="https://medium.com/@alisacodes"><i class="fab fa-medium"></i></a>
+                            </li>
+                            <li>
+                                <a aria-label="link to linkedin" href="https://www.linkedin.com/in/alisakitkina/"><i class="fab fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                        <a aria-label="go back up" class="up" href="#up">go back up</a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <!-- main ends -->
             
     <!-- footer starts --> 
-    <footer id="contact">
-        <div class="wrapper">
-            <div class="footerHeadings">
-                <h3>Contact me</h3>
-                <p>If there is something that you are interested in or curious about, feel free to reach out to me through any of the following!</p>
-            </div>
-            <div class="means">
-                <div class="contactMe">
-                    <form action="https://formspree.io/moqkayqd" method="POST">
-                        <label for="personName"> Hi Alisa! My name is:</label>
-                        <input id="personName" placeholder="your name" type="text" name="personName">
-                        <label for="_replyto"> Here is my e-mail:</label>
-                        <input id="_replyto" placeholder="your email" type="text" name="_replyto">
-                        <label for="message"> And this is my message:</label>
-                        <textarea id="message" placeholder="your message" name="message"></textarea>
-                        <button type="submit">Send</button>
-                    </form>
-                </div>
-                <div class="socials">
-                    <h4>E-mail:</h4>
-                    <p>alisalovescode@gmail.com</p>
-                    <ul class="socialLinks">
-                        <li>
-                            <a aria-label="link to github profile"  href="https://github.com/valkyrie-max"><i class="fab fa-github-square"></i></a>
-                        </li>
-                        <li>
-                            <a aria-label="link to twitter"  href="https://twitter.com/alisacodes"><i class="fab fa-twitter-square"></i></a>
-                        </li>
-                        <li>
-                            <a aria-label="link to medium" href="https://medium.com/@alisacodes"><i class="fab fa-medium"></i></a>
-                        </li>
-                        <li>
-                            <a aria-label="link to linkedin" href="https://www.linkedin.com/in/alisakitkina/"><i class="fab fa-linkedin"></i></a>
-                        </li>
-                    </ul>
-                    <a class="up" href="#up">go back up</a>
-                </div>
-            </div>
-        </div>
+    <footer>
         <div class="copyright">
-            <p>Designed and coded by Alisa Kitkina</p>
-            <p>© May 2020</p>
+            <p>a.k. © 2020</p>
         </div>
     </footer>
-    <!-- footer ends -->
 
     <!-- scripts -->
     <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-
-    <!-- carousel -->
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
     <!-- animation on scroll -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>

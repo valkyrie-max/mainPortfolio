@@ -293,25 +293,25 @@ form button {
 
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   font-family: "Montserrat", sans-serif;
-  color: #02423F;
+  color: #EF233C;
   opacity: 0.2;
 }
 
 input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   font-family: "Montserrat", sans-serif;
-  color: #02423F;
+  color: #EF233C;
   opacity: 0.2;
 }
 
 input::-ms-input-placeholder, textarea::-ms-input-placeholder {
   font-family: "Montserrat", sans-serif;
-  color: #02423F;
+  color: #EF233C;
   opacity: 0.2;
 }
 
 input::placeholder, textarea::placeholder {
   font-family: "Montserrat", sans-serif;
-  color: #02423F;
+  color: #EF233C;
   opacity: 0.2;
 }
 
@@ -323,54 +323,36 @@ input::placeholder, textarea::placeholder {
 header {
   padding: 0;
   margin: 0;
-  background-color: #F0E9ED;
+  background-color: #edf2f4;
   min-height: 100vh;
+  border-top: 80px solid #2B2D42;
+  border-bottom: 80px solid #2B2D42;
 }
 
 main {
   padding: 0;
   margin: 0;
-  background-color: #110506;
-  color: #F0E9ED;
+  background-color: #2B2D42;
+  color: #edf2f4;
+  background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
 }
 
-.slick-initialized .slick-slide {
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
-}
-
-.slick-dots {
-  font-size: 5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.slick-dots li {
-  background-color: #F0E9ED;
-}
-
-.slick-dots li button {
-  border: none;
+.navigation {
+  display: none;
 }
 
 .menuToggle {
   display: none;
   position: fixed;
-  top: 50px;
-  left: 50px;
+  top: 30px;
+  left: 30px;
   z-index: 1;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
 }
 
 .menuToggle a {
   text-decoration: none;
-  color: #02423F;
-  font-family: "Libre Baskerville", serif;
+  color: #2B2D42;
+  font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   -webkit-transition: color 0.3s ease;
@@ -379,7 +361,7 @@ main {
 
 .menuToggle a:hover,
 .menuToggle a:active {
-  color: #630304;
+  color: #c20114;
 }
 
 .menuToggle input {
@@ -395,22 +377,19 @@ main {
 }
 
 .menuToggle span {
+  width: 50px;
+  height: 6px;
   display: block;
-  width: 33px;
-  height: 4px;
   margin-bottom: 5px;
   position: relative;
-  background: #F0E9ED;
-  -webkit-box-shadow: 2px 2px #110506;
-          box-shadow: 2px 2px #110506;
-  border-radius: 3px;
+  background: #c20114;
   z-index: 3;
-  -webkit-transform-origin: 4px 0px;
-          transform-origin: 4px 0px;
-  -webkit-transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-  transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  -webkit-transform-origin: 2px 0px;
+          transform-origin: 2px 0px;
+  -webkit-transition: opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
 }
 
 .menuToggle span:first-child {
@@ -425,31 +404,42 @@ main {
 
 .menuToggle input:checked ~ span {
   opacity: 1;
-  -webkit-transform: rotate(45deg) translate(-2px, -1px);
-          transform: rotate(45deg) translate(-2px, -1px);
-  background: #110506;
+  -webkit-transform: rotate(45deg) translate(-6px, -10px);
+          transform: rotate(45deg) translate(-6px, -10px);
+  background: #c20114;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 
 .menuToggle input:checked ~ span:nth-last-child(3) {
   opacity: 0;
-  -webkit-transform: rotate(0deg) scale(0.2, 0.2);
-          transform: rotate(0deg) scale(0.2, 0.2);
+  -webkit-transform: rotate(0deg) translate(0px, 0px);
+          transform: rotate(0deg) translate(0px, 0px);
 }
 
 .menuToggle input:checked ~ span:nth-last-child(2) {
-  -webkit-transform: rotate(-45deg) translate(0, -1px);
-          transform: rotate(-45deg) translate(0, -1px);
+  -webkit-transform: rotate(-45deg) translate(2px, 0px);
+          transform: rotate(-45deg) translate(2px, 0px);
 }
 
 .menuToggle .menu {
   position: absolute;
-  width: 100vw;
+  top: -50px;
+  width: 120vw;
+  height: 120vh;
   margin: -100px 0 0 -50px;
-  padding: 50px;
-  padding-top: 125px;
-  background-color: #F0E9ED;
+  padding: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgba(237, 242, 244, 0.9);
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   -webkit-transform-origin: 0% 0%;
@@ -463,8 +453,11 @@ main {
 }
 
 .menuToggle .menu li {
+  width: 70%;
   padding: 10px 0;
+  margin-top: 20px;
   font-size: 22px;
+  border-bottom: 1px solid #c20114;
 }
 
 .menuToggle input:checked ~ ul {
@@ -476,7 +469,7 @@ header {
   position: relative;
 }
 
-header .headerContentContainer {
+header .headerContentContainer .headings {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -491,7 +484,7 @@ header .headerContentContainer {
   bottom: 45%;
 }
 
-header .headerContentContainer .mainHeading {
+header .headerContentContainer .headings .mainHeading {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -500,34 +493,74 @@ header .headerContentContainer .mainHeading {
       -ms-flex-direction: column;
           flex-direction: column;
   padding-right: 30px;
-  border-right: 3px solid #02423F;
+  border-right: 3px solid #c20114;
 }
 
-header .headerContentContainer .mainHeading h1 {
+header .headerContentContainer .headings .mainHeading h1 {
   font-size: 9rem;
   text-transform: uppercase;
-  color: #110506;
+  color: #2B2D42;
+  text-shadow: 2px 2px #edf2f4;
 }
 
-header .headerContentContainer .mainHeading span {
+header .headerContentContainer .headings .mainHeading span {
   font-size: 3.9rem;
   font-weight: 500;
-  color: #630304;
+  color: #edf2f4;
+  text-shadow: 1px 1px #c20114;
 }
 
-header .headerContentContainer .secondaryHeading {
+header .headerContentContainer .headings .secondaryHeading {
   padding-left: 30px;
 }
 
-header .headerContentContainer .secondaryHeading h2 {
-  color: #110506;
+header .headerContentContainer .headings .secondaryHeading h2 {
+  color: #2B2D42;
   font-size: 8rem;
   font-style: italic;
   font-weight: 400;
+  text-shadow: 2px 2px #edf2f4;
+}
+
+header .headerContentContainer .lpNavigation {
+  width: 50%;
+  position: absolute;
+  text-align: center;
+  bottom: 25%;
+  left: 36%;
+}
+
+header .headerContentContainer .lpNavigation ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+header .headerContentContainer .lpNavigation ul li a {
+  font-size: 2rem;
+  color: #2B2D42;
+  font-weight: 500;
+  text-transform: uppercase;
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+  padding-right: 5px;
+  border-right: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+}
+
+header .headerContentContainer .lpNavigation ul li a:hover, header .headerContentContainer .lpNavigation ul li a:focus {
+  border-right: 3px solid #c20114;
+  border-bottom: 3px solid #c20114;
 }
 
 header .scrollToContent {
-  opacity: 0.5;
   position: absolute;
   top: 92%;
   left: 50%;
@@ -543,7 +576,9 @@ header .scrollToContent {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #02423F;
+  color: #2B2D42;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
 }
 
 header .scrollToContent p {
@@ -556,120 +591,131 @@ header .scrollToContent p {
 
 header .scrollToContent .fa-chevron-down {
   margin-top: 5px;
-  font-size: 3rem;
+  font-size: 1.5rem;
 }
 
 header .scrollToContent p {
-  font-weight: 700;
+  font-size: 1.4rem;
 }
 
-header .scrollToContent .fa-chevron-down {
-  color: #02423F;
+header .scrollToContent:hover {
+  color: #c20114;
+}
+
+header::before {
+  content: "";
+  opacity: 0.35;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/background.jpg");
+  -webkit-filter: grayscale(90%);
+          filter: grayscale(90%);
 }
 
 .about {
   min-height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
+  padding: 100px 0px;
 }
 
-.about .aboutContentContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.about .aboutContentContainer .aboutHeading h3 {
+.about h3 {
+  text-align: right;
+  padding: 0 20px 20px 0px;
   font-size: 6rem;
   font-weight: 700;
   text-transform: uppercase;
-  margin-top: -100px;
-  text-shadow: 0px 60px rgba(2, 66, 63, 0.5), 0px 120px rgba(99, 3, 4, 0.5);
+  border-right: 8px solid #c20114;
+  border-bottom: 8px solid #c20114;
 }
 
-.about .aboutContentContainer .aboutText ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+.about .aboutText {
+  margin-top: 100px;
 }
 
-.about .aboutContentContainer .aboutText ul li {
-  margin: 15px 0px;
-}
-
-.about .aboutContentContainer .aboutText ul li p {
+.about .aboutText ul li {
+  list-style: square;
+  font-size: 2.5rem;
+  color: #EF233C;
   line-height: 1.7;
+  margin-bottom: 45px;
+}
+
+.about .aboutText ul li p {
   font-size: 2rem;
-  letter-spacing: 2px;
-}
-
-.about .aboutContentContainer .aboutLine {
-  display: inline-block;
-  width: 4px;
-  height: 500px;
-  background-color: #F0E9ED;
-  margin: 0px 50px;
-}
-
-.about .scrollToSkills {
-  opacity: 0.5;
-  position: absolute;
-  top: 92%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: #F0E9ED;
-}
-
-.about .scrollToSkills p {
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
+  color: #edf2f4;
   font-family: "Montserrat", sans-serif;
-  text-transform: uppercase;
-  font-size: 2rem;
-  font-weight: 500;
-}
-
-.about .scrollToSkills .fa-chevron-down {
-  margin-top: 5px;
-  font-size: 3rem;
-}
-
-.about .scrollToSkills p {
-  font-weight: 700;
-}
-
-.about .scrollToSkills .fa-chevron-down {
-  color: #F0E9ED;
 }
 
 .skillset {
   min-height: 100vh;
+  padding-top: 100px;
+  background-color: #edf2f4;
+  color: #2B2D42;
+}
+
+.skillset h3 {
+  text-align: right;
+  padding: 0 20px 20px 0px;
+  font-size: 6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-right: 8px solid #c20114;
+  border-bottom: 8px solid #c20114;
+}
+
+.skillset .skillsContainer {
+  margin-top: 50px;
+}
+
+.skillset .skillsContainer h4 {
+  font-size: 3rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #c20114;
+}
+
+.skillset .skillsContainer .comp, .skillset .skillsContainer .current {
+  margin-bottom: 50px;
+}
+
+.skillset .skillsContainer .comp .skillList li, .skillset .skillsContainer .current .skillList li {
+  text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
 }
 
-.skillset .skillsetContentContainer {
+.skillset .skillsContainer .comp .skillList li p, .skillset .skillsContainer .current .skillList li p {
+  font-size: 1.7rem;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.skillset .skillsContainer .comp .skillList li i, .skillset .skillsContainer .current .skillList li i {
+  text-shadow: 1.5px 1.5px #EF233C;
+  font-size: 5rem;
+}
+
+.skillset .skillsContainer .comp .current, .skillset .skillsContainer .current .current {
+  margin-top: 50px;
+  padding-bottom: 50px;
+}
+
+.skillset .skillsContainer .comp .current .skillList, .skillset .skillsContainer .current .current .skillList {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -677,157 +723,43 @@ header .scrollToContent .fa-chevron-down {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0px 20px;
 }
 
-.skillset .skillsetContentContainer .skillList h4 {
-  font-size: 3rem;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: 1 / 1 / 2 / 3;
-  letter-spacing: 2px;
-  font-weight: 400;
-  text-transform: uppercase;
-}
-
-.skillset .skillsetContentContainer .skillList h4 .fatText {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-}
-
-.skillset .skillsetContentContainer .skillList h4 .computers {
-  text-shadow: 3px 3px #630304;
-}
-
-.skillset .skillsetContentContainer .skillList h4 .humans {
-  text-shadow: 3px 3px #02423F;
-}
-
-.skillset .skillsetContentContainer .skillList .codeSkills, .skillset .skillsetContentContainer .skillList .humanSkills {
-  margin: 60px 0px;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-}
-
-.skillset .skillsetContentContainer .skillList .codeSkills ul, .skillset .skillsetContentContainer .skillList .humanSkills ul {
-  line-height: 2;
-  margin: 10px 50px 0px 0px;
-}
-
-.skillset .skillsetContentContainer .skillList .codeSkills ul li, .skillset .skillsetContentContainer .skillList .humanSkills ul li {
-  font-weight: 700;
-  font-size: 2rem;
-  list-style: disclosure-closed;
-  text-transform: uppercase;
-  margin-left: 24px;
-}
-
-.skillset .skillsetContentContainer .skillList .codeSkills ul .firstColumn, .skillset .skillsetContentContainer .skillList .humanSkills ul .firstColumn {
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-area: 2 / 1 / 3 / 2;
-}
-
-.skillset .skillsetContentContainer .skillList .codeSkills ul .secondColumn, .skillset .skillsetContentContainer .skillList .humanSkills ul .secondColumn {
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-area: 2 / 2 / 3 / 3;
-}
-
-.skillset .skillsetContentContainer .skillsetHeading {
-  font-size: 6rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  margin-top: -100px;
-  text-shadow: 0px 70px rgba(2, 66, 63, 0.5), 0px 140px rgba(99, 3, 4, 0.5);
-}
-
-.skillset .skillsetContentContainer .skillsetLine {
-  display: inline-block;
-  width: 1.5px;
-  height: 400px;
-  background-color: #F0E9ED;
-  margin: 0px 50px;
-  z-index: 0;
-}
-
-.skillset .scrollToProjects {
-  opacity: 0.5;
-  position: absolute;
-  top: 92%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+.skillset .skillsContainer .comp .compCont {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: #F0E9ED;
-  top: 95%;
-}
-
-.skillset .scrollToProjects p {
-  letter-spacing: 2px;
-  font-family: "Montserrat", sans-serif;
-  text-transform: uppercase;
-  font-size: 2rem;
-  font-weight: 500;
-}
-
-.skillset .scrollToProjects .fa-chevron-down {
-  margin-top: 5px;
-  font-size: 3rem;
-}
-
-.skillset .scrollToProjects p {
-  font-weight: 700;
-}
-
-.skillset .scrollToProjects .fa-chevron-down {
-  color: #F0E9ED;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .portfolio {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  padding: 100px 0px;
   min-height: 100vh;
 }
 
 .portfolio h3 {
-  margin: 0;
-  font-size: 2rem;
+  text-align: right;
+  padding: 0 20px 20px 0px;
+  font-size: 6rem;
+  font-weight: 700;
   text-transform: uppercase;
-  font-family: "Libre Baskerville", serif;
-  margin-bottom: 20px;
-  text-align: center;
+  border-right: 8px solid #c20114;
+  border-bottom: 8px solid #c20114;
 }
 
 .portfolio .gallery .projectContent {
-  height: 800px;
-  cursor: -webkit-grab;
-  cursor: grab;
+  min-height: 80vh;
+  margin: 20px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -835,95 +767,119 @@ header .scrollToContent .fa-chevron-down {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0px 20px;
+}
+
+.portfolio .gallery .projectContent .projectText {
+  max-width: 85%;
+  width: 85%;
+  margin-right: 50px;
 }
 
 .portfolio .gallery .projectContent .projectText .projectDescription h4 {
-  font-size: 5rem;
-  font-family: "Libre Baskerville", serif;
-  font-family: "Montserrat", sans-serif;
+  text-align: right;
+  font-size: 4rem;
+  padding: 0px 20px 15px 0px;
   text-transform: uppercase;
-  font-weight: 700;
-  text-shadow: 0px 20px rgba(2, 66, 63, 0.5), 0px 40px rgba(99, 3, 4, 0.5);
+  text-shadow: 2px 2px #c20114;
+  border-right: 3px solid #c20114;
+  border-bottom: 3px solid #c20114;
+}
+
+.portfolio .gallery .projectContent .projectText .projectDescription span {
+  text-align: right;
+  font-size: 5rem;
+  margin-right: 20px;
 }
 
 .portfolio .gallery .projectContent .projectText .projectDescription h5 {
-  margin: 40px 0px 35px 0px;
-  font-size: 2.3rem;
-  letter-spacing: 1px;
+  text-align: right;
+  margin: 15px 0px;
+  padding-bottom: 15px;
   font-family: "Libre Baskerville", serif;
-  font-weight: 400;
   font-style: italic;
-}
-
-.portfolio .gallery .projectContent .projectText .projectDescription .tools {
-  font-size: 2.2rem;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  margin-bottom: 20px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-size: 1.9rem;
 }
 
 .portfolio .gallery .projectContent .projectText .projectDescription p {
-  letter-spacing: 1.5px;
-  line-height: 1.5;
-  font-size: 1.8rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
   margin-bottom: 15px;
+  letter-spacing: 1px;
+  line-height: 1.7;
+}
+
+.portfolio .gallery .projectContent .projectText .projectDescription .tools {
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin-bottom: 25px;
 }
 
 .portfolio .gallery .projectContent .projectText .projectLinks {
-  font-size: 2rem;
-  text-transform: uppercase;
-  font-weight: 700;
   margin-top: 50px;
 }
 
 .portfolio .gallery .projectContent .projectText .projectLinks a {
-  margin-right: 30px;
-  color: #F0E9ED;
-  padding: 10px;
-  -webkit-box-shadow: 3px 3px rgba(240, 233, 237, 0.5);
-          box-shadow: 3px 3px rgba(240, 233, 237, 0.5);
+  margin-right: 50px;
+  background-color: #edf2f4;
+  text-transform: uppercase;
+  color: #c20114;
+  font-weight: 500;
+  font-size: 2.5rem;
+  padding: 5px 10px;
+  text-align: center;
+  -webkit-box-shadow: 0px 0px #c20114;
+          box-shadow: 0px 0px #c20114;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+  border: 6px solid transparent;
 }
 
-.portfolio .gallery .projectContent .projectText .projectLinks .github {
-  background-color: #630304;
+.portfolio .gallery .projectContent .projectText .projectLinks a:hover, .portfolio .gallery .projectContent .projectText .projectLinks a:focus {
+  -webkit-box-shadow: 6px 6px #EF233C;
+          box-shadow: 6px 6px #EF233C;
+  border: 6px solid #EF233C;
 }
 
-.portfolio .gallery .projectContent .projectText .projectLinks .viewLive {
-  background-color: #02423F;
+.portfolio .gallery .projectContent .projectText .projectLinks a:active {
+  -webkit-box-shadow: 4px 4px #c20114;
+          box-shadow: 4px 4px #c20114;
 }
 
 .portfolio .gallery .projectContent .projectImg {
-  width: 150%;
+  margin-left: 20px;
 }
 
-.portfolio .gallery .projectContent .projectsLine {
-  display: inline-block;
-  width: 5px;
-  height: 500px;
-  background-color: #F0E9ED;
-  margin: 0px 50px;
+.portfolio .gallery .reverse {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
 
-.portfolio .direction {
-  margin-top: 10px;
+.portfolio .gallery .reverse .projectText {
+  margin-left: 50px;
 }
 
-.portfolio .direction h3 {
-  font-size: 1.7rem;
-  opacity: 0.5;
+.contactInfo {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  color: #2B2D42;
+  background-color: #edf2f4;
+  background-image: url("https://www.transparenttextures.com/patterns/foggy-birds.png");
 }
 
-.portfolio .scrollToContact {
-  opacity: 0.5;
-  position: absolute;
-  top: 92%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+.contactInfo .contactHeadings {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -931,85 +887,56 @@ header .scrollToContent .fa-chevron-down {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: #F0E9ED;
-  top: 95%;
 }
 
-.portfolio .scrollToContact p {
-  letter-spacing: 2px;
-  font-family: "Montserrat", sans-serif;
-  text-transform: uppercase;
-  font-size: 2rem;
-  font-weight: 500;
-}
-
-.portfolio .scrollToContact .fa-chevron-down {
-  margin-top: 5px;
-  font-size: 3rem;
-}
-
-.portfolio .scrollToContact p {
+.contactInfo .contactHeadings h3 {
+  text-align: right;
+  padding: 0 20px 20px 0px;
+  font-size: 6rem;
   font-weight: 700;
+  text-transform: uppercase;
+  border-right: 8px solid #c20114;
+  border-bottom: 8px solid #c20114;
 }
 
-.portfolio .scrollToContact .fa-chevron-down {
-  color: #F0E9ED;
+.contactInfo .contactHeadings p {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 70%;
+  text-align: center;
+  margin-top: 40px;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  line-height: 1.7;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #c20114;
 }
 
-footer {
-  min-height: 100vh;
-  background-color: #F0E9ED;
+.contactInfo .means {
+  margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
-}
-
-footer .footerHeadings {
-  margin-top: 80px;
-  text-align: center;
-}
-
-footer .footerHeadings h3 {
-  display: inline-block;
-  max-width: 55%;
-  font-family: "Libre Baskerville", serif;
-  text-transform: uppercase;
-  font-size: 7rem;
-  font-weight: 400;
-  border-bottom: 2px solid #630304;
-}
-
-footer .footerHeadings p {
-  display: inline-block;
-  max-width: 90%;
-  line-height: 1.5;
-  margin: 20px 0px;
-  font-style: italic;
-  font-size: 3rem;
-}
-
-footer .means {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 20px;
 }
 
-footer .means .contactMe form {
+.contactInfo .means .contactMe {
+  width: 50%;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #2B2D42;
+}
+
+.contactInfo .means .contactMe form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1017,370 +944,530 @@ footer .means .contactMe form {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 500px;
 }
 
-footer .means .contactMe form label {
-  font-size: 2rem;
-  font-style: italic;
-  color: #110506;
-  margin: 10px 0px;
-}
-
-footer .means .contactMe form input, footer .means .contactMe form textarea {
-  -webkit-box-shadow: 3px 3px rgba(2, 66, 63, 0.5);
-          box-shadow: 3px 3px rgba(2, 66, 63, 0.5);
-  border: 1px solid #630304;
-  padding: 10px;
-  font-size: 2rem;
-  font-family: "Libre Baskerville", serif;
-  letter-spacing: 1.5px;
-  line-height: 1.5;
-  font-weight: 500;
-  color: #110506;
-}
-
-footer .means .contactMe form input:focus, footer .means .contactMe form textarea:focus {
-  border: 5px solid #630304;
-}
-
-footer .means .contactMe form input {
-  height: 40px;
-}
-
-footer .means .contactMe form textarea {
-  resize: none;
-  height: 250px;
-}
-
-footer .means .contactMe form button {
-  -webkit-box-shadow: 3px 3px rgba(2, 66, 63, 0.5);
-          box-shadow: 3px 3px rgba(2, 66, 63, 0.5);
-  border: 1px solid #630304;
-  text-transform: uppercase;
-  background-color: white;
-  font-size: 2.5rem;
-  font-family: "Libre Baskerville", serif;
-  padding: 10px;
-  margin-top: 10px;
-}
-
-footer .means .socials {
-  text-align: right;
-}
-
-footer .means .socials h4 {
-  text-transform: uppercase;
-  font-size: 4rem;
-  font-family: "Libre Baskerville", serif;
+.contactInfo .means .contactMe form label {
+  font-size: 1.7rem;
   margin-bottom: 10px;
+  margin-top: 15px;
+  color: #2B2D42;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
 }
 
-footer .means .socials p {
-  font-size: 3rem;
+.contactInfo .means .contactMe form input, .contactInfo .means .contactMe form textarea {
+  font-size: 1.7rem;
+  padding: 5px 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+  -webkit-box-shadow: 2px 2px transparent;
+          box-shadow: 2px 2px transparent;
+  -webkit-box-shadow: 0px 0px #2B2D42;
+          box-shadow: 0px 0px #2B2D42;
+  transition: 0.3s all ease;
+  border: 3px solid transparent;
 }
 
-footer .means .socials ul {
+.contactInfo .means .contactMe form input:focus, .contactInfo .means .contactMe form textarea:focus {
+  -webkit-box-shadow: 5px 5px #2B2D42;
+          box-shadow: 5px 5px #2B2D42;
+  border: 3px solid #2B2D42;
+}
+
+.contactInfo .means .contactMe form textarea {
+  resize: none;
+  min-height: 150px;
+  max-height: 300px;
+}
+
+.contactInfo .means .contactMe form button {
+  width: 30%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  cursor: pointer;
+  margin-top: 20px;
+  background-color: #edf2f4;
+  color: #2B2D42;
+  padding: 10px 20px;
+  font-size: 2rem;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  -webkit-box-shadow: 3px 3px #EF233C;
+          box-shadow: 3px 3px #EF233C;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+  border: 1px solid #EF233C;
+}
+
+.contactInfo .means .contactMe form button:hover, .contactInfo .means .contactMe form button:focus {
+  padding: 15px 20px;
+  -webkit-box-shadow: 8px 8px #EF233C;
+          box-shadow: 8px 8px #EF233C;
+}
+
+.contactInfo .means .contactMe form button:active {
+  -webkit-box-shadow: 3px 3px #EF233C;
+          box-shadow: 3px 3px #EF233C;
+}
+
+.contactInfo .means .socials {
+  margin-top: 25px;
+  width: 50%;
+  text-align: center;
+}
+
+.contactInfo .means .socials h4 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.contactInfo .means .socials .gmail {
+  font-size: 2rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #2B2D42;
+  padding-bottom: 5px;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+  border-bottom: 1px solid transparent;
+}
+
+.contactInfo .means .socials .gmail:hover {
+  border-bottom: 1px solid #c20114;
+}
+
+.contactInfo .means .socials .socialLinks {
+  margin-top: 20px;
+  margin-bottom: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
-  margin: 50px 0px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-footer .means .socials ul li {
-  font-size: 14rem;
-  margin-right: 30px;
-}
-
-footer .means .socials ul li a {
-  color: #110506;
-}
-
-footer .means .socials ul li:nth-child(4) {
-  margin: 0;
-}
-
-footer .copyright {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 50px;
-  padding-top: 8px;
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  color: #F0E9ED;
+.contactInfo .means .socials .socialLinks li {
   text-align: center;
-  background-color: #110506;
+  margin-right: 40px;
 }
 
-footer .copyright p:nth-child(1) {
-  margin-bottom: 10px;
+.contactInfo .means .socials .socialLinks li a {
+  color: #2B2D42;
+  text-shadow: 1px 1px #c20114;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
 }
 
-footer .up {
-  font-size: 3.5rem;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #630304;
+.contactInfo .means .socials .socialLinks li a i {
+  font-size: 4rem;
 }
 
-@media (max-width: 1630px) {
-  .slick-prev {
-    left: -14%;
+.contactInfo .means .socials .socialLinks li a:hover, .contactInfo .means .socials .socialLinks li a:focus {
+  text-shadow: 3px 3px #c20114;
+}
+
+.contactInfo .means .socials .socialLinks li:nth-child(4) {
+  margin-right: 0px;
+}
+
+.contactInfo .means .socials .up {
+  color: #2B2D42;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.contactInfo .means .socials .up:hover, .contactInfo .means .socials .up:focus {
+  color: #c20114;
+}
+
+footer {
+  min-height: 30px;
+  background-color: #2B2D42;
+  color: #edf2f4;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+footer p {
+  letter-spacing: 1px;
+  padding: 10px;
+}
+
+@media (max-width: 1435px) {
+  header .headerContentContainer .headings .mainHeading h1 {
+    font-size: 7rem;
   }
-  .slick-next {
-    right: -11%;
+  header .headerContentContainer .headings .mainHeading span {
+    font-size: 2.9rem;
   }
-  .portfolio .gallery .projectContent .projectText .projectDescription h4 {
-    font-size: 4rem;
+  header .headerContentContainer .headings .secondaryHeading h2 {
+    font-size: 6rem;
+  }
+  header .headerContentContainer .lpNavigation {
+    width: 50%;
+    left: 25%;
+  }
+  .portfolio .gallery .projectContent .projectImg {
+    width: 80%;
   }
   .portfolio .gallery .projectContent .projectText .projectDescription p {
     font-size: 1.6rem;
   }
-  footer .means .socials ul li {
-    font-size: 10rem;
-    margin-right: 30px;
-  }
-  footer .footerHeadings p {
+  .portfolio .gallery .projectContent .projectText .projectLinks a {
     font-size: 2rem;
+    border: 3px solid transparent;
+  }
+  .portfolio .gallery .projectContent .projectText .projectLinks a:focus,
+  .portfolio .gallery .projectContent .projectText .projectLinks a:hover {
+    border: 3px solid #EF233C;
   }
 }
 
-@media (max-width: 1430px) {
-  header .headerContentContainer {
-    bottom: 35%;
+@media (max-width: 1188px) {
+  header::before {
+    background-repeat: no-repeat;
+    background-size: 140%;
+  }
+  header .headerContentContainer .headings {
+    left: 50%;
+    bottom: 30%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header .headerContentContainer .headings .secondaryHeading h2 {
+    font-size: 5rem;
+  }
+  header .headerContentContainer .headings .mainHeading {
+    padding: 0px;
+    border: none;
+  }
+  header .headerContentContainer .headings .secondaryHeading {
+    padding: 0px;
+    text-align: center;
+  }
+  header .headerContentContainer .headings .mainHeading h1 {
+    font-size: 8rem;
+  }
+  header .headerContentContainer .headings .mainHeading span {
+    text-align: center;
+    font-size: 2.5rem;
+    border-bottom: 2px solid #c20114;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+  header .headerContentContainer .lpNavigation {
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
   }
-  footer .footerHeadings h3 {
-    font-size: 6rem;
+  header .headerContentContainer .lpNavigation ul {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
-  footer .means .socials h4 {
+  header .headerContentContainer .lpNavigation ul li a {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  .portfolio .gallery .projectContent .projectText .projectDescription h4 {
     font-size: 3rem;
   }
-  footer .means .socials p {
+  .portfolio .gallery .projectContent .projectText .projectDescription h5 {
+    font-size: 1.5rem;
+  }
+  .portfolio .gallery .projectContent .projectText .projectDescription span {
+    font-size: 3.5rem;
+  }
+  .portfolio .gallery .projectContent .projectText .projectLinks a {
+    font-size: 1.7rem;
+    margin-right: 25px;
+  }
+  .portfolio .gallery .projectContent .projectText .projectDescription p {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 1043px) {
+  header .headerContentContainer .headings .secondaryHeading h2 {
+    font-size: 4rem;
+  }
+  .about .aboutText ul li p {
+    font-size: 1.7rem;
+    letter-spacing: 0.5px;
+  }
+  .fatText {
+    letter-spacing: 1px;
+  }
+  .skillset .skillsContainer h4 {
     font-size: 2.5rem;
   }
-  footer .means .socials ul {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-    -ms-grid-rows: (1fr)[2];
-        grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    text-align: center;
+  .skillset .skillsContainer .comp .skillList li i, .skillset .skillsContainer .current .skillList li i {
+    font-size: 4rem;
   }
-  footer .means .socials ul li, footer .means .socials ul li:nth-child(4) {
-    font-size: 12rem;
-    margin-top: 20px;
-    margin-right: 0;
-    position: relative;
+  .skillset .skillsContainer .comp .skillList li p, .skillset .skillsContainer .current .skillList li p {
+    font-size: 1.5rem;
   }
-}
-
-@media (max-width: 1308px) {
-  button.slick-prev.slick-arrow {
-    display: none;
-  }
-  button.slick-next.slick-arrow {
-    display: none;
-  }
-  .wrapper {
-    width: 80%;
-  }
-  .portfolio h3 {
-    opacity: 2;
-  }
-  .portfolio .lowWidth {
-    display: block;
-    opacity: 1;
-  }
-  .portfolio .extra {
-    display: none;
-  }
-  .portfolio .gallery .projectContent .projectImg {
-    width: 200%;
-  }
-  footer .means .contactMe form textarea {
-    height: 200px;
-  }
-}
-
-@media (max-width: 1265px) {
-  button.slick-prev.slick-arrow {
-    display: none;
-  }
-  button.slick-next.slick-arrow {
-    display: none;
-  }
-  .about .aboutContentContainer .aboutHeading h3,
-  .skillset .skillsetContentContainer .skillsetHeading h3 {
-    font-size: 5rem;
-  }
-  .about .aboutContentContainer .aboutText ul li p {
-    font-size: 1.7rem;
-  }
-  .skillset .skillsetContentContainer .skillList .codeSkills ul li,
-  .skillset .skillsetContentContainer .skillList .humanSkills ul li {
-    font-size: 1.7rem;
-  }
-}
-
-@media (max-width: 1230px) {
-  button.slick-prev.slick-arrow {
-    display: none;
-  }
-  button.slick-next.slick-arrow {
-    display: none;
-  }
-  .projectImg {
-    display: none;
-  }
-  .portfolio .gallery .projectContent .projectsLine {
-    display: none;
-  }
-  footer .footerHeadings h3 {
-    font-size: 4.5rem;
-  }
-  footer .footerHeadings p {
-    font-size: 1.8rem;
-    letter-spacing: 1.5px;
-  }
-  footer .means {
-    margin-top: 0px;
-  }
-  footer .means .contactMe form label {
-    font-size: 1.6rem;
-  }
-  footer .means .contactMe form input {
-    height: 35px;
-  }
-  footer .means .contactMe form textarea {
-    height: 150px;
-  }
-  footer .means .contactMe form button {
-    font-size: 1.7rem;
-  }
-  footer .means {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  footer .means .socials {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    text-align: center;
-    margin: 20px;
-  }
-  footer .means .socials ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin: 0;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  footer .means .socials ul li,
-  footer .means .socials ul li:nth-child(4) {
-    font-size: 7rem;
-    margin-right: 15px;
-  }
-}
-
-@media (max-width: 1040px) {
-  button.slick-prev.slick-arrow {
-    display: none;
-  }
-  button.slick-next.slick-arrow {
-    display: none;
-  }
-  button.slick-prev.slick-arrow {
-    display: none;
-  }
-  button.slick-next.slick-arrow {
-    display: none;
-  }
-  .about .aboutContentContainer {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-  }
-  .about .aboutContentContainer .aboutHeading h3 {
-    text-shadow: 0px 30px rgba(2, 66, 63, 0.5), 0px 60px rgba(99, 3, 4, 0.5);
-    border-bottom: 1px solid;
-    padding-bottom: 80px;
-  }
-  .about .aboutContentContainer .aboutText ul {
-    margin-top: 30px;
-  }
-  .about .aboutContentContainer .aboutText ul li {
-    list-style: disclosure-closed;
-    font-size: 2rem;
-  }
-  .about .aboutContentContainer .aboutText ul li p {
-    font-size: 1.9rem;
-  }
-  .about .aboutContentContainer .aboutLine {
-    display: none;
-  }
-  .skillset {
-    padding-top: 70px;
-  }
-  .skillset .skillsetContentContainer .skillList h4 {
-    font-size: 2.5rem;
-  }
-  .skillset .skillsetContentContainer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  .portfolio .gallery .projectContent {
+    min-height: 85vh;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+    -webkit-box-pack: initial;
+        -ms-flex-pack: initial;
+            justify-content: initial;
+  }
+  .portfolio .gallery .projectContent .projectImg {
+    width: 50%;
+  }
+  .portfolio .gallery .projectContent .projectText {
+    margin-top: 50px;
+  }
+  .contactInfo .means .socials {
+    width: 100%;
+  }
+  .contactInfo .means .socials .gmail {
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 935px) {
+  header .headerContentContainer .lpNavigation {
+    display: none;
+  }
+  .navigation {
+    display: block;
+  }
+  .menuToggle {
+    display: block;
+  }
+  .skillset .skillsContainer h4 {
+    font-size: 2rem;
+  }
+  .contactInfo .contactHeadings p {
+    font-size: 1.5rem;
+  }
+  .contactInfo .means .contactMe {
+    width: 80%;
+  }
+}
+
+@media (max-width: 883px) {
+  header::before {
+    background-repeat: no-repeat;
+    background-size: 180%;
+  }
+  header .headerContentContainer .headings {
+    bottom: 20%;
+  }
+  header .headerContentContainer .headings .secondaryHeading h2 {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 730px) {
+  .about h3, .skillset h3, .portfolio h3, .contactInfo .contactHeadings h3 {
+    font-size: 5rem;
+  }
+  .skillset .skillsContainer h4 {
+    font-size: 1.7rem;
+  }
+  .skillset .skillsContainer .comp .skillList li i, .skillset .skillsContainer .current .skillList li i {
+    font-size: 3rem;
+    text-shadow: 1px solid #c20114;
+  }
+  .skillset .skillsContainer .comp .compCont {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .skillset .skillsContainer .comp .skillList {
+    margin-top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .skillset .skillsContainer .comp .skillList li {
+    margin-right: 20px;
+  }
+  .portfolio .gallery .projectContent {
+    min-height: 90vh;
+  }
+  .portfolio .gallery .projectContent .projectImg {
+    width: 70%;
+  }
+  .menuToggle span {
+    width: 33px;
+    height: 4px;
+    margin-bottom: 6px;
+  }
+  .menuToggle input:checked ~ span {
+    -webkit-transform: rotate(45deg) translate(0px, 0px);
+            transform: rotate(45deg) translate(0px, 0px);
+  }
+  .menuToggle input:checked ~ span:nth-last-child(2) {
+    -webkit-transform: rotate(-45deg) translate(0px, 0px);
+            transform: rotate(-45deg) translate(0px, 0px);
+  }
+  .menuToggle .menu {
+    padding: 50px;
+  }
+}
+
+@media (max-width: 690px) {
+  header::before {
+    background-size: 250%;
+  }
+  .about .aboutText ul li p {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 610px) {
+  .about h3, .skillset h3, .portfolio h3, .contactInfo .contactHeadings h3 {
+    font-size: 4rem;
+  }
+  .portfolio .gallery .projectContent .projectText .projectDescription h4 {
+    font-size: 2.5rem;
+  }
+  .portfolio .gallery .projectContent .projectText .projectDescription span {
+    font-size: 3rem;
+  }
+  .contactInfo .means .contactMe {
+    width: 100%;
+  }
+  .contactInfo .contactHeadings p {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    text-align: start;
+    width: 100%;
+  }
+}
+
+@media (max-width: 537px) {
+  header .scrollToContent p {
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+  .portfolio .gallery .projectContent .projectText .projectLinks a {
+    font-size: 1.5rem;
+    padding: 3px 5px;
+  }
+}
+
+@media (max-width: 510px) {
+  header::before {
+    background-size: 350%;
+  }
+  .about .aboutText ul li {
+    font-size: 1.5rem;
+  }
+  .about .aboutText ul li p {
+    font-weight: 500;
+    font-size: 1.5rem;
+  }
+  .skillset .skillsContainer .comp .skillList li p, .skillset .skillsContainer .current .skillList li p {
+    font-size: 1rem;
+  }
+  .portfolio .gallery .projectContent .projectText {
+    margin-right: 0px;
+    width: 100%;
+    max-width: 100%;
+  }
+  .portfolio .gallery .projectContent {
+    margin: 0px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
   }
-  .skillset .skillsetContentContainer .skillsetHeading {
-    text-shadow: 0px 30px rgba(2, 66, 63, 0.5), 0px 60px rgba(99, 3, 4, 0.5);
-    border-bottom: 1px solid;
-    padding-bottom: 80px;
+  .contactInfo .means .contactMe form button {
+    font-size: 1.5rem;
   }
-  .skillset .skillsetContentContainer .skillList .codeSkills, .skillset .skillsetContentContainer .skillList .humanSkills {
-    margin-top: 30px;
+}
+
+@media (max-width: 481px) {
+  header .scrollToContent p {
+    width: 60%;
+    font-size: 1rem;
+    text-align: center;
   }
-  .skillset .skillsetContentContainer .skillList h4 {
-    font-size: 3.5rem;
+  .menuToggle {
+    top: 15px;
+    left: 15px;
   }
-  .skillset .skillsetContentContainer .skillList .codeSkills ul, .skillset .skillsetContentContainer .skillList .humanSkills ul {
+  .contactInfo .means .socials .gmail {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+  }
+  .contactInfo .means .socials .socialLinks li a i {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 410px) {
+  header::before {
+    background-size: 370%;
+  }
+  header .headerContentContainer .headings .mainHeading h1 {
+    font-size: 6.5rem;
+  }
+  header .headerContentContainer .headings .secondaryHeading h2 {
+    font-size: 4rem;
+  }
+  .about h3, .skillset h3, .portfolio h3, .contactInfo .contactHeadings h3 {
+    font-size: 3rem;
+  }
+  .skillset .skillsContainer .comp .skillList li i, .skillset .skillsContainer .current .skillList li i {
+    font-size: 2.2rem;
+    text-shadow: none;
+  }
+  .skillset .skillsContainer .comp .skillList li p, .skillset .skillsContainer .current .skillList li p {
+    font-size: 0.9rem;
+  }
+  .skillset .skillsContainer .comp .skillList li:nth-child(4) {
+    margin: 0px;
+  }
+  .skillset .skillsContainer .comp .current .skillList {
+    padding: 0;
+  }
+  .portfolio .gallery .projectContent .projectImg {
+    width: 100%;
+  }
+  .portfolio .gallery .projectContent .projectText .projectDescription .tools {
+    font-size: 1.4rem;
+  }
+  .portfolio .gallery .projectContent .projectText .projectDescription p {
+    font-size: 1.2rem;
+  }
+  .portfolio .gallery .projectContent .projectText .projectLinks {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1388,378 +1475,19 @@ footer .up {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -ms-flex-line-pack: justify;
-        align-content: space-between;
-  }
-  .skillset .skillsetContentContainer .skillList .codeSkills ul li, .skillset .skillsetContentContainer .skillList .humanSkills ul li {
-    font-size: 2rem;
-  }
-  .skillset .skillsetContentContainer .skillsetLine {
-    display: none;
-  }
-  footer .up {
-    margin-top: 10px;
-    font-size: 2.5rem;
-  }
-}
-
-@media (max-width: 890px) {
-  header .headerContentContainer {
-    position: static;
-    -webkit-transform: none;
-            transform: none;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-align: center;
-    -webkit-transform: translate(0%, 120%);
-            transform: translate(0%, 120%);
-  }
-  header .headerContentContainer .mainHeading {
-    border: none;
-    padding: 0;
-  }
-  header .headerContentContainer .secondaryHeading {
-    margin-top: 50px;
-    padding: 0;
-  }
-  header .headerContentContainer .secondaryHeading h2 {
-    font-size: 6rem;
-  }
-  .skillset .skillsetContentContainer .skillList h4 {
-    font-size: 2.9rem;
-  }
-  .skillset .skillsetContentContainer .skillList .codeSkills ul li, .skillset .skillsetContentContainer .skillList .humanSkills ul li {
-    font-size: 1.7rem;
-  }
-  footer .footerHeadings h3 {
-    font-size: 4rem;
-  }
-  footer .footerHeadings p {
-    font-size: 1.6rem;
-    letter-spacing: 1px;
-  }
-  footer .means .socials ul li, footer .means .socials ul li:nth-child(4) {
-    font-size: 5rem;
-    margin-right: 45px;
-  }
-  footer .means .socials ul li:nth-child(4) {
-    margin-right: 0;
-  }
-}
-
-@media (max-width: 800px) {
-  header .headerContentContainer .secondaryHeading h2 {
-    font-size: 5rem;
-  }
-  header .headerContentContainer .secondaryHeading {
-    margin-top: 30px;
-  }
-  .about .aboutContentContainer .aboutText ul li p {
-    font-size: 1.7rem;
-    letter-spacing: normal;
-  }
-  .skillset .skillsetContentContainer .skillList .codeSkills ul li, .skillset .skillsetContentContainer .skillList .humanSkills ul li {
-    font-size: 1.5rem;
-  }
-  .portfolio .gallery .projectContent .projectText .projectDescription h4 {
-    font-size: 3rem;
-  }
-  .portfolio .gallery .projectContent .projectText .projectDescription h5 {
-    font-size: 2rem;
-  }
-  .portfolio .gallery .projectContent .projectText .projectDescription p {
-    font-size: 1.4rem;
-  }
-  .portfolio .gallery .projectContent .projectText .projectDescription .tools {
-    font-size: 1.8rem;
-    font-weight: 700;
-  }
-  footer .footerHeadings h3 {
-    font-size: 3.5rem;
-  }
-  footer .means .contactMe form {
-    width: 350px;
-  }
-}
-
-@media (max-width: 707px) {
-  footer .footerHeadings h3 {
-    max-width: 100%;
-  }
-}
-
-@media (max-width: 621px) {
-  .menuToggle {
-    display: block;
-  }
-  .portfolio .direction h3 {
-    font-size: 1.4rem;
-  }
-  .portfolio .gallery .projectContent .projectText .projectLinks {
     margin-top: 20px;
   }
-  .about .aboutContentContainer .aboutHeading h3,
-  .skillset .skillsetContentContainer .skillsetHeading h3 {
-    display: none;
-  }
-  .about .scrollToSkills,
-  .skillset .scrollToProjects,
-  .portfolio .scrollToContact {
-    display: none;
-  }
-}
-
-@media (max-width: 590px) {
-  .about .aboutContentContainer .aboutHeading h3,
-  .skillset .skillsetContentContainer .skillsetHeading h3 {
-    font-size: 4rem;
-    padding-bottom: 60px;
-  }
-  .about .aboutContentContainer .aboutText ul li p {
-    font-size: 1.5rem;
-  }
-  .about .aboutContentContainer .aboutText ul li {
-    font-size: 1.5rem;
-  }
-  .skillset .skillsetContentContainer .skillsetHeading {
-    padding: 0;
-  }
-  .skillset .skillsetContentContainer .skillList h4 {
-    font-size: 2.5rem;
-  }
-  .skillset .skillsetContentContainer .skillList .codeSkills ul,
-  .skillset .skillsetContentContainer .skillList .humanSkills ul {
-    margin: 10px 30px 0px 0px;
-  }
-  .portfolio .gallery .projectContent {
-    height: 700px;
+  .portfolio .gallery .projectContent .projectText .projectLinks a {
+    font-size: 1.2rem;
+    font-weight: 700;
     margin-top: 20px;
+    margin-right: 0px;
   }
-  .portfolio .gallery .projectContent .projectText .projectDescription h4 {
-    text-shadow: 0px 10px rgba(2, 66, 63, 0.5), 0px 20px rgba(99, 3, 4, 0.5);
-  }
-  .portfolio .gallery .projectContent .projectText .projectDescription h5 {
-    margin: 20px 0px;
-  }
-  .portfolio .gallery .projectContent .projectText .projectDescription p {
-    font-size: 1.35rem;
-  }
-  .portfolio .gallery .projectContent .projectText .projectLinks .github,
-  .portfolio .gallery .projectContent .projectText .projectLinks .viewLive {
-    font-size: 1.6rem;
-    padding: 5px 10px;
-  }
-}
-
-@media (max-width: 515px) {
-  .skillset .skillsetContentContainer .skillList h4 {
-    font-size: 2rem;
-  }
-  .skillset .skillsetContentContainer .skillList .codeSkills ul li, .skillset .skillsetContentContainer .skillList .humanSkills ul li {
-    font-size: 1.2rem;
-  }
-  .portfolio .direction h3 {
-    font-size: 1.2rem;
-  }
-  .portfolio .gallery .projectContent {
-    margin-top: 0;
-    height: 800px;
-  }
-  .portfolio .gallery .projectContent .projectText .projectDescription .tools {
-    font-size: 1.5rem;
-    font-weight: 700;
-  }
-  .portfolio .gallery .projectContent .projectText .projectDescription p {
-    font-size: 1.35rem;
-  }
-  .portfolio .scrollToContact {
-    top: 96%;
-  }
-  footer .means .socials p {
-    font-size: 2rem;
-  }
-  footer .up {
-    font-size: 2rem;
-  }
-}
-
-@media (max-width: 470px) {
-  header .scrollToContent p,
-  .about .scrollToSkills p,
-  .skillset .scrollToProjects p,
-  .portfolio .scrollToContact p {
-    font-size: 1.5rem;
-  }
-  header .headerContentContainer {
-    -webkit-transform: translate(0, 160%);
-            transform: translate(0, 160%);
-  }
-  header .headerContentContainer .mainHeading h1 {
-    font-size: 5rem;
-  }
-  header .headerContentContainer .mainHeading span {
-    font-size: 2rem;
-  }
-  header .headerContentContainer .secondaryHeading h2 {
-    font-size: 4rem;
-  }
-  .about .aboutContentContainer .aboutHeading h3, .skillset .skillsetContentContainer .skillsetHeading h3 {
-    font-size: 2.5rem;
-    text-shadow: 0px 15px rgba(2, 66, 63, 0.5), 0px 30px rgba(99, 3, 4, 0.5);
-    padding-bottom: 30px;
-  }
-  .about .aboutContentContainer .aboutHeading h3 {
-    margin-bottom: 0px;
-  }
-  .about .aboutContentContainer .aboutText ul {
-    margin-top: 0px;
-  }
-  .about .aboutContentContainer .aboutText ul li {
-    list-style: none;
-  }
-  .about .aboutContentContainer .aboutText ul li p {
-    font-size: 1.4rem;
-    letter-spacing: 0.5px;
-  }
-  .skillset .skillsetContentContainer .skillList h4 {
-    display: inline-block;
-    max-width: 70%;
-    font-size: 1.7rem;
-  }
-  .skillset .skillsetContentContainer .skillList .codeSkills ul,
-  .skillset .skillsetContentContainer .skillList .humanSkills ul {
-    margin-right: 30px;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .skillset .skillsetContentContainer .skillList .codeSkills ul li,
-  .skillset .skillsetContentContainer .skillList .humanSkills ul li {
-    font-size: 1.3rem;
-    margin-left: 0;
-  }
-  .skillset .skillsetContentContainer .skillList .codeSkills ul li p,
-  .skillset .skillsetContentContainer .skillList .humanSkills ul li p {
-    letter-spacing: 2px;
-  }
-  .portfolio .direction h3 {
-    font-size: 1rem;
-    margin-bottom: 4px;
-  }
-  .portfolio .gallery .projectContent .projectText .projectDescription h4 {
-    font-size: 2rem;
-  }
-  .portfolio .gallery .projectContent .projectText .projectDescription h5 {
-    display: none;
-  }
-  .portfolio .gallery .projectContent .projectText .projectDescription .tools {
-    margin: 20px 0px;
-  }
-  .portfolio .gallery .projectContent .projectText .projectDescription p {
-    font-size: 1.3rem;
-  }
-  .portfolio .gallery .projectContent .projectText .projectLinks .github,
-  .portfolio .gallery .projectContent .projectText .projectLinks .viewLive {
-    font-size: 1.2rem;
-    letter-spacing: normal;
-    margin-right: 15px;
-  }
-  footer .footerHeadings h3 {
-    font-size: 2.5rem;
-  }
-  footer .footerHeadings p {
-    font-size: 1.3rem;
-    letter-spacing: normal;
-    margin: 5px;
-  }
-  footer .means .contactMe form {
-    width: 220px;
-  }
-  footer .means .contactMe form input {
-    height: 25px;
-  }
-  footer .means .contactMe form input, footer .means .contactMe form textarea {
-    font-size: 1.2rem;
-  }
-  footer .means .contactMe form button {
-    font-size: 1.4rem;
-    padding: 4px;
-  }
-  footer .means .socials h4 {
-    font-size: 1.5rem;
-    margin-bottom: 5px;
-  }
-  footer .means .socials p {
-    font-size: 1.2rem;
-    font-weight: 700;
-  }
-  footer .means .socials ul li, footer .means .socials ul li:nth-child(4) {
-    font-size: 3rem;
-    margin-right: 25px;
-  }
-  footer .copyright {
-    font-size: 0.7rem;
-  }
-}
-
-@media (max-width: 420px) {
-  header .headerContentContainer {
-    -webkit-transform: translate(0, 120%);
-            transform: translate(0, 120%);
+  .contactInfo .means .contactMe form button {
+    width: 100%;
   }
   .menuToggle {
     top: 10px;
-    left: 10px;
-    z-index: 1;
-  }
-  .menuToggle span {
-    display: block;
-    width: 33px;
-    height: 4px;
-  }
-  .about .aboutContentContainer .aboutText ul {
-    margin: 30px 0px;
-  }
-  .portfolio .direction h3 {
-    line-height: 1.5;
-  }
-  .portfolio .gallery .projectContent {
-    height: 600px;
-    margin: 20px 0px;
-  }
-}
-
-@media (max-width: 350px) {
-  header .headerContentContainer {
-    -webkit-transform: translate(0, 80%);
-            transform: translate(0, 80%);
-  }
-  .skillset .skillsetContentContainer .skillList .codeSkills ul li p, .skillset .skillsetContentContainer .skillList .humanSkills ul li p {
-    font-size: 1.1rem;
-  }
-  .portfolio .gallery .projectContent .projectText .projectDescription p {
-    font-size: 1.2rem;
-  }
-  footer .footerHeadings {
-    margin-top: 30px;
-  }
-  footer .footerHeadings p {
-    display: none;
-  }
-  footer .means .contactMe form label {
-    font-size: 1.3rem;
-  }
-  footer .means .contactMe form textarea {
-    height: 100px;
+    left: 5px;
   }
 }

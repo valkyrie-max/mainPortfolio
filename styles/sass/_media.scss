@@ -1,582 +1,937 @@
-@media (max-width: 1630px) {
-    .slick-prev {
-        left: -14%;
+@media (max-width: 1435px) {
+    header .headerContentContainer .headings .mainHeading h1 {
+        font-size: 7rem;
     }
-    .slick-next {
-        right: -11%;
+    header .headerContentContainer .headings .mainHeading span {
+        font-size: 2.9rem;
     }
-    .portfolio .gallery .projectContent .projectText .projectDescription h4 {
-        font-size: 4rem;
+    header .headerContentContainer .headings .secondaryHeading h2 {
+        font-size: 6rem;
+    }
+    header .headerContentContainer .lpNavigation {
+        width: 50%;
+        left: 25%;
+    }
+    .portfolio .gallery .projectContent .projectImg {
+        width:80%;
     }
     .portfolio .gallery .projectContent .projectText .projectDescription p {
         font-size: 1.6rem;
     }
-    footer .means .socials ul li {
-        font-size: 10rem;
-        margin-right: 30px;
-    }
-
-    footer .footerHeadings p {
+    .portfolio .gallery .projectContent .projectText .projectLinks a {
         font-size: 2rem;
+        border: 3px solid transparent;
+    }
+    .portfolio .gallery .projectContent .projectText .projectLinks a:focus, 
+    .portfolio .gallery .projectContent .projectText .projectLinks a:hover {
+        border: 3px solid #EF233C;
     }
 }
 
-@media (max-width: 1430px) {
-    header .headerContentContainer {
-        bottom: 35%;
+@media (max-width: 1188px) {
+    header::before {
+        background-repeat: no-repeat;
+        background-size: 140%;
+    }
+    header .headerContentContainer .headings  {
+        left: 50%;
+        bottom: 30%;
+        transform: translate(-50%, -50%);
+        flex-direction: column;
+    }
+    header .headerContentContainer .headings .secondaryHeading h2 {
+        font-size: 5rem;
+    }
+    header .headerContentContainer .headings .mainHeading {
+        padding: 0px;
+        border: none;
+    }
+    header .headerContentContainer .headings .secondaryHeading {
+        padding: 0px;
+        text-align: center;
+    }
+    header .headerContentContainer .headings .mainHeading h1 {
+        font-size: 8rem;
+    }
+    header .headerContentContainer .headings .mainHeading span {
+        text-align: center;
+        font-size: 2.5rem;
+        border-bottom: 2px solid $firstAccentColor;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+    }
+    header .headerContentContainer .lpNavigation {
         left: 50%;
         transform: translate(-50%, -50%);
+        // width: 100%;
     }
-    footer .footerHeadings h3 {
-        font-size: 6rem;
-    }
-    footer .means .socials h4 {
-        font-size: 3rem;
-    }
-    footer .means .socials p {
-        font-size: 2.5rem;
-    }
-    footer .means .socials ul {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        grid-column-gap: 0px;
-        grid-row-gap: 0px; 
-        text-align: center;
-        li, li:nth-child(4) {
-            font-size: 12rem;
-            margin-top: 20px;
-            margin-right: 0;
-            position: relative;
-        }
-    }
-}
-
-@media (max-width: 1308px) {
-    button.slick-prev.slick-arrow {
-        display: none;
-    }
-    button.slick-next.slick-arrow  {
-        display: none;
-    }
-    .wrapper {
-        width: 80%;
-    }
-    .portfolio h3 {
-        opacity: 2;
-    }
-    .portfolio .lowWidth {
-        display: block;
-        opacity: 1;
-    }
-    .portfolio .extra {
-        display: none;
-    }
-    .portfolio .gallery .projectContent .projectImg {
-        width: 200%;
-    }
-    footer .means .contactMe form textarea {
-        height: 200px;
-    }
-} 
-
-@media (max-width: 1265px) {
-    button.slick-prev.slick-arrow {
-        display: none;
-    }
-    button.slick-next.slick-arrow  {
-        display: none;
-    }
-    .about .aboutContentContainer .aboutHeading h3, 
-    .skillset .skillsetContentContainer .skillsetHeading h3{
-        font-size: 5rem;
-    }
-    .about .aboutContentContainer .aboutText ul li p {
-        font-size: 1.7rem;
-    }
-    .skillset .skillsetContentContainer .skillList .codeSkills ul li, 
-    .skillset .skillsetContentContainer .skillList .humanSkills ul li {
-        font-size: 1.7rem;
-    }
-}
-
-@media (max-width: 1230px) {
-    button.slick-prev.slick-arrow {
-        display: none;
-    }
-    button.slick-next.slick-arrow  {
-        display: none;
-    }
-    .projectImg {
-        display: none;
-    }
-    .portfolio .gallery .projectContent .projectsLine {
-        display: none;
-    }
-    footer .footerHeadings h3 {
-        font-size: 4.5rem;
-    }
-    footer .footerHeadings p {
-        font-size: 1.8rem;
-        letter-spacing: 1.5px;
-    }
-    footer .means {
-        margin-top: 0px;
-    }
-    footer .means .contactMe form label {
-        font-size: 1.6rem;
-    }
-    footer .means .contactMe form input {
-        height: 35px;
-    }
-    footer .means .contactMe form textarea {
-        height: 150px;
-    }
-    footer .means .contactMe form button {
-        font-size: 1.7rem;
-    }
-    footer .means {
-        flex-direction: column;
-        align-items: center;
-    }
-    footer .means .socials {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        margin: 20px;
-    }
-    footer .means .socials ul {
-        display: flex;
-        margin: 0;
-        justify-content: center;
-    }
-    footer .means .socials ul li,
-    footer .means .socials ul li:nth-child(4){
-        font-size: 7rem;
-        margin-right: 15px;
-    }
-}
-
-@media (max-width: 1040px) {
-    button.slick-prev.slick-arrow {
-        display: none;
-    }
-    button.slick-next.slick-arrow  {
-        display: none;
-    }
-    button.slick-prev.slick-arrow {
-        display: none;
-    }
-    button.slick-next.slick-arrow  {
-        display: none;
-    }
-    .about .aboutContentContainer {
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-end;
-    }
-    .about .aboutContentContainer .aboutHeading h3 {
-        text-shadow: 0px 30px rgba(2, 66, 63, 0.5), 0px 60px rgba(99, 3, 4, 0.5);
-        border-bottom: 1px solid;
-        padding-bottom: 80px;
-    }
-    .about .aboutContentContainer .aboutText ul {
-        margin-top: 30px;
-    }
-    .about .aboutContentContainer .aboutText ul li {
-        list-style: disclosure-closed;
-        font-size: 2rem;
-    }
-    .about .aboutContentContainer .aboutText ul li p {
-        font-size: 1.9rem;
-    }
-    .about .aboutContentContainer .aboutLine {
-        display: none;
-    }
-    .skillset {
-        padding-top: 70px;
-    }
-    .skillset .skillsetContentContainer .skillList h4 {
-        font-size: 2.5rem;
-    }
-    .skillset .skillsetContentContainer {
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-items: flex-start;
-    }
-    .skillset .skillsetContentContainer .skillsetHeading {
-        text-shadow: 0px 30px rgba(2, 66, 63, 0.5), 0px 60px rgba(99, 3, 4, 0.5);
-        border-bottom: 1px solid;
-        padding-bottom: 80px;
-    }
-    .skillset .skillsetContentContainer .skillList .codeSkills, .skillset .skillsetContentContainer .skillList .humanSkills {
-        margin-top: 30px;
-    }
-    .skillset .skillsetContentContainer .skillList h4 {
-        font-size: 3.5rem;
-    }
-    .skillset .skillsetContentContainer .skillList .codeSkills ul, .skillset .skillsetContentContainer .skillList .humanSkills ul {
-        display: flex;
-        flex-direction: column;
+    header .headerContentContainer .lpNavigation ul {
         justify-content: space-between;
-        align-content: space-between;
     }
-    .skillset .skillsetContentContainer .skillList .codeSkills ul li, .skillset .skillsetContentContainer .skillList .humanSkills ul li {
-        font-size: 2rem;
-    }
-    .skillset .skillsetContentContainer .skillsetLine {
-        display: none;
-    }
-    footer .up {
-        margin-top: 10px;
-        font-size: 2.5rem;
-    }
-}
-
-@media (max-width: 890px) {
-    header .headerContentContainer {
-        position: static;
-        transform: none;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        transform: translate(0%, 120%);
-    }
-    header .headerContentContainer .mainHeading {
-        border: none;
-        // text-align: center;
-        padding: 0;
-    }
-    header .headerContentContainer .secondaryHeading {
-        margin-top: 50px;
-        padding: 0;
-    }
-    header .headerContentContainer .secondaryHeading h2 {
-        font-size: 6rem;
-    }
-    .skillset .skillsetContentContainer .skillList h4 {
-        font-size: 2.9rem;
-    }
-    .skillset .skillsetContentContainer .skillList .codeSkills ul li, .skillset .skillsetContentContainer .skillList .humanSkills ul li {
-        font-size: 1.7rem;
-    }
-    footer .footerHeadings h3 {
-        font-size: 4rem;
-    }
-    footer .footerHeadings p {
-        font-size: 1.6rem;
-        letter-spacing: 1px;
-    }
-    footer .means .socials ul li, footer .means .socials ul li:nth-child(4) {
-        font-size: 5rem;
-        margin-right: 45px;
-    }
-    footer .means .socials ul li:nth-child(4) {
-        margin-right: 0;
-    }
-}
-
-@media (max-width: 800px) {
-    header .headerContentContainer .secondaryHeading h2 {
-        font-size: 5rem;
-    }
-    header .headerContentContainer .secondaryHeading {
-        margin-top: 30px;
-    }
-    .about .aboutContentContainer .aboutText ul li p {
-        font-size: 1.7rem;
-        letter-spacing: normal;
-    }
-    .skillset .skillsetContentContainer .skillList .codeSkills ul li, .skillset .skillsetContentContainer .skillList .humanSkills ul li {
+    header .headerContentContainer .lpNavigation ul li a {
         font-size: 1.5rem;
+        font-weight: 700;
     }
     .portfolio .gallery .projectContent .projectText .projectDescription h4 {
         font-size: 3rem;
     }
     .portfolio .gallery .projectContent .projectText .projectDescription h5 {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
-    .portfolio .gallery .projectContent .projectText .projectDescription p {
-        font-size: 1.4rem;
-    } 
-    .portfolio .gallery .projectContent .projectText .projectDescription .tools {
-        font-size: 1.8rem;
-        font-weight: 700;
-    }
-    footer .footerHeadings h3 {
+    .portfolio .gallery .projectContent .projectText .projectDescription span {
         font-size: 3.5rem;
     }
-    footer .means .contactMe form {
-        width: 350px;
+    .portfolio .gallery .projectContent .projectText .projectLinks a {
+        font-size: 1.7rem;
+        margin-right: 25px;
+    }
+    .portfolio .gallery .projectContent .projectText .projectDescription p {
+        font-size: 1.5rem;
     }
 }
 
-@media (max-width: 707px) {
-    footer .footerHeadings h3 {
-        max-width: 100%;
+@media (max-width: 1043px) {
+    header .headerContentContainer .headings .secondaryHeading h2 {
+        font-size: 4rem;
+    }
+    .about .aboutText ul li p {
+        font-size: 1.7rem;
+        letter-spacing: 0.5px;
+    }
+    .fatText {
+        letter-spacing: 1px;
+    }
+    .skillset .skillsContainer h4 {
+        font-size: 2.5rem;
+    }
+    .skillset .skillsContainer .comp .skillList li i, .skillset .skillsContainer .current .skillList li i {
+        font-size: 4rem;
+    }
+    .skillset .skillsContainer .comp .skillList li p, .skillset .skillsContainer .current .skillList li p {
+        font-size: 1.5rem;
+    }
+    .portfolio .gallery .projectContent {
+        min-height: 85vh;
+        flex-direction: column-reverse;
+        justify-content: initial;
+    }
+    .portfolio .gallery .projectContent .projectImg {
+        width: 50%;
+    }
+    .portfolio .gallery .projectContent .projectText {
+        margin-top: 50px;
+    }
+    .contactInfo .means .socials {
+        width: 100%;
+    }
+    .contactInfo .means .socials .gmail {
+        font-size: 1.7rem;
     }
 }
 
-@media (max-width: 621px) {
+@media (max-width: 935px) {
+    header .headerContentContainer .lpNavigation {
+        display: none;
+    }
+    .navigation {
+        display: block;
+    }
     .menuToggle {
         display: block;
     }
-    .portfolio .direction h3 {
-        font-size: 1.4rem;
+    .skillset .skillsContainer h4 {
+        font-size: 2rem;
     }
-    .portfolio .gallery .projectContent .projectText .projectLinks {
-        margin-top: 20px;
+    .contactInfo .contactHeadings p {
+        font-size: 1.5rem;
     }
-    .about .aboutContentContainer .aboutHeading h3, 
-    .skillset .skillsetContentContainer .skillsetHeading h3 {
-        display: none;
-    }
-    .about .scrollToSkills,
-    .skillset .scrollToProjects,
-    .portfolio .scrollToContact {
-        display: none;
+    .contactInfo .means .contactMe {
+        width: 80%;
     }
 }
 
-@media (max-width: 590px) {
-    .about .aboutContentContainer .aboutHeading h3,
-    .skillset .skillsetContentContainer .skillsetHeading h3 {
-        font-size: 4rem;
-        padding-bottom: 60px;
+@media (max-width: 883px) {
+    header::before {
+        background-repeat: no-repeat;
+        background-size: 180%;
     }
-    .about .aboutContentContainer .aboutText ul li p {
-        font-size: 1.5rem;
+    header .headerContentContainer .headings {
+        bottom: 20%;
     }
-    .about .aboutContentContainer .aboutText ul li {
-        font-size: 1.5rem;
-    }
-    .skillset .skillsetContentContainer .skillsetHeading {
-        padding: 0;
-    }
-    .skillset .skillsetContentContainer .skillList h4 {
-        font-size: 2.5rem;
-    }
-    .skillset .skillsetContentContainer .skillList .codeSkills ul, 
-    .skillset .skillsetContentContainer .skillList .humanSkills ul {
-        margin: 10px 30px 0px 0px;
-    }
-    .portfolio .gallery .projectContent {
-        height: 700px;
-        margin-top: 20px;
-    }
-    .portfolio .gallery .projectContent .projectText .projectDescription h4 {
-        text-shadow: 0px 10px rgba(2, 66, 63, 0.5), 0px 20px rgba(99, 3, 4, 0.5);
-    }
-    .portfolio .gallery .projectContent .projectText .projectDescription h5 {
-        margin: 20px 0px;
-    }
-    .portfolio .gallery .projectContent .projectText .projectDescription p {
-        font-size: 1.35rem;
-    }
-    .portfolio .gallery .projectContent .projectText .projectLinks .github,
-    .portfolio .gallery .projectContent .projectText .projectLinks .viewLive {
-        font-size: 1.6rem;
-        padding: 5px 10px;
-    }
-}
-
-@media (max-width: 515px) {
-    .skillset .skillsetContentContainer .skillList h4 {
-        font-size: 2rem;
-    }
-    .skillset .skillsetContentContainer .skillList .codeSkills ul li, .skillset .skillsetContentContainer .skillList .humanSkills ul li {
-        font-size: 1.2rem;
-    }
-    .portfolio .direction h3 {
-        font-size: 1.2rem;
-    }
-    .portfolio .gallery .projectContent {
-        margin-top: 0;
-        height: 800px;
-    }
-    .portfolio .gallery .projectContent .projectText .projectDescription .tools {
-        font-size: 1.5rem;
-        font-weight: 700;
-    }
-    .portfolio .gallery .projectContent .projectText .projectDescription p {
-        font-size: 1.35rem;
-    }
-    .portfolio .scrollToContact {
-        top: 96%;
-    }
-    footer .means .socials p {
-        font-size: 2rem;
-    }
-    footer .up {
-        font-size: 2rem;
-    }
-}
-
-@media (max-width: 470px) {
-    header .scrollToContent p,
-    .about .scrollToSkills p,
-    .skillset .scrollToProjects p,
-    .portfolio .scrollToContact p {
-        font-size: 1.5rem;
-    }
-    header .headerContentContainer {
-        transform: translate(0, 160%);
-    }
-    header .headerContentContainer .mainHeading h1 {
+    header .headerContentContainer .headings .secondaryHeading h2 {
         font-size: 5rem;
     }
-    header .headerContentContainer .mainHeading span {
-        font-size: 2rem;;
+}
+
+@media (max-width: 730px) {
+    .about h3, .skillset h3, .portfolio h3, .contactInfo .contactHeadings h3 {
+        font-size: 5rem;
     }
-    header .headerContentContainer .secondaryHeading h2 {
-        font-size: 4rem;
-    }
-    .about .aboutContentContainer .aboutHeading h3, .skillset .skillsetContentContainer .skillsetHeading h3 {
-        font-size: 2.5rem;
-        text-shadow: 0px 15px rgba(2, 66, 63, 0.5), 0px 30px rgba(99, 3, 4, 0.5);
-        padding-bottom: 30px;
-    }
-    .about .aboutContentContainer .aboutHeading h3 {
-        margin-bottom: 0px;
-    }
-    .about .aboutContentContainer .aboutText ul {
-        margin-top: 0px;
-    }
-    .about .aboutContentContainer .aboutText ul li  {
-        list-style: none;
-    }
-    .about .aboutContentContainer .aboutText ul li p {
-        font-size: 1.4rem;
-        letter-spacing: 0.5px;
-    }
-    .skillset .skillsetContentContainer .skillList h4 {
-        display: inline-block;
-        max-width: 70%;
+
+    .skillset .skillsContainer h4 {
         font-size: 1.7rem;
     }
-    .skillset .skillsetContentContainer .skillList .codeSkills ul, 
-    .skillset .skillsetContentContainer .skillList .humanSkills ul {
-        margin-right: 30px;
-        flex-wrap: wrap;
-    }
-    .skillset .skillsetContentContainer .skillList .codeSkills ul li, 
-    .skillset .skillsetContentContainer .skillList .humanSkills ul li {
-        font-size: 1.3rem;
-        margin-left: 0;
-    }
-    .skillset .skillsetContentContainer .skillList .codeSkills ul li p, 
-    .skillset .skillsetContentContainer .skillList .humanSkills ul li p {
-        letter-spacing: 2px;
-    }
-    .portfolio .direction h3 {
-        font-size: 1rem;
-        margin-bottom: 4px;
-    }
-    .portfolio .gallery .projectContent .projectText .projectDescription h4 {
-        font-size: 2rem;
-    }
-    .portfolio .gallery .projectContent .projectText .projectDescription h5 {
-        display: none;
-    }
-    .portfolio .gallery .projectContent .projectText .projectDescription .tools {
-        margin: 20px 0px;
-    }
-    .portfolio .gallery .projectContent .projectText .projectDescription p {
-        font-size: 1.3rem;
-    }
-    .portfolio .gallery .projectContent .projectText .projectLinks .github, 
-    .portfolio .gallery .projectContent .projectText .projectLinks .viewLive {
-        font-size: 1.2rem;
-        letter-spacing: normal;
-        margin-right: 15px;
-        // padding: 5px 10px;
-    }
-    footer .footerHeadings h3 {
-        font-size: 2.5rem;
-    }
-    footer .footerHeadings p {
-        font-size: 1.3rem;
-        letter-spacing: normal;
-        margin: 5px;
-    }
-    footer .means .contactMe form {
-        width: 220px;
-    }
-    footer .means .contactMe form input {
-        height: 25px;
-    }
-    footer .means .contactMe form input, footer .means .contactMe form textarea {
-        font-size: 1.2rem;
-    }
-    footer .means .contactMe form button {
-        font-size: 1.4rem;
-        padding: 4px;
-    }
-    footer .means .socials h4 {
-        font-size: 1.5rem;
-        margin-bottom: 5px;
-    }
-    footer .means .socials p {
-        font-size: 1.2rem;
-        font-weight: 700;
-    }
-    footer .means .socials ul li, footer .means .socials ul li:nth-child(4) {
+    .skillset .skillsContainer .comp .skillList li i, .skillset .skillsContainer .current .skillList li i {
         font-size: 3rem;
-        margin-right: 25px;
+        text-shadow: 1px solid $firstAccentColor;
     }
-    footer .copyright {
-        font-size: 0.7rem;
+    .skillset .skillsContainer .comp .compCont {
+        flex-direction: column;
+    }
+    .skillset .skillsContainer .comp .skillList {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .skillset .skillsContainer .comp .skillList li {
+        margin-right: 20px;
+    }
+    .portfolio .gallery .projectContent {
+        min-height: 90vh;
+    }
+    .portfolio .gallery .projectContent .projectImg {
+        width: 70%;
+    }
+    .menuToggle span {
+        width: 33px;
+        height: 4px;
+        margin-bottom: 6px;
+    }
+    .menuToggle input:checked ~ span {
+        transform: rotate(45deg) translate(0px, 0px);
+    }
+    .menuToggle input:checked ~ span:nth-last-child(2) {
+        transform: rotate(-45deg) translate(0px, 0px);
+    }
+    .menuToggle .menu {
+        // width: 10vw;
+        padding: 50px;
     }
 }
 
-@media (max-width: 420px) {
-    header .headerContentContainer {
-        transform: translate(0, 120%);
+@media (max-width: 690px) {
+    header::before {
+        background-size: 250%;
+    }
+    .about .aboutText ul li p {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 610px) {
+    .about h3, .skillset h3, .portfolio h3, .contactInfo .contactHeadings h3 {
+        font-size: 4rem;
+    }
+    .portfolio .gallery .projectContent .projectText .projectDescription h4 {
+        font-size: 2.5rem;
+    }
+    .portfolio .gallery .projectContent .projectText .projectDescription span {
+        font-size: 3rem;
+    }
+    .contactInfo .means .contactMe {
+        width: 100%;
+    }
+    .contactInfo .contactHeadings p {
+        align-self: flex-start;
+        text-align: start;
+        width: 100%;
+    }
+}
+
+@media (max-width: 537px) {
+    header .scrollToContent p {
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+    .portfolio .gallery .projectContent .projectText .projectLinks a {
+        font-size: 1.5rem;
+        padding: 3px 5px;
+    }
+}
+
+@media (max-width: 510px) {
+    header::before {
+        background-size: 350%;
+    }
+    .about .aboutText ul li {
+        font-size: 1.5rem;
+    }
+    .about .aboutText ul li p {
+        font-weight: 500;
+        font-size: 1.5rem;
+    }
+    .skillset .skillsContainer .comp .skillList li p, .skillset .skillsContainer .current .skillList li p {
+        font-size: 1rem;
+    }
+    .portfolio .gallery .projectContent .projectText {
+        margin-right: 0px;
+        width: 100%;
+        max-width: 100%;
+    }
+    .portfolio .gallery .projectContent {
+        margin: 0px;
+        align-items: center;
+        justify-content: center;
+    }
+    .contactInfo .means .contactMe form button {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 481px) {
+    header .scrollToContent p {
+        width: 60%;
+        font-size: 1rem;
+        text-align: center;
+    }
+    .menuToggle {
+        top: 15px;
+        left: 15px;
+    }
+    .contactInfo .means .socials .gmail {
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+    }
+    .contactInfo .means .socials .socialLinks li a i {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 410px) {
+    header::before {
+        background-size: 370%;
+    }
+    header .headerContentContainer .headings .mainHeading h1 {
+        font-size: 6.5rem;
+    }
+    header .headerContentContainer .headings .secondaryHeading h2 {
+        font-size: 4rem;
+    }
+    .about h3, .skillset h3, .portfolio h3, .contactInfo .contactHeadings h3 {
+        font-size: 3rem;
+    }
+    .skillset .skillsContainer .comp .skillList li i, .skillset .skillsContainer .current .skillList li i {
+        font-size: 2.2rem;
+        text-shadow: none;
+    }
+    .skillset .skillsContainer .comp .skillList li p, .skillset .skillsContainer .current .skillList li p {
+        font-size: 0.9rem;
+    }
+    .skillset .skillsContainer .comp .skillList li:nth-child(4) {
+        margin: 0px;
+    }
+    .skillset .skillsContainer .comp .current .skillList {
+        padding: 0;
+    }
+    .portfolio .gallery .projectContent .projectImg {
+        width: 100%;
+    }
+    .portfolio .gallery .projectContent .projectText .projectDescription .tools {
+        font-size: 1.4rem;
+    }
+    .portfolio .gallery .projectContent .projectText .projectDescription p {
+        font-size: 1.2rem;
+    }
+    .portfolio .gallery .projectContent .projectText .projectLinks {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .portfolio .gallery .projectContent .projectText .projectLinks a {
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin-top: 20px;
+        margin-right: 0px;
+    }
+    .contactInfo .means .contactMe form button {
+        width: 100%;
     }
     .menuToggle {
         top: 10px;
-        left: 10px;
-        z-index: 1;
-    }
-    .menuToggle span {
-        display: block;
-        width: 33px;
-        height: 4px;
-    }
-    .about .aboutContentContainer .aboutText ul {
-        margin: 30px 0px;
-    }
-    .portfolio .direction h3 {
-        line-height: 1.5;
-    }
-    .portfolio .gallery .projectContent {
-        height: 600px;
-        margin: 20px 0px;
+        left: 5px;
     }
 }
 
-@media (max-width: 350px) {
-    header .headerContentContainer {
-        transform: translate(0, 80%);
-    }
-    .skillset .skillsetContentContainer .skillList .codeSkills ul li p, .skillset .skillsetContentContainer .skillList .humanSkills ul li p {
-        font-size: 1.1rem;
-    }
-    .portfolio .gallery .projectContent .projectText .projectDescription p {
-        font-size: 1.2rem;
-    }
-    footer .footerHeadings {
-        margin-top: 30px;
-    }
-    footer .footerHeadings p {
-        display: none;
-    }
-    footer .means .contactMe form label {
-        font-size: 1.3rem;
-    }
-    footer .means .contactMe form textarea {
-        height: 100px;
-    }
-}
+// @media (max-width: 1630px) {
+//     .slick-prev {
+//         left: -14%;
+//     }
+//     .slick-next {
+//         right: -11%;
+//     }
+//     .portfolio .gallery .projectContent .projectText .projectDescription h4 {
+//         font-size: 4rem;
+//     }
+//     .portfolio .gallery .projectContent .projectText .projectDescription p {
+//         font-size: 1.6rem;
+//     }
+//     footer .means .socials ul li {
+//         font-size: 10rem;
+//         margin-right: 30px;
+//     }
+
+//     footer .footerHeadings p {
+//         font-size: 2rem;
+//     }
+// }
+
+// @media (max-width: 1430px) {
+//     header .headerContentContainer {
+//         bottom: 35%;
+//         left: 50%;
+//         transform: translate(-50%, -50%);
+//     }
+//     footer .footerHeadings h3 {
+//         font-size: 6rem;
+//     }
+//     footer .means .socials h4 {
+//         font-size: 3rem;
+//     }
+//     footer .means .socials p {
+//         font-size: 2.5rem;
+//     }
+//     footer .means .socials ul {
+//         display: grid;
+//         grid-template-columns: repeat(2, 1fr);
+//         grid-template-rows: repeat(2, 1fr);
+//         grid-column-gap: 0px;
+//         grid-row-gap: 0px; 
+//         text-align: center;
+//         li, li:nth-child(4) {
+//             font-size: 12rem;
+//             margin-top: 20px;
+//             margin-right: 0;
+//             position: relative;
+//         }
+//     }
+// }
+
+// @media (max-width: 1308px) {
+//     button.slick-prev.slick-arrow {
+//         display: none;
+//     }
+//     button.slick-next.slick-arrow  {
+//         display: none;
+//     }
+//     .wrapper {
+//         width: 80%;
+//     }
+//     .portfolio h3 {
+//         opacity: 2;
+//     }
+//     .portfolio .lowWidth {
+//         display: block;
+//         opacity: 1;
+//     }
+//     .portfolio .extra {
+//         display: none;
+//     }
+//     .portfolio .gallery .projectContent .projectImg {
+//         width: 200%;
+//     }
+//     footer .means .contactMe form textarea {
+//         height: 200px;
+//     }
+// } 
+
+// @media (max-width: 1265px) {
+//     button.slick-prev.slick-arrow {
+//         display: none;
+//     }
+//     button.slick-next.slick-arrow  {
+//         display: none;
+//     }
+//     .about .aboutContentContainer .aboutHeading h3, 
+//     .skillset .skillsetContentContainer .skillsetHeading h3{
+//         font-size: 5rem;
+//     }
+//     .about .aboutContentContainer .aboutText ul li p {
+//         font-size: 1.7rem;
+//     }
+//     .skillset .skillsetContentContainer .skillList .codeSkills ul li, 
+//     .skillset .skillsetContentContainer .skillList .humanSkills ul li {
+//         font-size: 1.7rem;
+//     }
+// }
+
+// @media (max-width: 1230px) {
+//     button.slick-prev.slick-arrow {
+//         display: none;
+//     }
+//     button.slick-next.slick-arrow  {
+//         display: none;
+//     }
+//     .projectImg {
+//         display: none;
+//     }
+//     .portfolio .gallery .projectContent .projectsLine {
+//         display: none;
+//     }
+//     footer .footerHeadings h3 {
+//         font-size: 4.5rem;
+//     }
+//     footer .footerHeadings p {
+//         font-size: 1.8rem;
+//         letter-spacing: 1.5px;
+//     }
+//     footer .means {
+//         margin-top: 0px;
+//     }
+//     footer .means .contactMe form label {
+//         font-size: 1.6rem;
+//     }
+//     footer .means .contactMe form input {
+//         height: 35px;
+//     }
+//     footer .means .contactMe form textarea {
+//         height: 150px;
+//     }
+//     footer .means .contactMe form button {
+//         font-size: 1.7rem;
+//     }
+//     footer .means {
+//         flex-direction: column;
+//         align-items: center;
+//     }
+//     footer .means .socials {
+//         display: flex;
+//         flex-direction: column;
+//         text-align: center;
+//         margin: 20px;
+//     }
+//     footer .means .socials ul {
+//         display: flex;
+//         margin: 0;
+//         justify-content: center;
+//     }
+//     footer .means .socials ul li,
+//     footer .means .socials ul li:nth-child(4){
+//         font-size: 7rem;
+//         margin-right: 15px;
+//     }
+// }
+
+// @media (max-width: 1040px) {
+//     button.slick-prev.slick-arrow {
+//         display: none;
+//     }
+//     button.slick-next.slick-arrow  {
+//         display: none;
+//     }
+//     button.slick-prev.slick-arrow {
+//         display: none;
+//     }
+//     button.slick-next.slick-arrow  {
+//         display: none;
+//     }
+//     .about .aboutContentContainer {
+//         flex-direction: column;
+//         justify-content: center;
+//         align-items: flex-end;
+//     }
+//     .about .aboutContentContainer .aboutHeading h3 {
+//         text-shadow: 0px 30px rgba(2, 66, 63, 0.5), 0px 60px rgba(99, 3, 4, 0.5);
+//         border-bottom: 1px solid;
+//         padding-bottom: 80px;
+//     }
+//     .about .aboutContentContainer .aboutText ul {
+//         margin-top: 30px;
+//     }
+//     .about .aboutContentContainer .aboutText ul li {
+//         list-style: disclosure-closed;
+//         font-size: 2rem;
+//     }
+//     .about .aboutContentContainer .aboutText ul li p {
+//         font-size: 1.9rem;
+//     }
+//     .about .aboutContentContainer .aboutLine {
+//         display: none;
+//     }
+//     .skillset {
+//         padding-top: 70px;
+//     }
+//     .skillset .skillsetContentContainer .skillList h4 {
+//         font-size: 2.5rem;
+//     }
+//     .skillset .skillsetContentContainer {
+//         display: flex;
+//         flex-direction: column-reverse;
+//         justify-content: center;
+//         align-items: flex-start;
+//     }
+//     .skillset .skillsetContentContainer .skillsetHeading {
+//         text-shadow: 0px 30px rgba(2, 66, 63, 0.5), 0px 60px rgba(99, 3, 4, 0.5);
+//         border-bottom: 1px solid;
+//         padding-bottom: 80px;
+//     }
+//     .skillset .skillsetContentContainer .skillList .codeSkills, .skillset .skillsetContentContainer .skillList .humanSkills {
+//         margin-top: 30px;
+//     }
+//     .skillset .skillsetContentContainer .skillList h4 {
+//         font-size: 3.5rem;
+//     }
+//     .skillset .skillsetContentContainer .skillList .codeSkills ul, .skillset .skillsetContentContainer .skillList .humanSkills ul {
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: space-between;
+//         align-content: space-between;
+//     }
+//     .skillset .skillsetContentContainer .skillList .codeSkills ul li, .skillset .skillsetContentContainer .skillList .humanSkills ul li {
+//         font-size: 2rem;
+//     }
+//     .skillset .skillsetContentContainer .skillsetLine {
+//         display: none;
+//     }
+//     footer .up {
+//         margin-top: 10px;
+//         font-size: 2.5rem;
+//     }
+// }
+
+// @media (max-width: 890px) {
+//     header .headerContentContainer {
+//         position: static;
+//         transform: none;
+//         flex-direction: column;
+//         justify-content: center;
+//         align-items: center;
+//         text-align: center;
+//         transform: translate(0%, 120%);
+//     }
+//     header .headerContentContainer .mainHeading {
+//         border: none;
+//         // text-align: center;
+//         padding: 0;
+//     }
+//     header .headerContentContainer .secondaryHeading {
+//         margin-top: 50px;
+//         padding: 0;
+//     }
+//     header .headerContentContainer .secondaryHeading h2 {
+//         font-size: 6rem;
+//     }
+//     .skillset .skillsetContentContainer .skillList h4 {
+//         font-size: 2.9rem;
+//     }
+//     .skillset .skillsetContentContainer .skillList .codeSkills ul li, .skillset .skillsetContentContainer .skillList .humanSkills ul li {
+//         font-size: 1.7rem;
+//     }
+//     footer .footerHeadings h3 {
+//         font-size: 4rem;
+//     }
+//     footer .footerHeadings p {
+//         font-size: 1.6rem;
+//         letter-spacing: 1px;
+//     }
+//     footer .means .socials ul li, footer .means .socials ul li:nth-child(4) {
+//         font-size: 5rem;
+//         margin-right: 45px;
+//     }
+//     footer .means .socials ul li:nth-child(4) {
+//         margin-right: 0;
+//     }
+// }
+
+// @media (max-width: 800px) {
+//     header .headerContentContainer .secondaryHeading h2 {
+//         font-size: 5rem;
+//     }
+//     header .headerContentContainer .secondaryHeading {
+//         margin-top: 30px;
+//     }
+//     .about .aboutContentContainer .aboutText ul li p {
+//         font-size: 1.7rem;
+//         letter-spacing: normal;
+//     }
+//     .skillset .skillsetContentContainer .skillList .codeSkills ul li, .skillset .skillsetContentContainer .skillList .humanSkills ul li {
+//         font-size: 1.5rem;
+//     }
+//     .portfolio .gallery .projectContent .projectText .projectDescription h4 {
+//         font-size: 3rem;
+//     }
+//     .portfolio .gallery .projectContent .projectText .projectDescription h5 {
+//         font-size: 2rem;
+//     }
+//     .portfolio .gallery .projectContent .projectText .projectDescription p {
+//         font-size: 1.4rem;
+//     } 
+//     .portfolio .gallery .projectContent .projectText .projectDescription .tools {
+//         font-size: 1.8rem;
+//         font-weight: 700;
+//     }
+//     footer .footerHeadings h3 {
+//         font-size: 3.5rem;
+//     }
+//     footer .means .contactMe form {
+//         width: 350px;
+//     }
+// }
+
+// @media (max-width: 707px) {
+//     footer .footerHeadings h3 {
+//         max-width: 100%;
+//     }
+// }
+
+// @media (max-width: 621px) {
+//     .menuToggle {
+//         display: block;
+//     }
+//     .portfolio .direction h3 {
+//         font-size: 1.4rem;
+//     }
+//     .portfolio .gallery .projectContent .projectText .projectLinks {
+//         margin-top: 20px;
+//     }
+//     .about .aboutContentContainer .aboutHeading h3, 
+//     .skillset .skillsetContentContainer .skillsetHeading h3 {
+//         display: none;
+//     }
+//     .about .scrollToSkills,
+//     .skillset .scrollToProjects,
+//     .portfolio .scrollToContact {
+//         display: none;
+//     }
+// }
+
+// @media (max-width: 590px) {
+//     .about .aboutContentContainer .aboutHeading h3,
+//     .skillset .skillsetContentContainer .skillsetHeading h3 {
+//         font-size: 4rem;
+//         padding-bottom: 60px;
+//     }
+//     .about .aboutContentContainer .aboutText ul li p {
+//         font-size: 1.5rem;
+//     }
+//     .about .aboutContentContainer .aboutText ul li {
+//         font-size: 1.5rem;
+//     }
+//     .skillset .skillsetContentContainer .skillsetHeading {
+//         padding: 0;
+//     }
+//     .skillset .skillsetContentContainer .skillList h4 {
+//         font-size: 2.5rem;
+//     }
+//     .skillset .skillsetContentContainer .skillList .codeSkills ul, 
+//     .skillset .skillsetContentContainer .skillList .humanSkills ul {
+//         margin: 10px 30px 0px 0px;
+//     }
+//     .portfolio .gallery .projectContent {
+//         height: 700px;
+//         margin-top: 20px;
+//     }
+//     .portfolio .gallery .projectContent .projectText .projectDescription h4 {
+//         text-shadow: 0px 10px rgba(2, 66, 63, 0.5), 0px 20px rgba(99, 3, 4, 0.5);
+//     }
+//     .portfolio .gallery .projectContent .projectText .projectDescription h5 {
+//         margin: 20px 0px;
+//     }
+//     .portfolio .gallery .projectContent .projectText .projectDescription p {
+//         font-size: 1.35rem;
+//     }
+//     .portfolio .gallery .projectContent .projectText .projectLinks .github,
+//     .portfolio .gallery .projectContent .projectText .projectLinks .viewLive {
+//         font-size: 1.6rem;
+//         padding: 5px 10px;
+//     }
+// }
+
+// @media (max-width: 515px) {
+//     .skillset .skillsetContentContainer .skillList h4 {
+//         font-size: 2rem;
+//     }
+//     .skillset .skillsetContentContainer .skillList .codeSkills ul li, .skillset .skillsetContentContainer .skillList .humanSkills ul li {
+//         font-size: 1.2rem;
+//     }
+//     .portfolio .direction h3 {
+//         font-size: 1.2rem;
+//     }
+//     .portfolio .gallery .projectContent {
+//         margin-top: 0;
+//         height: 800px;
+//     }
+//     .portfolio .gallery .projectContent .projectText .projectDescription .tools {
+//         font-size: 1.5rem;
+//         font-weight: 700;
+//     }
+//     .portfolio .gallery .projectContent .projectText .projectDescription p {
+//         font-size: 1.35rem;
+//     }
+//     .portfolio .scrollToContact {
+//         top: 96%;
+//     }
+//     footer .means .socials p {
+//         font-size: 2rem;
+//     }
+//     footer .up {
+//         font-size: 2rem;
+//     }
+// }
+
+// @media (max-width: 470px) {
+//     header .scrollToContent p,
+//     .about .scrollToSkills p,
+//     .skillset .scrollToProjects p,
+//     .portfolio .scrollToContact p {
+//         font-size: 1.5rem;
+//     }
+//     header .headerContentContainer {
+//         transform: translate(0, 160%);
+//     }
+//     header .headerContentContainer .mainHeading h1 {
+//         font-size: 5rem;
+//     }
+//     header .headerContentContainer .mainHeading span {
+//         font-size: 2rem;;
+//     }
+//     header .headerContentContainer .secondaryHeading h2 {
+//         font-size: 4rem;
+//     }
+//     .about .aboutContentContainer .aboutHeading h3, .skillset .skillsetContentContainer .skillsetHeading h3 {
+//         font-size: 2.5rem;
+//         text-shadow: 0px 15px rgba(2, 66, 63, 0.5), 0px 30px rgba(99, 3, 4, 0.5);
+//         padding-bottom: 30px;
+//     }
+//     .about .aboutContentContainer .aboutHeading h3 {
+//         margin-bottom: 0px;
+//     }
+//     .about .aboutContentContainer .aboutText ul {
+//         margin-top: 0px;
+//     }
+//     .about .aboutContentContainer .aboutText ul li  {
+//         list-style: none;
+//     }
+//     .about .aboutContentContainer .aboutText ul li p {
+//         font-size: 1.4rem;
+//         letter-spacing: 0.5px;
+//     }
+//     .skillset .skillsetContentContainer .skillList h4 {
+//         display: inline-block;
+//         max-width: 70%;
+//         font-size: 1.7rem;
+//     }
+//     .skillset .skillsetContentContainer .skillList .codeSkills ul, 
+//     .skillset .skillsetContentContainer .skillList .humanSkills ul {
+//         margin-right: 30px;
+//         flex-wrap: wrap;
+//     }
+//     .skillset .skillsetContentContainer .skillList .codeSkills ul li, 
+//     .skillset .skillsetContentContainer .skillList .humanSkills ul li {
+//         font-size: 1.3rem;
+//         margin-left: 0;
+//     }
+//     .skillset .skillsetContentContainer .skillList .codeSkills ul li p, 
+//     .skillset .skillsetContentContainer .skillList .humanSkills ul li p {
+//         letter-spacing: 2px;
+//     }
+//     .portfolio .direction h3 {
+//         font-size: 1rem;
+//         margin-bottom: 4px;
+//     }
+//     .portfolio .gallery .projectContent .projectText .projectDescription h4 {
+//         font-size: 2rem;
+//     }
+//     .portfolio .gallery .projectContent .projectText .projectDescription h5 {
+//         display: none;
+//     }
+//     .portfolio .gallery .projectContent .projectText .projectDescription .tools {
+//         margin: 20px 0px;
+//     }
+//     .portfolio .gallery .projectContent .projectText .projectDescription p {
+//         font-size: 1.3rem;
+//     }
+//     .portfolio .gallery .projectContent .projectText .projectLinks .github, 
+//     .portfolio .gallery .projectContent .projectText .projectLinks .viewLive {
+//         font-size: 1.2rem;
+//         letter-spacing: normal;
+//         margin-right: 15px;
+//         // padding: 5px 10px;
+//     }
+//     footer .footerHeadings h3 {
+//         font-size: 2.5rem;
+//     }
+//     footer .footerHeadings p {
+//         font-size: 1.3rem;
+//         letter-spacing: normal;
+//         margin: 5px;
+//     }
+//     footer .means .contactMe form {
+//         width: 220px;
+//     }
+//     footer .means .contactMe form input {
+//         height: 25px;
+//     }
+//     footer .means .contactMe form input, footer .means .contactMe form textarea {
+//         font-size: 1.2rem;
+//     }
+//     footer .means .contactMe form button {
+//         font-size: 1.4rem;
+//         padding: 4px;
+//     }
+//     footer .means .socials h4 {
+//         font-size: 1.5rem;
+//         margin-bottom: 5px;
+//     }
+//     footer .means .socials p {
+//         font-size: 1.2rem;
+//         font-weight: 700;
+//     }
+//     footer .means .socials ul li, footer .means .socials ul li:nth-child(4) {
+//         font-size: 3rem;
+//         margin-right: 25px;
+//     }
+//     footer .copyright {
+//         font-size: 0.7rem;
+//     }
+// }
+
+// @media (max-width: 420px) {
+//     header .headerContentContainer {
+//         transform: translate(0, 120%);
+//     }
+//     .menuToggle {
+//         top: 10px;
+//         left: 10px;
+//         z-index: 1;
+//     }
+//     .menuToggle span {
+//         display: block;
+//         width: 33px;
+//         height: 4px;
+//     }
+//     .about .aboutContentContainer .aboutText ul {
+//         margin: 30px 0px;
+//     }
+//     .portfolio .direction h3 {
+//         line-height: 1.5;
+//     }
+//     .portfolio .gallery .projectContent {
+//         height: 600px;
+//         margin: 20px 0px;
+//     }
+// }
+
+// @media (max-width: 350px) {
+//     header .headerContentContainer {
+//         transform: translate(0, 80%);
+//     }
+//     .skillset .skillsetContentContainer .skillList .codeSkills ul li p, .skillset .skillsetContentContainer .skillList .humanSkills ul li p {
+//         font-size: 1.1rem;
+//     }
+//     .portfolio .gallery .projectContent .projectText .projectDescription p {
+//         font-size: 1.2rem;
+//     }
+//     footer .footerHeadings {
+//         margin-top: 30px;
+//     }
+//     footer .footerHeadings p {
+//         display: none;
+//     }
+//     footer .means .contactMe form label {
+//         font-size: 1.3rem;
+//     }
+//     footer .means .contactMe form textarea {
+//         height: 100px;
+//     }
+// }

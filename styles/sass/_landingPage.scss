@@ -1,46 +1,89 @@
 header {
     position: relative;
     .headerContentContainer {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        position: absolute;
-        bottom: 45%;
-        .mainHeading {
+        .headings {
             display: flex;
-            flex-direction: column;
-            padding-right: 30px;
-            border-right: 3px solid $secondAccentColor;
-            h1 {
-                font-size: 9rem;
-                text-transform: uppercase;
-                color: $primaryDarkColor;
+            flex-direction: row;
+            align-items: center;
+            position: absolute;
+            bottom: 45%;
+            .mainHeading {
+                display: flex;
+                flex-direction: column;
+                padding-right: 30px;
+                border-right: 3px solid $firstAccentColor;
+                h1 {
+                    font-size: 9rem;
+                    text-transform: uppercase;
+                    color: $primaryDarkColor;
+                    text-shadow: 2px 2px $primaryLightColor;
+                }
+                span {
+                    font-size: 3.9rem;
+                    font-weight: 500;
+                    color: $primaryLightColor;
+                    text-shadow: 1px 1px $firstAccentColor;
+                }
             }
-            span {
-                font-size: 3.9rem;
-                font-weight: 500;
-                color: $firstAccentColor;
+            .secondaryHeading {
+                padding-left: 30px;
+                h2 {
+                    color: $primaryDarkColor;
+                    font-size: 8rem;
+                    font-style: italic;
+                    font-weight: 400;
+                    text-shadow: 2px 2px $primaryLightColor;
+                }
             }
         }
-        .secondaryHeading {
-            padding-left: 30px;
-            h2 {
-                color: $primaryDarkColor;
-                font-size: 8rem;
-                font-style: italic;
-                font-weight: 400;
+        .lpNavigation {
+            width: 50%;
+            position: absolute;
+            text-align: center;
+            bottom: 25%;
+            left: 36%;
+            ul {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                li {
+                    a {
+                        font-size: 2rem;
+                        color: $primaryDarkColor;
+                        font-weight: 500;
+                        text-transform: uppercase;
+                        transition: 0.5s all ease;
+                        padding-right: 5px;
+                        border-right: 3px solid transparent;
+                        border-bottom: 3px solid transparent;
+                    }
+                    a:hover, a:focus {
+                        border-right: 3px solid $firstAccentColor;
+                        border-bottom: 3px solid $firstAccentColor;
+                    }
+                }
             }
         }
     }
     .scrollToContent {
         @include arrowPosition;
-        color: $secondAccentColor;
+        color: $primaryDarkColor;
+        transition: 0.3s all ease;
         p {
-            font-weight: 700;
-            // font-size: 5rem;
-        }
-        .fa-chevron-down {
-            color: $secondAccentColor;
+            font-size: 1.4rem;
         }
     }
+    .scrollToContent:hover {
+        color: $firstAccentColor;
+    }
+}
+
+header::before {
+    content: "";
+    opacity: 0.35;
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-image: url('../assets/background.jpg');
+    filter: grayscale(90%);
 }

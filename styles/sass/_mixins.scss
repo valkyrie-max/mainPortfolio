@@ -1,5 +1,5 @@
 @mixin arrowPosition {
-    opacity: 0.5;
+    // opacity: 0.5;
     position: absolute;
     top: 92%;
     left: 50%;
@@ -16,7 +16,7 @@
     }
     .fa-chevron-down {
         margin-top: 5px;
-        font-size: 3rem;
+        font-size: 1.5rem;
     }
 }
 
@@ -46,5 +46,4 @@
     font-size: 6rem;
     font-weight: 700;
     text-transform: uppercase;
-    margin-top: -100px;
 }

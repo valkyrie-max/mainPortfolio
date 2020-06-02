@@ -2,12 +2,21 @@ footer {
     min-height: 30px;
     background-color: $primaryDarkColor;
     color: $primaryLightColor;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     text-align: center;
     p {
         letter-spacing: 1px;
-
-        // text-transform: uppercase;
+        a {
+            letter-spacing: 1px;
+            font-family: $contentFont;
+            color: $primaryLightColor;
+            border-bottom: 1px solid transparent;
+            padding-bottom: 3px;
+            transition: 0.3s all ease-in;
+        }
+        a:hover {
+            border-bottom: 1px solid $firstAccentColor;
+        }
         padding: 10px;
     }
 }

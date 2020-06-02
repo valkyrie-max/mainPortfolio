@@ -1098,13 +1098,27 @@ footer {
   min-height: 30px;
   background-color: #2B2D42;
   color: #edf2f4;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-align: center;
 }
 
 footer p {
   letter-spacing: 1px;
   padding: 10px;
+}
+
+footer p a {
+  letter-spacing: 1px;
+  font-family: "Libre Baskerville", serif;
+  color: #edf2f4;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 3px;
+  -webkit-transition: 0.3s all ease-in;
+  transition: 0.3s all ease-in;
+}
+
+footer p a:hover {
+  border-bottom: 1px solid #c20114;
 }
 
 @media (max-width: 1435px) {
